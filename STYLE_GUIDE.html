@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>style_guide – Minerva</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-f848181818c3893b963cd5966e0c67a6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-9f3223cf83f8b40da4505dc360a18426.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Minerva</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> <i class="bi bi-house-door-fill" role="img">
+</i> 
+<span class="menu-text">Heim</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./years/1.g/index.html"> 
+<span class="menu-text">1.g</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./years/2.g/index.html"> 
+<span class="menu-text">2.g</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> <i class="bi bi-info-circle" role="img">
+</i> 
+<span class="menu-text">Um Okkum</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Á hesi síðu</h2>
+   
+  <ul>
+  <li><a href="#minerva-style-guide" id="toc-minerva-style-guide" class="nav-link active" data-scroll-target="#minerva-style-guide">Minerva Style Guide</a>
+  <ul class="collapse">
+  <li><a href="#design-philosophy" id="toc-design-philosophy" class="nav-link" data-scroll-target="#design-philosophy">🎨 Design Philosophy</a></li>
+  <li><a href="#theme-colors" id="toc-theme-colors" class="nav-link" data-scroll-target="#theme-colors">🎯 Theme &amp; Colors</a>
+  <ul class="collapse">
+  <li><a href="#base-theme" id="toc-base-theme" class="nav-link" data-scroll-target="#base-theme">Base Theme</a></li>
+  <li><a href="#color-palette" id="toc-color-palette" class="nav-link" data-scroll-target="#color-palette">Color Palette</a></li>
+  <li><a href="#usage-guidelines" id="toc-usage-guidelines" class="nav-link" data-scroll-target="#usage-guidelines">Usage Guidelines</a></li>
+  </ul></li>
+  <li><a href="#typography" id="toc-typography" class="nav-link" data-scroll-target="#typography">📝 Typography</a>
+  <ul class="collapse">
+  <li><a href="#fonts" id="toc-fonts" class="nav-link" data-scroll-target="#fonts">Fonts</a></li>
+  <li><a href="#font-sizes" id="toc-font-sizes" class="nav-link" data-scroll-target="#font-sizes">Font Sizes</a></li>
+  <li><a href="#line-height" id="toc-line-height" class="nav-link" data-scroll-target="#line-height">Line Height</a></li>
+  </ul></li>
+  <li><a href="#layout-spacing" id="toc-layout-spacing" class="nav-link" data-scroll-target="#layout-spacing">📐 Layout &amp; Spacing</a>
+  <ul class="collapse">
+  <li><a href="#grid-structure" id="toc-grid-structure" class="nav-link" data-scroll-target="#grid-structure">Grid Structure</a></li>
+  <li><a href="#spacing-scale" id="toc-spacing-scale" class="nav-link" data-scroll-target="#spacing-scale">Spacing Scale</a></li>
+  </ul></li>
+  <li><a href="#math-styling" id="toc-math-styling" class="nav-link" data-scroll-target="#math-styling">🧮 Math Styling</a>
+  <ul class="collapse">
+  <li><a href="#inline-math" id="toc-inline-math" class="nav-link" data-scroll-target="#inline-math">Inline Math</a></li>
+  <li><a href="#display-math" id="toc-display-math" class="nav-link" data-scroll-target="#display-math">Display Math</a></li>
+  <li><a href="#multi-line-equations" id="toc-multi-line-equations" class="nav-link" data-scroll-target="#multi-line-equations">Multi-line Equations</a></li>
+  </ul></li>
+  <li><a href="#callout-styles" id="toc-callout-styles" class="nav-link" data-scroll-target="#callout-styles">📦 Callout Styles</a>
+  <ul class="collapse">
+  <li><a href="#standard-callouts" id="toc-standard-callouts" class="nav-link" data-scroll-target="#standard-callouts">Standard Callouts</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  </ul></li>
+  <li><a href="#card-components" id="toc-card-components" class="nav-link" data-scroll-target="#card-components">🃏 Card Components</a>
+  <ul class="collapse">
+  <li><a href="#course-cards-homepage" id="toc-course-cards-homepage" class="nav-link" data-scroll-target="#course-cards-homepage">Course Cards (Homepage)</a></li>
+  <li><a href="#topic-cards-year-pages" id="toc-topic-cards-year-pages" class="nav-link" data-scroll-target="#topic-cards-year-pages">Topic Cards (Year Pages)</a></li>
+  <li><a href="#lesson-cards-topic-pages" id="toc-lesson-cards-topic-pages" class="nav-link" data-scroll-target="#lesson-cards-topic-pages">Lesson Cards (Topic Pages)</a></li>
+  </ul></li>
+  <li><a href="#responsive-design" id="toc-responsive-design" class="nav-link" data-scroll-target="#responsive-design">📱 Responsive Design</a>
+  <ul class="collapse">
+  <li><a href="#breakpoints" id="toc-breakpoints" class="nav-link" data-scroll-target="#breakpoints">Breakpoints</a></li>
+  <li><a href="#mobile-considerations" id="toc-mobile-considerations" class="nav-link" data-scroll-target="#mobile-considerations">Mobile Considerations</a></li>
+  </ul></li>
+  <li><a href="#style-checklist" id="toc-style-checklist" class="nav-link" data-scroll-target="#style-checklist">✅ Style Checklist</a></li>
+  <li><a href="#avoid" id="toc-avoid" class="nav-link" data-scroll-target="#avoid">🚫 Avoid</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="minerva-style-guide" class="level1">
+<h1>Minerva Style Guide</h1>
+<p>Design standards and formatting conventions.</p>
+<hr>
+<section id="design-philosophy" class="level2">
+<h2 class="anchored" data-anchor-id="design-philosophy">🎨 Design Philosophy</h2>
+<p><strong>Calm, Academic, Readable</strong></p>
+<p>Minerva uses a clean, distraction-free design optimized for: - Extended reading sessions - Mathematical content clarity - Mobile and desktop viewing</p>
+<hr>
+</section>
+<section id="theme-colors" class="level2">
+<h2 class="anchored" data-anchor-id="theme-colors">🎯 Theme &amp; Colors</h2>
+<section id="base-theme" class="level3">
+<h3 class="anchored" data-anchor-id="base-theme">Base Theme</h3>
+<p><strong>Bootswatch Flatly</strong> — A professional, calm theme with excellent contrast.</p>
+</section>
+<section id="color-palette" class="level3">
+<h3 class="anchored" data-anchor-id="color-palette">Color Palette</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Role</th>
+<th>Color</th>
+<th>Hex</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary</td>
+<td>Teal</td>
+<td><code>#18bc9c</code></td>
+<td>Links, buttons, accents</td>
+</tr>
+<tr class="even">
+<td>Secondary</td>
+<td>Dark Gray</td>
+<td><code>#95a5a6</code></td>
+<td>Muted text, borders</td>
+</tr>
+<tr class="odd">
+<td>Success</td>
+<td>Green</td>
+<td><code>#18bc9c</code></td>
+<td>Positive indicators</td>
+</tr>
+<tr class="even">
+<td>Info</td>
+<td>Blue</td>
+<td><code>#3498db</code></td>
+<td>Information callouts</td>
+</tr>
+<tr class="odd">
+<td>Warning</td>
+<td>Orange</td>
+<td><code>#f39c12</code></td>
+<td>Warnings, cautions</td>
+</tr>
+<tr class="even">
+<td>Danger</td>
+<td>Red</td>
+<td><code>#e74c3c</code></td>
+<td>Errors, important warnings</td>
+</tr>
+<tr class="odd">
+<td>Background</td>
+<td>White</td>
+<td><code>#ffffff</code></td>
+<td>Main content area</td>
+</tr>
+<tr class="even">
+<td>Text</td>
+<td>Dark</td>
+<td><code>#2c3e50</code></td>
+<td>Body text</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="usage-guidelines" class="level3">
+<h3 class="anchored" data-anchor-id="usage-guidelines">Usage Guidelines</h3>
+<ul>
+<li><strong>Don’t</strong> add random colors — stick to the palette</li>
+<li><strong>Do</strong> use primary color for interactive elements</li>
+<li><strong>Do</strong> use semantic colors for callouts (info, warning, etc.)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="typography" class="level2">
+<h2 class="anchored" data-anchor-id="typography">📝 Typography</h2>
+<section id="fonts" class="level3">
+<h3 class="anchored" data-anchor-id="fonts">Fonts</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Purpose</th>
+<th>Font</th>
+<th>Fallback</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Body text</td>
+<td>Source Sans 3</td>
+<td>system-ui</td>
+</tr>
+<tr class="even">
+<td>Code</td>
+<td>JetBrains Mono</td>
+<td>monospace</td>
+</tr>
+<tr class="odd">
+<td>Math</td>
+<td>KaTeX default</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="font-sizes" class="level3">
+<h3 class="anchored" data-anchor-id="font-sizes">Font Sizes</h3>
+<ul>
+<li>Body: 16px base</li>
+<li>H1: 2rem (32px)</li>
+<li>H2: 1.5rem (24px)</li>
+<li>H3: 1.25rem (20px)</li>
+<li>Small: 0.875rem (14px)</li>
+</ul>
+</section>
+<section id="line-height" class="level3">
+<h3 class="anchored" data-anchor-id="line-height">Line Height</h3>
+<ul>
+<li>Body: 1.6 (comfortable reading)</li>
+<li>Headings: 1.2 (tighter)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="layout-spacing" class="level2">
+<h2 class="anchored" data-anchor-id="layout-spacing">📐 Layout &amp; Spacing</h2>
+<section id="grid-structure" class="level3">
+<h3 class="anchored" data-anchor-id="grid-structure">Grid Structure</h3>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                      Navbar                              │
+├──────────┬──────────────────────────────────────┬───────┤
+│          │                                      │       │
+│ Sidebar  │       Main Content                   │  TOC  │
+│  280px   │         850px                        │ 220px │
+│          │                                      │       │
+├──────────┴──────────────────────────────────────┴───────┤
+│                      Footer                              │
+└─────────────────────────────────────────────────────────┘</code></pre>
+</section>
+<section id="spacing-scale" class="level3">
+<h3 class="anchored" data-anchor-id="spacing-scale">Spacing Scale</h3>
+<p>Use consistent spacing multiples:</p>
+<ul>
+<li><code>0.25rem</code> — Tiny (4px)</li>
+<li><code>0.5rem</code> — Small (8px)</li>
+<li><code>1rem</code> — Base (16px)</li>
+<li><code>1.5rem</code> — Medium (24px)</li>
+<li><code>2rem</code> — Large (32px)</li>
+<li><code>3rem</code> — Extra large (48px)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="math-styling" class="level2">
+<h2 class="anchored" data-anchor-id="math-styling">🧮 Math Styling</h2>
+<section id="inline-math" class="level3">
+<h3 class="anchored" data-anchor-id="inline-math">Inline Math</h3>
+<p>Rendered inline with text, matching font size.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>The area is $A = \pi r^2$.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="display-math" class="level3">
+<h3 class="anchored" data-anchor-id="display-math">Display Math</h3>
+<p>Centered, slightly larger, with breathing room.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>\sum_{i=1}^{n} i = \frac{n(n+1)}{2}</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>$$</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="multi-line-equations" class="level3">
+<h3 class="anchored" data-anchor-id="multi-line-equations">Multi-line Equations</h3>
+<p>Use <code>aligned</code> for step-by-step derivations:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>\begin{aligned}</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  2x + 3 &amp;= 7 <span class="sc">\\</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  2x &amp;= 4 <span class="sc">\\</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  x &amp;= 2</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>\end{aligned}</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>$$</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="callout-styles" class="level2">
+<h2 class="anchored" data-anchor-id="callout-styles">📦 Callout Styles</h2>
+<p>The theme provides styled callouts:</p>
+<section id="standard-callouts" class="level3">
+<h3 class="anchored" data-anchor-id="standard-callouts">Standard Callouts</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Color</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Note</td>
+<td>Blue</td>
+<td>General information</td>
+</tr>
+<tr class="even">
+<td>Tip</td>
+<td>Green</td>
+<td>Helpful hints</td>
+</tr>
+<tr class="odd">
+<td>Warning</td>
+<td>Orange</td>
+<td>Cautions, common mistakes</td>
+</tr>
+<tr class="even">
+<td>Important</td>
+<td>Red</td>
+<td>Critical information</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="examples" class="level3">
+<h3 class="anchored" data-anchor-id="examples">Examples</h3>
+<p><strong>Note</strong> — Background information:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>This formula was discovered by Euler in 1748.</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Tip</strong> — Study advice:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Study Tip</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Practice this technique with different values.</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Warning</strong> — Common mistakes:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>Don't forget to check for division by zero!</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="card-components" class="level2">
+<h2 class="anchored" data-anchor-id="card-components">🃏 Card Components</h2>
+<section id="course-cards-homepage" class="level3">
+<h3 class="anchored" data-anchor-id="course-cards-homepage">Course Cards (Homepage)</h3>
+<p>Used on the homepage for year navigation:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"course-cards"</span><span class="dt">&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"years/1.g/index.qmd"</span><span class="ot"> class</span><span class="op">=</span><span class="st">"course-card"</span><span class="dt">&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"card-content"</span><span class="dt">&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"course-icon"</span><span class="dt">&gt;</span>📐<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">h3</span><span class="dt">&gt;</span>1.g<span class="dt">&lt;/</span><span class="kw">h3</span><span class="dt">&gt;</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Støddfrøði C<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="topic-cards-year-pages" class="level3">
+<h3 class="anchored" data-anchor-id="topic-cards-year-pages">Topic Cards (Year Pages)</h3>
+<p>Used on year overview pages:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>::: {.topic-grid}</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>::: {.topic-card}</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### [📊 Funktionir](funktionir/index.qmd)</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>Linear and exponential functions</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="lesson-cards-topic-pages" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-cards-topic-pages">Lesson Cards (Topic Pages)</h3>
+<p>For individual lessons:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>::: {.lesson-grid}</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>::: {.lesson-card}</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### [Lesson Title](lesson.qmd)</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>Brief description</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="responsive-design" class="level2">
+<h2 class="anchored" data-anchor-id="responsive-design">📱 Responsive Design</h2>
+<section id="breakpoints" class="level3">
+<h3 class="anchored" data-anchor-id="breakpoints">Breakpoints</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Width</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mobile</td>
+<td>&lt; 576px</td>
+<td>Single column, hidden sidebar</td>
+</tr>
+<tr class="even">
+<td>Tablet</td>
+<td>576-991px</td>
+<td>Collapsible sidebar</td>
+</tr>
+<tr class="odd">
+<td>Desktop</td>
+<td>≥ 992px</td>
+<td>Full layout with sidebar</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="mobile-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="mobile-considerations">Mobile Considerations</h3>
+<ul>
+<li>Sidebar auto-collapses on mobile</li>
+<li>TOC moves to top of page</li>
+<li>Cards stack vertically</li>
+<li>Math remains readable</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="style-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="style-checklist">✅ Style Checklist</h2>
+<p>When creating content:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Use standard Quarto markdown</label></li>
+<li><label><input type="checkbox">Use callouts for highlighted content</label></li>
+<li><label><input type="checkbox">Use proper heading hierarchy (H1 → H2 → H3)</label></li>
+<li><label><input type="checkbox">Keep paragraphs short (3-5 sentences)</label></li>
+<li><label><input type="checkbox">Test on mobile viewport</label></li>
+<li><label><input type="checkbox">Avoid inline styles — use existing classes</label></li>
+<li><label><input type="checkbox">Check math renders at all sizes</label></li>
+</ul>
+<hr>
+</section>
+<section id="avoid" class="level2">
+<h2 class="anchored" data-anchor-id="avoid">🚫 Avoid</h2>
+<p><strong>Don’t:</strong> - Add inline CSS to <code>.qmd</code> files - Create custom colors outside the palette - Use <code>&lt;font&gt;</code> or other deprecated HTML - Mix heading levels (e.g., H1 → H3) - Create ultra-wide content that breaks layout</p>
+<p><strong>Do:</strong> - Use semantic HTML and Quarto classes - Let the theme handle styling - Use callouts for emphasis - Keep content width within bounds</p>
+
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script>
+// Minimal navbar handler
+document.addEventListener('DOMContentLoaded', function() {
+  const path = window.location.pathname;
+  const backButton = document.querySelector('.navbar-nav .nav-link[href="index.qmd"]');
+  const navbarBrand = document.querySelector('.navbar-brand');
+  
+  if (path.endsWith('index.html') && !path.includes('/years/')) {
+    if (backButton) backButton.style.display = 'none';
+  } else if (path.includes('/1.g/')) {
+    if (navbarBrand) navbarBrand.textContent = '';
+    if (backButton) backButton.href = path.includes('index.html') && path.split('/').length <= 6 ? '../../index.html' : '../index.html';
+  } else if (path.includes('/2.g/')) {
+    if (navbarBrand) navbarBrand.textContent = '';
+    if (backButton) backButton.href = path.includes('index.html') && path.split('/').length <= 6 ? '../../index.html' : '../index.html';
+  }
+});
+</script>
+<footer class="minerva-footer">
+  <div class="sponsor-section">
+    <h3> Stuðlað hava</h3>
+    <h1> Nám </h1>
+    <h1> Betri </h1>
+    
+    <h3> Stuðla Minerva</h3>
+    <p>Hjálp okkum at gera meira støddfrøðiinnihald og halda síðuna koyra.</p>
+    <a href="https://github.com/sponsors/tannstori" class="sponsor-button" target="_blank">
+      💖 Stuðla Minerva
+    </a>
+  </div>
+  
+  <div class="footer-links">
+    <a href="https://github.com/tannstori/minerva_quarto" class="footer-link" target="_blank">
+      <svg viewbox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+      GitHub Repository
+    </a>
+    
+    <a href="https://github.com/tannstori/minerva_quarto/issues" class="footer-link" target="_blank">
+      <svg viewbox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+        <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path>
+      </svg>
+      Boða frá feilum
+    </a>
+  </div>
+  
+  <div class="footer-copyright">
+    <p>© 2024 Minerva - Støddfrøði á føroyskum. Gjørt við ❤️ fyri Føroyum.</p>
+  </div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all content sections
+  const sections = document.querySelectorAll('.content-section');
+  
+  sections.forEach(section => {
+    const heading = section.querySelector('h2');
+    const grid = section.querySelector('.lesson-grid');
+    
+    if (!heading || !grid) return;
+    
+    // Check if this section should be collapsed on load based on URL hash
+    const sectionId = heading.textContent.trim().toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-');
+    
+    const urlHash = window.location.hash.substring(1).toLowerCase();
+    
+    // Collapse all sections by default
+    heading.classList.add('collapsed');
+    grid.classList.add('collapsed');
+    
+    // If URL matches this section, expand it
+    if (urlHash && sectionId.includes(urlHash)) {
+      heading.classList.remove('collapsed');
+      grid.classList.remove('collapsed');
+    }
+    
+    // Add click handler
+    heading.addEventListener('click', function() {
+      // Toggle collapsed state
+      heading.classList.toggle('collapsed');
+      grid.classList.toggle('collapsed');
+    });
+  });
+  
+  // Handle hash changes (when user clicks anchor links)
+  window.addEventListener('hashchange', function() {
+    const hash = window.location.hash.substring(1).toLowerCase();
+    
+    if (!hash) return;
+    
+    // Find and expand the matching section
+    sections.forEach(section => {
+      const heading = section.querySelector('h2');
+      const grid = section.querySelector('.lesson-grid');
+      
+      if (!heading || !grid) return;
+      
+      const sectionId = heading.textContent.trim().toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-');
+      
+      if (sectionId.includes(hash)) {
+        heading.classList.remove('collapsed');
+        grid.classList.remove('collapsed');
+        
+        // Scroll to section smoothly
+        setTimeout(() => {
+          heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    });
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/tannstori\.github\.io\/Quarto_2\.0");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
