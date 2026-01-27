@@ -1,0 +1,68 @@
+﻿---
+title: "Prógv: Areal í trýkanti við sinus"
+---
+
+## Prógv
+
+Henda undirvísing prgvar evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Setningur
+
+Areal av einum trýkanti við síður $a$ og $b$ og vinkulin $C$ ímillum:
+
+$$
+A = \frac{1}{2} ab \sin(C)
+$$
+
+### Prógv
+
+**Byrja við grunnformulinum:**
+$$
+A = \frac{1}{2} \cdot \text{grunnur} \cdot \text{hædd}
+$$
+
+**Lat grunnurin vera $a$:**
+Vit skulu finna hæddina.
+
+**Draga hædd frá hornpunkti B til síðu $a$:**
+Lat hæddina vera $h$.
+
+**Í rættvinklaða trýkantinum:**
+Við vinkul $C$ og hypotenusa $b$:
+
+$$
+\sin(C) = \frac{h}{b}
+$$
+
+$$
+h = b \sin(C)
+$$
+
+**Set inn í arealformulið:**
+$$
+A = \frac{1}{2} a h = \frac{1}{2} a (b \sin(C)) = \frac{1}{2} ab \sin(C)
+$$
+
+### Niðurstøða
+
+Hetta virkar fyri allar tríggjar síðublandingar:
+
+$$
+A = \frac{1}{2} ab \sin(C) = \frac{1}{2} bc \sin(A) = \frac{1}{2} ac \sin(B)
+$$
+
+### Serligi føri
+
+**Rættvinklaður trýkantur ($C = 90°$):**
+$$
+A = \frac{1}{2} ab \sin(90°) = \frac{1}{2} ab \cdot 1 = \frac{1}{2} ab
+$$
+
+Hetta er sama sum $\frac{1}{2} \cdot \text{katetur} \cdot \text{katetur}$ ✓
+
+## Filmur 
+{{< video https://youtu.be/hirC0H_xMUM?si=GIqeJHUF_-ufh6yp >}}

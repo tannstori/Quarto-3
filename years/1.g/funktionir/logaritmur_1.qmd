@@ -1,0 +1,76 @@
+﻿---
+title: "Innleiðing"
+---
+
+### Hvat er logaritmur?
+
+Logaritmur er tað umvenda av eksponentialfunktiónini.
+
+Um:
+$$
+a^x = b
+$$
+
+so er:
+$$
+x = \log_a(b)
+$$
+
+### Vanligastu grundtøl
+
+**Grundtal 10 ('vanliga' logaritman):**
+$$
+\log(x) = \log_{10}(x)
+$$
+
+**Grundtal $e$ (náttúrliga logaritman):**
+$$
+\ln(x) = \log_e(x)
+$$
+
+har $e \approx 2.71828$
+
+### Einfald dømi
+
+$$
+\log(100) = 2 \quad \text{tí } 10^2 = 100
+$$
+
+$$
+\log(1000) = 3 \quad \text{tí } 10^3 = 1000
+$$
+
+$$
+\log(1) = 0 \quad \text{tí } 10^0 = 1
+$$
+
+$$
+\log(0.1) = -1 \quad \text{tí } 10^{-1} = 0.1
+$$
+
+### Samband millum eksponential- og logaritmu-funtiónir
+
+**Eksponentialfunktión:**
+$$
+y = a^x
+$$
+
+**Logaritmufunktión:**
+$$
+x = \log_a(y)
+$$
+
+### Grafiska sambandi
+
+Grafurin av $y = \log(x)$ er grafurin av $y = 10^x$ speglað um linjuna $y = x$.
+
+### Nýtsla
+
+Logaritmur verða nýttar til at:
+- Loysa eksponentlíkar líkningar
+- Linearisera eksponentlíkar dáta
+- Mát/skala í vísindini (pH, Richter, decibel)
+
+
+## Filmur 
+{{< video https://youtu.be/NM5JTRFnK3g?si=xdafAbGGMIqG0rcj >}}

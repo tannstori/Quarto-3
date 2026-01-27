@@ -1,0 +1,60 @@
+﻿---
+title: "Prógv: Formil fyri at finna areal á trýkanti"
+---
+
+## Prógv
+
+Henda undirvísing prgvar evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Grunnformul
+
+Areal av einum trýkanti:
+
+$$
+A = \frac{1}{2} \cdot \text{grunnur} \cdot \text{hædd}
+$$
+
+### Prógv
+
+**Rektangul:**
+Ein rektangul hevur areal $b \cdot h$.
+
+**Trýkantur:**
+Tveir eins trýkantar kunnu leggja saman til ein rektangul.
+
+Sostatt er areal av einum trýkanti helvtin av rektangulinum:
+
+$$
+A = \frac{1}{2} \cdot b \cdot h
+$$
+
+### Alternativt prógv
+
+**Rættvinklaður trýkantur:**
+Hetta er beint sjóligt, tí trýkanturin er helvtin av rektangulinum við síður $b$ og $h$.
+
+**Almennur trýkantur:**
+Vit kunnu draga hædd til hvørja síðu, og formulið virkar altíð.
+
+### Areal við sinus
+
+Um vit vita tvær síður $a$ og $b$ og vinkulin $C$ ímillum:
+
+$$
+A = \frac{1}{2} ab \sin(C)
+$$
+
+**Prógv:**
+Hæddin er $h = b \sin(C)$
+
+Sostatt:
+$$
+A = \frac{1}{2} a h = \frac{1}{2} a (b \sin(C)) = \frac{1}{2} ab \sin(C)
+$$
+
+## Filmur 
+{{< video https://youtu.be/erDX_XaLnhA?si=uQlUp88OrXP3zYUF >}}

@@ -1,0 +1,85 @@
+﻿---
+title: "Dømi: Pythagoras 2"
+---
+
+## Dømi
+
+Henda undirvísing gevur fleiri dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### Dømi 1: Stigin til vegg
+
+Ein stigin er 5 m longur og stendur 1.5 m frá vegginum. Hvussu høgt upp á veggin røkur stigin?
+
+$$
+h^2 = 5^2 - 1.5^2 = 25 - 2.25 = 22.75
+$$
+
+$$
+h = \sqrt{22.75} \approx 4.77 \text{ m}
+$$
+
+### Dømi 2: Sjálvstøðug uppgáva
+
+Finna $x$ í einum rættvinklaðum trýkanti, har:
+- Hypotenusa = $x + 2$
+- Katetir = $x$ og $6$
+
+$$
+(x+2)^2 = x^2 + 6^2
+$$
+
+$$
+x^2 + 4x + 4 = x^2 + 36
+$$
+
+$$
+4x = 32
+$$
+
+$$
+x = 8
+$$
+
+### Dømi 3: TV skermur
+
+Ein TV er 40 tummar á ská (diagonalin). Lutfallið millum breidd og hædd er 16:9.
+
+Lat breiddin vera $16x$ og hæddin $9x$.
+
+$$
+(16x)^2 + (9x)^2 = 40^2
+$$
+
+$$
+256x^2 + 81x^2 = 1600
+$$
+
+$$
+337x^2 = 1600
+$$
+
+$$
+x = \sqrt{\frac{1600}{337}} \approx 2.18
+$$
+
+Breidd: $16 \times 2.18 \approx 34.9$ tummar
+
+Hædd: $9 \times 2.18 \approx 19.6$ tummar
+
+### Dømi 4: Pythagoreisk trítøl
+
+Stekk, at $(8, 15, 17)$ er eitt pythagoreiskt trítøl:
+
+$$
+8^2 + 15^2 = 64 + 225 = 289 = 17^2
+$$
+
+Ja! ✓
+
+## Filmur 
+{{< video https://youtu.be/XsaKr8WPZLU?si=GNWYQ5495adxxrxJ >}}
+

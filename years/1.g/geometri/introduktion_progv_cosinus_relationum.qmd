@@ -1,0 +1,76 @@
+﻿---
+title: "Introduktión og prógv av cosinus relatiónunum"
+---
+
+## Innleiðing og Prógv
+
+Henda undirvísing innleiðir evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Cosinus relatiónin (Cosinussetningin)
+
+Í hvørjum trýkanti:
+
+$$
+c^2 = a^2 + b^2 - 2ab \cos(C)
+$$
+
+Ella generelt:
+
+$$
+a^2 = b^2 + c^2 - 2bc \cos(A)
+$$
+
+$$
+b^2 = a^2 + c^2 - 2ac \cos(B)
+$$
+
+### Prógv
+
+**Konstruktión:**
+Lat okkum hava ein trýkant ABC. Set koordinatsystemið so at C er í (0,0), og síðan $b$ liggur álætt við $x$-ásin.
+
+**Koordinatar:**
+- C = (0, 0)
+- A = (b, 0)
+- B = (a cos(C), a sin(C))
+
+**Avstandur AB:**
+Nýt avstandsformulið:
+
+$$
+c^2 = (b - a \cos(C))^2 + (0 - a \sin(C))^2
+$$
+
+$$
+c^2 = b^2 - 2ab \cos(C) + a^2 \cos^2(C) + a^2 \sin^2(C)
+$$
+
+$$
+c^2 = b^2 - 2ab \cos(C) + a^2(\cos^2(C) + \sin^2(C))
+$$
+
+$$
+c^2 = b^2 - 2ab \cos(C) + a^2
+$$
+
+$$
+c^2 = a^2 + b^2 - 2ab \cos(C)
+$$
+
+### Serligi føri: Pythagoras
+
+Um $C = 90°$:
+
+$$
+c^2 = a^2 + b^2 - 2ab \cos(90°) = a^2 + b^2 - 0 = a^2 + b^2
+$$
+
+Hetta er Pythagoras! ✓
+
+
+## Filmur 
+{{< video https://youtu.be/OqUJW6Nb6iA?si=DnghmJv-ViE8xhbF >}}

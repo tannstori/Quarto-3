@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>eksponentiellar_funktion_tvi_helt – Minerva</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../years/1.g/funktionir/eksponentiellar_funktion_tvi_progv.html" rel="next">
+<link href="../../../years/1.g/funktionir/eksponentiellar_funktion_helvt.html" rel="prev">
+<link href="../../../images/favicon.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-238a979bd79e78209611caf68af57d27.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-62586f0d5c6765e43a3f9c87384b239d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Minerva</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../index.html" aria-current="page"> <i class="bi bi-house-door-fill" role="img">
+</i> 
+<span class="menu-text">Heim</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../years/1.g/index.html"> 
+<span class="menu-text">1.g</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../years/2.g/index.html"> 
+<span class="menu-text">2.g</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html"> <i class="bi bi-info-circle" role="img">
+</i> 
+<span class="menu-text">Um Okkum</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../years/1.g/funktionir/index.html">📈 Funktiónir</a></li><li class="breadcrumb-item"><a href="../../../years/1.g/funktionir/mangli_at_uploada_eksponentiellar_funktionir.html">⚡ Eksponentiellar Funktiónir</a></li><li class="breadcrumb-item"><a href="../../../years/1.g/funktionir/eksponentiellar_funktion_tvi_helt.html">Eksponentiellar funktión tví helt</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🏠 Aftur til øll evni</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../years/1.g/tol_og_algebra/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">📚 Tøl og Algebra</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Grundleggjandi Tal-ástøði</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/tol-naturlig_og_heiltol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tøl - náturlig og heiltøl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/tol-makad_og_stok.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tøl - makað og støk tøl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/tol-rationel_og_irrationel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tøl - rationel og irrationel tøl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/eginleikar_hja_tolum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eginleikar hjá tølum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/eginleikar_hja_tolum-domi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eginleikar hjá tølum - dømi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/stigskipan_av_roknihattum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stigskipan av rokniháttum</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Brot</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/brot-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Brot 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/brot-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Brot 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/brot-stytta_og_leingja.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Brot - stytta og leingja</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/brot-stytta_og_leingja-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Brot - stytta og leingja 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/brot-stytta_og_leingja-domi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Brot - stytta og leingja dømi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/brot-falda_og_byta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Brot - falda og býta</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Kvadratsetningar</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/kvadratsetningar-introduktion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kvadratsetningar introduktión</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/kvadratsetningar-domi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kvadratsetningar dømi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/progv-1kvadratsetningur-algebraiskt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv: 1.kvadratsetningur algebraiskt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/progv-1kvadratsetningur-geometriskt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv: 1.kvadratsetningur geometriskt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/progv-2kvadratsetningur-algebraiskt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv: 2.kvadratsetningur algebraiskt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/progv-2kvadratsetningur-geometriskt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv: 2.kvadratsetningur geometriskt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/progv-3kvadratsetningur-algebraiskt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv: 3.kvadratsetningur algebraiskt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/progv-3kvadratsetningar-geometriskt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv: 3.kvadratsetningar geometriskt</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Potensar</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/potensar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Potensar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/potensroknireglur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Potensroknireglur - falda potensar við sama grundtalið</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/potensroknireglur-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Potensroknireglur 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/potensroknireglur-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Potensroknireglur 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/primtol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Primtøl</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Líkningar</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/loysa_tvaer_likningar-substitution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Loysa tvær líkningar við tveimum ókendum - substitutión</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/loysa_tvaer_likningar-koefficienthatturin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Loysa tvær líkningar við tveimum ókendum - koefficienthátturin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/loysa_tvaer_likningar-grafiskt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Loysa tvær líkningar við tveimum ókendum - grafiskt</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">Røtur og Talmongdir</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/tol-rationel_og_irrationel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tøl - rationel og irrationel tøl</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/rotroknireglur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rótroknireglur</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/rotroknireglur-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rótroknireglur 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/tol_og_algebra/rotur_og_rotroknireglur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Røtur og rótroknireglur</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../years/1.g/funktionir/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">📈 Funktiónir</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
+ <span class="menu-text">📈 Potensfunktiónir</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/potensfunktionir_a_o_b.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Innleiðing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/potensfunktionir_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Potensfunktiónir 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/potensfunktionir_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Finn a og b</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false">
+ <span class="menu-text">📊 Linjurættar Funktiónir</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/linjurattar_funktionir_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hvat er ein linjurøtt funktiónir</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/linjurattar_funktionir_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hvat eru a og b</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/linjurattar_funktionir_a_og_b.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hvussu finna vit a og b</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/linjurattar_funktionir_a_og_b_progv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv av formlunum fyri at finna a og b</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/linjurattar_funktionir_domi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false">
+ <span class="menu-text">🔍 Funktiónskanning</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/funktions_kanning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Funktións kanning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/funktions_kanning_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Funktións kanning 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
+ <span class="menu-text">📉 Logaritmur</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/logaritmur_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Innleiðing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/logaritmur_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tómt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/logaritmur_roknireglur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Logaritmur roknireglur</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true">
+ <span class="menu-text">⚡ Eksponentiellar Funktiónir</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/mangli_at_uploada_eksponentiellar_funktionir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Innleiðing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/eksponentiellar_funktion_helvt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eksponentiellar funktión helvt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/eksponentiellar_funktion_tvi_helt.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Eksponentiellar funktión tví helt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/eksponentiellar_funktion_tvi_progv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eksponentiellar funktión tví prógv</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/eksponentiellar_funktion_finn_ab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eksponentiellar funktión finn ab</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/funktionir/eksponentiellar_funktion_finn_ab_domi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Finn a og b - dømi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../years/1.g/geometri/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">📐 Geometri</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false">
+ <span class="menu-text">🔺 Trýkantar - Grundleggjandi</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/einsvinkladir_trykantar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einsvinklaðir trýkantar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_einsvinkladir_trykantar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Einsvinklaðir trýkantar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/javnbeintir_og_javnsidadir_trykantar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Javnbeintir og javnsíðaðir trýkantar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/progv_vinkulsamlogan_i_trykantum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv: Vinkulsamløgan í trýkantum</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
+ <span class="menu-text">📐 Pythagoras</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/raettvinkladir_trykantar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rættvinklaðir trýkantar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_pythagoras.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Pythagoras</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_pythagoras_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Pythagoras 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/progv_pythagoras.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv: Pythagoras</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
+ <span class="menu-text">Sinus og Cosinus</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/sinus_og_cosinus_i_raettvinkladum_trykantum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sinus og cosinus í rættvinklaðum trýkantum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_sinus_cosinus_vinklar_eindarsirklinum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Sinus og cosinus - vinklar í eindarsirklinum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_sinus_cosinus_vinklar_eindarsirklinum_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Sinus og cosinus - vinklar í eindarsirklinum 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/progv_sinus_cosinus_raettvinkladum_trykantum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv: Sinus og cosinus í rættvinklaðum trýkantum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_finn_manglandi_sidur_vinklar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Finn manglandi síður og vinklar í rættvinklaðum trýkantum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_finn_vinkul_sinus_formlinum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Finn vinkul í rættvinklaðum trýkanti við sinus formlinum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_finn_vinkul_raettvinkladum_trykanti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Finn vinkul i rættvinklaðum trýkanti</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false">
+ <span class="menu-text">📏 Areal</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-18" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/progv_formil_areal_trykanti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv: Formil fyri at finna areal á trýkanti</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_finn_areal_trykanti_sinus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Finn areal á trýkanti við sinus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/progv_areal_trykanti_sinus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prógv: Areal í trýkanti við sinus</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false">
+ <span class="menu-text">🎯 Sinus Relatiónin</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-19" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/introduktion_progv_sinus_relationum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduktión og prógv av sinus relatiónunum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/sinus_relationirnar_domi_finna_vinkul.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sinus relatiónirnar dømi - finna vinkul</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/sinusfellan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sinusfellan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_sinusfellan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Sinusfellan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_finn_longdina_sidu_sinus_relationi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Finn longdina á síðu við sinus relatiónini</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_finn_vinkul_trykanti_sinus_relationi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Finn vinkul í trýkanti við sinus relatiónini</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false">
+ <span class="menu-text">🎲 Cosinus Relatiónin</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-20" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-20" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/introduktion_progv_cosinus_relationum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduktión og prógv av cosinus relatiónunum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_finn_vinkul_trykanti_cosinus_relationi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Finn vinkul í trýkanti við cosinus relatiónini</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/geometri/domi_finn_sidu_trykanti_cosinus_relationi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dømi: Finn síðu í trýkanti við cosinus relatiónini</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../years/1.g/hagfrodi/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">📊 Hagfrøði</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-21" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false">
+ <span class="menu-text">📊 Grundleggjandi Hugtøk</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-22" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/population_og_stakroynd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Populatión og stakroynd</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/obolkadar_observationir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Óbólkaðar observatiónir</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/bolkadar_observationir.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bólkaðar observatiónir</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false">
+ <span class="menu-text">📈 Myndir og Framsetingar</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/pinnamynd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pinnamynd</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/stabbamynd_v2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stabbamynd v2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/trappumynd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Trappumynd</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false">
+ <span class="menu-text">📊 Miðalvirði og Spjaðing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/midalvirdid_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Miðalvirðið 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/midalvirdid_og_spjading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Miðalvirðið og spjaðing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/midalvirdid_domi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Miðalvirðið dømi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/midalvirdid_kanska_slettast.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Miðalvirðið - kanska slettast</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false">
+ <span class="menu-text">📉 Frágreiðandi Hagtøl</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/fjordingsmork_og_typutalid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fjórðingsmørk og typutalið</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/fjordingsmork_median_typutal_ol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fjórðingsmørk median typutal ol</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/fragreidandi_hagtol_obolkad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Frágreiðandi hagtøl óbólkað</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/summationstekin_v2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summatiónstekin v2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/hagfrodi/s_ras.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S rás</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../years/1.g/likindarokning/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🎲 Líkindarokning</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-26" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-27" role="navigation" aria-expanded="false">
+ <span class="menu-text">🎲 Grundleggjandi Hugtøk</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-27" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-27" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/likindarokning/likindarokning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Líkindarokning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/likindarokning/likindarokning_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Líkindarokning 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/likindarokning/likindaokid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Líkindaøkið</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-28" role="navigation" aria-expanded="false">
+ <span class="menu-text">🎯 Hendingar</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-28" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-28" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/likindarokning/hendingar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hendingar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/likindarokning/hendingar_domi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hendingar dømi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/likindarokning/oheftar_hendingar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Óheftar hendingar</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-29" role="navigation" aria-expanded="false">
+ <span class="menu-text">🔗 Treytað Sannlíkindi</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-29" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-29" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/likindarokning/treytad_sannlikindi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Treytað sannlíkindi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../years/1.g/kapitalrokning/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">💰 Kapitalrokning</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-30" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-30" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-31" role="navigation" aria-expanded="false">
+ <span class="menu-text">💯 Prosent</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-31" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-31" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/Prosent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prosent</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/prosentrokning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prosentrokning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/prosentrokning_domi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prosentrokning dømi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-32" role="navigation" aria-expanded="false">
+ <span class="menu-text">📈 Kapitalframskriving</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-32" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-32" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/kapitalframskriving_rentufrymilin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kapitalframskriving rentufrymilin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/rentufrymilin_domi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rentufrymilin dømi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/kapitalframskriving.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kapitalframskriving</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/kapitalframskriving_domi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kapitalframskriving dømi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/effektiv_renta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Effektiv renta</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-33" role="navigation" aria-expanded="false">
+ <span class="menu-text">🏦 Annuitetslán</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-33" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-33" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/intro_til_annuitet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intro til annuitet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/annuitetslán_setningur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Annuitetslán setningur</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/annuitetslán_prógv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Annuitetslán prógv</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/annuitetslán_domi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Annuitetslán dømi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-34" role="navigation" aria-expanded="false">
+ <span class="menu-text">💰 Annuitetsuppsparing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-34" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-34" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/annuitetsuppsparing_setningur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Annuitetsuppsparing setningur</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/annuitetsuppsparing_prógv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Annuitetsuppsparing prógv</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../years/1.g/kapitalrokning/summationstekin_v2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summatiónstekin v2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Á hesi síðu</h2>
+   
+  <ul>
+  <li><a href="#tvífalingartíð" id="toc-tvífalingartíð" class="nav-link active" data-scroll-target="#tvífalingartíð">Tvífalingartíð</a></li>
+  <li><a href="#formil" id="toc-formil" class="nav-link" data-scroll-target="#formil">Formil</a></li>
+  <li><a href="#dømi-bakterier" id="toc-dømi-bakterier" class="nav-link" data-scroll-target="#dømi-bakterier">Dømi: Bakterier</a></li>
+  <li><a href="#sambandi-við-vakstrarfaktor" id="toc-sambandi-við-vakstrarfaktor" class="nav-link" data-scroll-target="#sambandi-við-vakstrarfaktor">Sambandi við vakstrarfaktor</a></li>
+  <li><a href="#dømi-fíggjarligur-vøkstur" id="toc-dømi-fíggjarligur-vøkstur" class="nav-link" data-scroll-target="#dømi-fíggjarligur-vøkstur">Dømi: Fíggjarligur vøkstur</a></li>
+  <li><a href="#finna-tvífalingartíðina" id="toc-finna-tvífalingartíðina" class="nav-link" data-scroll-target="#finna-tvífalingartíðina">Finna tvífalingartíðina</a></li>
+  <li><a href="#dømi-5-árligur-vøkstur" id="toc-dømi-5-árligur-vøkstur" class="nav-link" data-scroll-target="#dømi-5-árligur-vøkstur">Dømi: 5% árligur vøkstur</a></li>
+  <li><a href="#reglan" id="toc-reglan" class="nav-link" data-scroll-target="#reglan">72-reglan</a></li>
+  <li><a href="#filmur" id="toc-filmur" class="nav-link" data-scroll-target="#filmur">Filmur</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../years/1.g/funktionir/index.html">📈 Funktiónir</a></li><li class="breadcrumb-item"><a href="../../../years/1.g/funktionir/mangli_at_uploada_eksponentiellar_funktionir.html">⚡ Eksponentiellar Funktiónir</a></li><li class="breadcrumb-item"><a href="../../../years/1.g/funktionir/eksponentiellar_funktion_tvi_helt.html">Eksponentiellar funktión tví helt</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Eksponentiellar funktión tví helt</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="tvífalingartíð" class="level3">
+<h3 class="anchored" data-anchor-id="tvífalingartíð">Tvífalingartíð</h3>
+<p>Tvífalingartíð er tann tíðin, tað tekur fyri eitt virði at tvífaldast.</p>
+</section>
+<section id="formil" class="level3">
+<h3 class="anchored" data-anchor-id="formil">Formil</h3>
+<p><span class="math display">\[
+f(x) = b \cdot 2^{\frac{x}{T_2}}
+\]</span></p>
+<p>har: - <span class="math inline">\(b\)</span> er byrjanarvirðið - <span class="math inline">\(T_2\)</span> er tvífalingartíðin</p>
+</section>
+<section id="dømi-bakterier" class="level3">
+<h3 class="anchored" data-anchor-id="dømi-bakterier">Dømi: Bakterier</h3>
+<p>Ein bakteriepopulatión tvífaldast hvørjar 3 tímar. Byrjanartalið er 1000.</p>
+<p><span class="math display">\[
+f(x) = 1000 \cdot 2^{\frac{x}{3}}
+\]</span></p>
+<p><strong>Eftir 9 tímar:</strong> <span class="math display">\[
+f(9) = 1000 \cdot 2^{\frac{9}{3}} = 1000 \cdot 2^3 = 1000 \cdot 8 = 8000
+\]</span></p>
+</section>
+<section id="sambandi-við-vakstrarfaktor" class="level3">
+<h3 class="anchored" data-anchor-id="sambandi-við-vakstrarfaktor">Sambandi við vakstrarfaktor</h3>
+<p>Um vakstrarfaktorurin er <span class="math inline">\(a\)</span>:</p>
+<p><span class="math display">\[
+a = 2^{\frac{1}{T_2}}
+\]</span></p>
+</section>
+<section id="dømi-fíggjarligur-vøkstur" class="level3">
+<h3 class="anchored" data-anchor-id="dømi-fíggjarligur-vøkstur">Dømi: Fíggjarligur vøkstur</h3>
+<p>Ein íløga tvífaldast hvørt 10. ár. Um tú gert eina íløgu á 5000 kr, hvussu nógv hevur tú eftir 30 ár?</p>
+<p><span class="math display">\[
+f(30) = 5000 \cdot 2^{\frac{30}{10}} = 5000 \cdot 2^3 = 5000 \cdot 8 = 40{,}000 \text{ kr}
+\]</span></p>
+</section>
+<section id="finna-tvífalingartíðina" class="level3">
+<h3 class="anchored" data-anchor-id="finna-tvífalingartíðina">Finna tvífalingartíðina</h3>
+<p>Um vakstrarfaktorurin er <span class="math inline">\(b\)</span> um tíðarskeið, er tvífalingartíðin:</p>
+<p><span class="math display">\[
+T_2 = \frac{\log(2)}{\log(a)}
+\]</span></p>
+</section>
+<section id="dømi-5-árligur-vøkstur" class="level3">
+<h3 class="anchored" data-anchor-id="dømi-5-árligur-vøkstur">Dømi: 5% árligur vøkstur</h3>
+<p>Um fólkatalið veksur við 5% um árið, hvat er tvífalingartíðin?</p>
+<p>Vøkstursfaktur: <span class="math inline">\(a = 1.05\)</span></p>
+<p><span class="math display">\[
+T_2 = \frac{\log(2)}{\log(1.05)} = \frac{0.301}{0.021} \approx 14.2 \text{ ár}
+\]</span></p>
+</section>
+<section id="reglan" class="level3">
+<h3 class="anchored" data-anchor-id="reglan">72-reglan</h3>
+<p>Ein einfaldur tummilfingra-regul:</p>
+<p><span class="math display">\[
+T_2 \approx \frac{72}{\text{prosent vøkstur}}
+\]</span></p>
+<p>Fyri 5%: <span class="math inline">\(T_2 \approx \frac{72}{5} = 14.4\)</span> ár</p>
+</section>
+<section id="filmur" class="level2">
+<h2 class="anchored" data-anchor-id="filmur">Filmur</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/rdYhGm685mM?si=Pu6zg0GBibfl4JLY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script>
+
+// Minimal navbar handler
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  const path = window.location.pathname;
+
+  const backButton = document.querySelector('.navbar-nav .nav-link[href="index.qmd"]');
+
+  const navbarBrand = document.querySelector('.navbar-brand');
+
+  
+
+  if (path.endsWith('index.html') && !path.includes('/years/')) {
+
+    if (backButton) backButton.style.display = 'none';
+
+  } else if (path.includes('/1.g/')) {
+
+    if (navbarBrand) navbarBrand.textContent = '';
+
+    if (backButton) backButton.href = path.includes('index.html') && path.split('/').length <= 6 ? '../../index.html' : '../index.html';
+
+  } else if (path.includes('/2.g/')) {
+
+    if (navbarBrand) navbarBrand.textContent = '';
+
+    if (backButton) backButton.href = path.includes('index.html') && path.split('/').length <= 6 ? '../../index.html' : '../index.html';
+
+  }
+
+});
+
+</script>
+<footer class="minerva-footer">
+
+  <div class="sponsor-section">
+
+    <h3> Stuðlað hava</h3>
+
+    <h1> Nám </h1>
+
+    <h1> Betri </h1>
+
+    
+
+    <h3> Stuðla Minerva</h3>
+
+    <p>Hjálp okkum at gera meira støddfrøðiinnihald og halda síðuna koyra.</p>
+
+    <a href="https://github.com/sponsors/tannstori" class="sponsor-button" target="_blank">
+
+      💖 Stuðla Minerva
+
+    </a>
+
+  </div>
+
+  
+
+  <div class="footer-links">
+
+    <a href="https://github.com/tannstori/minerva_quarto" class="footer-link" target="_blank">
+
+      <svg viewbox="0 0 16 16" fill="currentColor" aria-hidden="true">
+
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+
+      </svg>
+
+      GitHub Repository
+
+    </a>
+
+    
+
+    <a href="https://github.com/tannstori/minerva_quarto/issues" class="footer-link" target="_blank">
+
+      <svg viewbox="0 0 16 16" fill="currentColor" aria-hidden="true">
+
+        <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+
+        <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path>
+
+      </svg>
+
+      Boða frá feilum
+
+    </a>
+
+  </div>
+
+  
+
+  <div class="footer-copyright">
+
+    <p>© 2024 Minerva - Støddfrøði á føroyskum. Gjørt við ❤️ fyri Føroyum.</p>
+
+  </div>
+
+</footer>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Get all content sections
+
+  const sections = document.querySelectorAll('.content-section');
+
+  
+
+  sections.forEach(section => {
+
+    const heading = section.querySelector('h2');
+
+    const grid = section.querySelector('.lesson-grid');
+
+    
+
+    if (!heading || !grid) return;
+
+    
+
+    // Check if this section should be collapsed on load based on URL hash
+
+    const sectionId = heading.textContent.trim().toLowerCase()
+
+      .replace(/[^\w\s-]/g, '')
+
+      .replace(/\s+/g, '-');
+
+    
+
+    const urlHash = window.location.hash.substring(1).toLowerCase();
+
+    
+
+    // Collapse all sections by default
+
+    heading.classList.add('collapsed');
+
+    grid.classList.add('collapsed');
+
+    
+
+    // If URL matches this section, expand it
+
+    if (urlHash && sectionId.includes(urlHash)) {
+
+      heading.classList.remove('collapsed');
+
+      grid.classList.remove('collapsed');
+
+    }
+
+    
+
+    // Add click handler
+
+    heading.addEventListener('click', function() {
+
+      // Toggle collapsed state
+
+      heading.classList.toggle('collapsed');
+
+      grid.classList.toggle('collapsed');
+
+    });
+
+  });
+
+  
+
+  // Handle hash changes (when user clicks anchor links)
+
+  window.addEventListener('hashchange', function() {
+
+    const hash = window.location.hash.substring(1).toLowerCase();
+
+    
+
+    if (!hash) return;
+
+    
+
+    // Find and expand the matching section
+
+    sections.forEach(section => {
+
+      const heading = section.querySelector('h2');
+
+      const grid = section.querySelector('.lesson-grid');
+
+      
+
+      if (!heading || !grid) return;
+
+      
+
+      const sectionId = heading.textContent.trim().toLowerCase()
+
+        .replace(/[^\w\s-]/g, '')
+
+        .replace(/\s+/g, '-');
+
+      
+
+      if (sectionId.includes(hash)) {
+
+        heading.classList.remove('collapsed');
+
+        grid.classList.remove('collapsed');
+
+        
+
+        // Scroll to section smoothly
+
+        setTimeout(() => {
+
+          heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        }, 100);
+
+      }
+
+    });
+
+  });
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/tannstori\.github\.io\/Quarto_2\.0");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../years/1.g/funktionir/eksponentiellar_funktion_helvt.html" class="pagination-link" aria-label="Eksponentiellar funktión helvt">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Eksponentiellar funktión helvt</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../years/1.g/funktionir/eksponentiellar_funktion_tvi_progv.html" class="pagination-link" aria-label="Eksponentiellar funktión tví prógv">
+        <span class="nav-page-text">Eksponentiellar funktión tví prógv</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,18 @@
+﻿---
+title: "Electricity"
+---
+Henda undirvísing fevnir um evnið.
+
+<!-- TODO: Replace with real lesson video -->
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+
+For example, Ohm's law relates voltage, current, and resistance:
+$$
+V = I\,R.
+$$
+
+- Define voltage \(V\), current \(I\), and resistance \(R\)
+- Use \(V = I R\) to solve for one quantity given the others
+- Understand units (volts, amperes, ohms)
+- Analyze simple series and parallel circuits
+

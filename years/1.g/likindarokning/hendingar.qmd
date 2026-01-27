@@ -1,0 +1,35 @@
+﻿---
+title: "Hendingar"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er ein hending?
+
+Ein hending er eitt úrslit ella eitt sett av úrslitum úr líkindaøkinum.
+
+### Slag av hendingum
+
+- **Einføld hending**: Ein ein úrslit
+- **Samsett hending**: Fleiri úrslit
+
+### Dømi
+
+Tá vit kasta einum terningi:
+
+- Hending A: "Fáa ein 4-ara" (einføld)
+- Hending B: "Fáa eitt tal størri enn 4" (samsett: {5, 6})
+
+$$
+P(A) = \frac{1}{6}, \quad P(B) = \frac{2}{6} = \frac{1}{3}
+$$
+
+
+## Filmur 
+{{< video https://youtu.be/llz7tJW4naQ?si=r76rsTAHE7FkYJjI >}}

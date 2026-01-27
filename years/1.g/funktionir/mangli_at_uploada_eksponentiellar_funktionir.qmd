@@ -1,0 +1,62 @@
+﻿---
+title: "Innleiðing"
+---
+
+### Formil
+
+$$
+f(x) = b\cdot a^x
+$$
+
+har:
+- $b$ er byrjanarvirðið
+- $a$ er vøkstursfakturin
+
+### Eginleikar
+
+**Um $a > 1$:**
+Eksponentiellur vøkstur (funktiónin er vaksandi)
+
+**Um $0 < a < 1$:**
+Eksponentielt fall (funktiónin fellur)
+
+**Um $a = 1$:**
+Konstant funktión
+
+### Dømi
+
+**Vaksandi:**
+$$
+f(x) = 2 \cdot 1.5^x
+$$
+
+**Fallandi:**
+$$
+f(x) = 100 \cdot 0.8^x
+$$
+
+### Nýtsla
+
+Eksponentiellar funktiónir verða nýttar til:
+- Populatiónsmodellir
+- Felli av radioaktivum tilfari
+- Rentur og kapitalvøkstur
+- Bakteriuvøkstur
+
+### Grafur
+
+Eksponentiellar funktiónir:
+- Gongur ígjøgnum $(0, b)$
+- Asymptota við $y = 0$
+- Altíð positiv (um $b > 0$)
+
+### Náttúrliga eksponentialfunktiónin
+$$
+f(x) = e^x
+$$
+
+har $e \approx 2.71828$ (Euler tali).
+Hetta talið er serliga týdningarmikil í matematikki og náttúruvísindum.
+
+## Filmur 
+{{< video https://youtu.be/2imBePX7Ngk >}}

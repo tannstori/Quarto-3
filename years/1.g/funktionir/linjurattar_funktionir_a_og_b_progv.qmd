@@ -1,0 +1,11 @@
+﻿---
+title: "Prógv av formlunum fyri at finna a og b"
+---
+
+## Prógv
+
+Her prógva vit formlarnar fyri hvussu man finnur a og b hjá einara linjurættari funktió.
+
+
+## Filmur 
+{{< video https://youtu.be/iRTJIf3I3lw >}}

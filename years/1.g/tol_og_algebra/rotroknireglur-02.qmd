@@ -1,0 +1,10 @@
+﻿---
+title: "Rótroknireglur 2"
+---
+
+## Innleiðing
+
+Alt við røtur skal vera ein síða.
+
+## Filmur 
+{{< video https://youtu.be/pPlXuL_5K4M?si=kY748_GgJkeVeS6Q >}}

@@ -1,0 +1,1247 @@
+/* ========================================
+   Minerva Theme - Modern Educational Design
+   ======================================== 
+   
+   This is the single, unified stylesheet for the Minerva website.
+   All styling is contained in this file for easy maintenance.
+   
+   STRUCTURE:
+   1. Variables - Colors, fonts, shadows
+   2. Base Styles - Typography, layout
+   3. Navbar - Top navigation
+   4. Sidebar - Left navigation
+   5. TOC - Right sidebar (table of contents)
+   6. Content - Main content area
+   7. Cards - Lesson and topic cards
+   8. Footer - Bottom section
+   9. Responsive - Mobile breakpoints
+   10. Utilities - Animations, helpers
+   
+   MAINTENANCE:
+   - Use CSS variables for colors (--minerva-*)
+   - Test changes at all breakpoints (mobile, tablet, desktop)
+   - Keep sections organized and commented
+   - Avoid inline styles in .qmd files
+   
+   See MAINTENANCE.md for detailed styling guidelines.
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --main-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Professional Modern Color Palette */
+  --minerva-primary: #0F172A;        /* Deep slate - professional & elegant */
+  --minerva-primary-light: #1E293B;  /* Lighter slate */
+  --minerva-secondary: #3B82F6;      /* Modern blue - trust & clarity */
+  --minerva-secondary-light: #60A5FA;
+  --minerva-accent: #8B5CF6;         /* Purple - creativity & sophistication */
+  --minerva-accent-light: #A78BFA;
+  --minerva-success: #10B981;        /* Green for success states */
+  --minerva-warning: #F59E0B;        /* Amber for highlights */
+  
+  /* Neutral palette */
+  --minerva-text: #1F2937;
+  --minerva-text-light: #6B7280;
+  --minerva-bg: #F9FAFB;
+  --minerva-card-bg: #FFFFFF;
+  --minerva-border: #E5E7EB;
+  --minerva-hover: #F3F4F6;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Layout constants */
+  --sidebar-width: 260px;   /* Slimmer sidebar width for better content space */
+  --content-gutter: 15px;   /* Space between sidebar and content */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--minerva-text);
+  line-height: 1.7;
+  background-color: var(--minerva-bg);
+  font-size: 16px;
+  padding-top: 60px !important; /* Ensure content is not hidden by fixed navbar */
+  overflow-x: hidden;
+}
+
+main:not(.text_grid, .text_grid_title), p:not(.text_grid, .text_grid_title) {
+  font-size: 1.1em !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--minerva-primary);
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.7em;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+}
+
+h1 {
+  font-size: 2.2em;
+  border-bottom: 2px solid var(--minerva-border);
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.75em;
+  position: relative;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background: linear-gradient(180deg, var(--minerva-secondary), var(--minerva-accent));
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.4em;
+  color: var(--minerva-primary);
+  font-weight: 600;
+}
+
+/* Ultra-Modern Navbar Styling */
+.navbar {
+  background: linear-gradient(135deg, var(--minerva-primary) 0%, var(--minerva-primary-light) 100%);
+  background-size: 200% 200%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1030; /* Higher z-index */
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+  min-height: 60px;
+  padding: 0.5rem 1rem;
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--minerva-secondary), transparent);
+  opacity: 0.5;
+}
+
+.navbar a {
+  color: white !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-weight: 800 !important;
+  font-size: 1.5em !important;
+  letter-spacing: 0.5px;
+  position: relative;
+  background: linear-gradient(135deg, #60A5FA, #A78BFA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none !important;
+  margin-right: 2rem;
+  transition: none !important;
+}
+
+.navbar-brand::after {
+  content: '📚';
+  margin-left: 10px;
+  -webkit-text-fill-color: initial;
+}
+
+.navbar-brand > img {
+  max-height: 60px;
+  max-width: 150px;
+  width: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.navbar-toggler {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: none !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  border-color: var(--minerva-secondary);
+  transform: scale(1.1);
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+li.nav-item {
+  text-align: center !important;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  font-weight: 700 !important;
+  color: var(--minerva-secondary) !important;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 8px;
+}
+
+.navbar-brand, .navbar-nav li.nav-item a.nav-link {
+  height: inherit;
+  line-height: 30px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  margin: 0 5px;
+}
+
+.navbar a.nav-link, .navbar-nav .nav-link {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0.7rem 1.5rem !important;
+  font-size: 1.15em;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar a.nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.navbar a.nav-link:hover::before {
+  left: 100%;
+}
+
+.navbar a.nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  content: '';
+  background: var(--minerva-secondary);
+  height: 3px;
+  border-radius: 2px 2px 0 0;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar a.nav-link:hover, .navbar-nav .nav-link:hover {
+  color: white !important;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+a.nav-link:hover:after {
+  width: 80%;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white !important;
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+}
+
+/* Ultra-Modern Dropdown Menu */
+.dropdown-menu {
+  min-width: 200px !important;
+  top: 55px !important;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  animation: dropdownSlide 0.3s ease-out;
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu .dropdown-item {
+  text-align: left;
+  background: transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  color: var(--minerva-text) !important;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin: 3px 0;
+  position: relative;
+  font-weight: 600;
+}
+
+.dropdown-menu .dropdown-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(180deg, var(--minerva-secondary), var(--minerva-secondary-light));
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+  border-radius: 0 4px 4px 0;
+}
+
+.dropdown-menu .dropdown-item:hover::before {
+  transform: scaleY(1);
+}
+
+.dropdown-menu .dropdown-item:hover {
+  transform: translateX(5px);
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.08), rgba(139, 92, 246, 0.05));
+  color: var(--minerva-primary) !important;
+  padding-left: 25px;
+}
+
+/* Modern Sidebar Styling */
+.sidebar {
+  background-color: var(--minerva-card-bg);
+  border-right: 1px solid var(--minerva-border);
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+  padding-top: 1rem !important;
+  width: var(--sidebar-width) !important;
+  max-width: var(--sidebar-width) !important;
+  overflow-y: auto;
+  z-index: 1; /* participate in grid; avoid overlaying content */
+  transition: none !important;
+  transform: none !important;
+  position: sticky;
+  top: 60px;
+  height: calc(100vh - 60px);
+}
+
+#quarto-sidebar {
+  width: var(--sidebar-width) !important;
+}
+#quarto-sidebar { transition: none !important; }
+#quarto-sidebar.sidebar-navigation { display: block; }
+#quarto-sidebar .sidebar-menu-container { width: 100%; }
+#quarto-sidebar ul { width:100%; }
+#quarto-sidebar ul.sidebar-section { width:100%; }
+
+.sidebar-title {
+  font-size: 1.15em;
+  font-weight: 700;
+  color: var(--minerva-primary) !important;
+  padding: 1.1rem 1.25rem 0.9rem;
+  margin: 0 0 0.35rem 0;
+  letter-spacing: 0.5px;
+  background: linear-gradient(180deg, #fff, #f5f7fa);
+  border-bottom: 1px solid var(--minerva-border);
+  box-shadow: inset 0 -4px 0 -2px var(--minerva-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.sidebar-item, .sidebar nav[role=doc-toc] ul>li>a {
+  padding: 0.55rem 1.05rem;
+  border-left: 3px solid transparent;
+  transition: background 0.2s ease, color 0.2s ease, padding 0.25s ease;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 1px 0;
+  font-size: 0.9em;
+  line-height: 1.25rem;
+  border-radius: 6px;
+}
+
+.sidebar-item:hover, .sidebar nav[role=doc-toc] ul>li>a:hover {
+  background: var(--minerva-hover);
+  border-left-color: var(--minerva-secondary);
+  padding-left: 1.3rem;
+  color: var(--minerva-secondary) !important;
+  box-shadow: none;
+}
+
+.sidebar-item.active, .sidebar-item-active, .sidebar nav[role=doc-toc] ul>li>a.active {
+  border-left: 3px solid var(--minerva-secondary);
+  background: rgba(59,130,246,0.08);
+  color: var(--minerva-primary) !important;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.sidebar-section .sidebar-item { padding-left: 0.6rem !important; }
+.sidebar-section .sidebar-section .sidebar-item { padding-left: 1.2rem !important; font-size: 0.82em; }
+
+/* ========================================
+   NUCLEAR OPTION: Kill Bootstrap Collapse Horizontal
+   Override at every possible level
+   ======================================== */
+
+/* Target all possible Bootstrap collapse states */
+#quarto-sidebar ul.sidebar-section,
+#quarto-sidebar ul.sidebar-section.collapse,
+#quarto-sidebar ul.sidebar-section.collapsing,
+#quarto-sidebar ul.sidebar-section.collapse.show,
+#quarto-sidebar ul.sidebar-section.collapse-horizontal,
+#quarto-sidebar ul.sidebar-section.collapsing-horizontal,
+.sidebar-section,
+.sidebar-section.collapse,
+.sidebar-section.collapsing {
+  /* FORCE WIDTH */
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  flex-basis: 100% !important;
+  
+  /* KILL HORIZONTAL BEHAVIOR */
+  transform: none !important;
+  translate: 0 0 !important;
+  
+  /* FORCE VERTICAL ONLY */
+  display: block !important;
+  overflow: hidden !important;
+  
+  /* HEIGHT-BASED TRANSITIONS ONLY */
+  transition: max-height 0.35s ease-out !important;
+  -webkit-transition: max-height 0.35s ease-out !important;
+  -moz-transition: max-height 0.35s ease-out !important;
+}
+
+/* Collapsed state */
+#quarto-sidebar ul.sidebar-section:not(.show),
+#quarto-sidebar ul.sidebar-section.collapse:not(.show),
+.sidebar-section:not(.show),
+.sidebar-section.collapse:not(.show) {
+  max-height: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+/* Expanded state */
+#quarto-sidebar ul.sidebar-section.show,
+#quarto-sidebar ul.sidebar-section.collapse.show,
+.sidebar-section.show,
+.sidebar-section.collapse.show {
+  max-height: none !important;
+  height: auto !important;
+  overflow: visible !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+/* Kill any inline styles that Bootstrap might add */
+#quarto-sidebar ul.sidebar-section[style*="width"],
+#quarto-sidebar ul.sidebar-section[style*="transform"],
+.sidebar-section[style*="width"],
+.sidebar-section[style*="transform"] {
+  width: 100% !important;
+  transform: none !important;
+}
+
+/* Prevent flex shrinking/growing that could enable horizontal */
+#quarto-sidebar ul.sidebar-section {
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* COMPLETELY disable horizontal collapse classes */
+.collapse-horizontal,
+.collapsing-horizontal {
+  display: block !important;
+  width: 100% !important;
+}
+
+
+/* Accordion-style toggle with proper chevron rotation */
+#quarto-sidebar a.sidebar-item-toggle { 
+  display:inline-flex !important; 
+  align-items:center; 
+  padding:0 .4rem;
+  cursor: pointer;
+}
+
+#quarto-sidebar a.sidebar-item-toggle i.bi { 
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+  font-size:.7rem;
+  color: var(--minerva-secondary);
+  margin-right: 4px;
+}
+
+/* Default collapsed state: chevron points right (►) */
+#quarto-sidebar a.sidebar-item-toggle.collapsed i.bi,
+#quarto-sidebar a.sidebar-item-toggle[aria-expanded='false'] i.bi { 
+  transform: rotate(0deg); 
+}
+
+/* Expanded state: chevron points DOWN (▼) for true accordion-style opening */
+#quarto-sidebar a.sidebar-item-toggle[aria-expanded='true'] i.bi,
+#quarto-sidebar a.sidebar-item-toggle:not(.collapsed) i.bi { 
+  transform: rotate(90deg);
+  color: var(--minerva-primary);
+}
+
+/* Enhanced hover effects for vertical accordion toggles */
+#quarto-sidebar a.sidebar-item-toggle:hover {
+  background-color: rgba(59,130,246,0.05);
+  border-radius: 4px;
+}
+
+/* Collapsed state hover: right arrow (►) */
+#quarto-sidebar a.sidebar-item-toggle.collapsed:hover i.bi,
+#quarto-sidebar a.sidebar-item-toggle[aria-expanded='false']:hover i.bi {
+  color: var(--minerva-primary);
+  transform: scale(1.15) rotate(0deg);
+}
+
+/* Expanded state hover: down arrow (▼) */
+#quarto-sidebar a.sidebar-item-toggle[aria-expanded='true']:hover i.bi,
+#quarto-sidebar a.sidebar-item-toggle:not(.collapsed):hover i.bi {
+  color: var(--minerva-primary);
+  transform: scale(1.15) rotate(90deg);
+}
+
+/* Visual feedback when section is expandable */
+#quarto-sidebar a.sidebar-item-toggle::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 0;
+  background: var(--minerva-secondary);
+  transition: height 0.2s ease;
+}
+
+#quarto-sidebar a.sidebar-item-toggle:hover::before {
+  height: 16px;
+}
+
+#quarto-sidebar a.sidebar-item-text.sidebar-link[data-bs-toggle='collapse']::after { display:none; }
+
+/* Hide "Frontpage" and other unwanted items from sidebar */
+.sidebar-item a[href="index.qmd"],
+.sidebar-item a[href="../../../index.qmd"],
+.sidebar-item a[href="../../index.qmd"] {
+  display: none;
+}
+
+/* Sidebar toggle button styling */
+.quarto-sidebar-toggle {
+  background-color: var(--minerva-primary) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 0.5rem 0.75rem !important;
+  box-shadow: 0 2px 8px var(--shadow-lg) !important;
+  transition: all 0.2s ease !important;
+  z-index: 1025;
+}
+
+.quarto-sidebar-toggle:hover {
+  background-color: var(--minerva-secondary) !important;
+  transform: scale(1.05);
+}
+
+/* Content Area */
+#quarto-content {
+  background-color: var(--minerva-card-bg);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+  margin: 2rem auto;
+}
+
+.quarto-container, .container-fluid {
+  max-width: 1600px !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: padding-left 0.3s ease;
+}
+
+
+
+
+
+
+
+/* Pages without sidebar (homepage) */
+body:not(.nav-sidebar) #quarto-content {
+  max-width: 1300px;
+}
+
+.quarto-title-block {
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#title-block-header {
+  margin-top: 0;
+  padding-top: 0.5rem;
+}
+
+#title-block-header h1.title {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+/* Links */
+a {
+  color: var(--minerva-secondary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: none;
+}
+
+a:hover {
+  color: var(--minerva-accent);
+}
+
+/* Lesson list links */
+main ul li a {
+  display: inline-block;
+  padding: 0.5rem 0;
+  margin: 0;
+  color: var(--minerva-text);
+  transition: all 0.2s ease;
+  border-bottom: none;
+  background: none;
+  border-left: none;
+  font-weight: 400;
+}
+
+main ul li a:hover {
+  color: var(--minerva-primary);
+  background: none;
+  transform: none;
+  box-shadow: none;
+  padding-left: 0.5rem;
+}
+
+main ul li {
+  border-bottom: 1px solid var(--minerva-border);
+  padding: 0.3rem 0;
+}
+
+main ul li:last-child {
+  border-bottom: none;
+}
+
+/* Lists */
+ul, ol {
+  line-height: 1.9;
+  margin: 1rem 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  padding-left: 0.3rem;
+}
+
+/* Math Equations */
+.katex-display {
+  background-color: var(--minerva-light-bg);
+  padding: 1.2rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--minerva-accent);
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.katex {
+  font-size: 1.1em;
+}
+
+/* Code Blocks */
+pre {
+  background-color: #2c3e50;
+  border-radius: 8px;
+  padding: 1.2rem;
+  border-left: 4px solid var(--minerva-secondary);
+  box-shadow: var(--shadow-md);
+}
+
+code {
+  background-color: var(--minerva-light-bg);
+  color: var(--minerva-secondary);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+pre code {
+  background-color: transparent;
+  color: #ecf0f1;
+  padding: 0;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-md);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: linear-gradient(135deg, var(--minerva-primary), var(--minerva-primary-light));
+  color: white;
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--minerva-border);
+}
+
+tbody tr:hover {
+  background-color: var(--minerva-hover);
+  transition: background-color 0.2s ease;
+}
+
+/* Callout Boxes */
+.callout {
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  border-left: 5px solid;
+  box-shadow: var(--shadow-sm);
+}
+
+.callout-note {
+  background-color: #e8f4f8;
+  border-color: var(--minerva-secondary);
+  #quarto-sidebar.collapse-horizontal { width: var(--sidebar-width) !important; }
+  #quarto-sidebar.collapse-horizontal:not(.show) { width: var(--sidebar-width) !important; }
+}
+
+.callout-tip {
+  background-color: #e9f7ef;
+  border-color: var(--minerva-success);
+}
+
+.callout-warning {
+  background-color: #fff3cd;
+  border-color: var(--minerva-warning);
+}
+
+.callout-important {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+}
+
+/* Search */
+#quarto-search {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#quarto-search:focus-within {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Footer */
+footer.footer {
+  background-color: var(--minerva-primary);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 4px solid var(--minerva-secondary);
+}
+
+/* Buttons */
+.btn-primary, .btn {
+  background: linear-gradient(135deg, var(--minerva-secondary), var(--minerva-secondary-light));
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  font-size: 0.95em;
+  color: white !important;
+}
+
+.btn-primary::before, .btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-primary:hover::before, .btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-primary:hover, .btn:hover {
+  background: linear-gradient(135deg, var(--minerva-accent), var(--minerva-accent-light));
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-primary:active, .btn:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.btn-lg {
+  padding: 16px 40px;
+  font-size: 1.1em;
+}
+
+.btn-sm {
+  padding: 8px 20px;
+  font-size: 0.85em;
+}
+
+/* Page Width & Layout */
+.quarto-title-banner {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Hide "About" link and other unwanted pages */
+a[href="about.qmd"],
+a[href="readme.html"],
+a[href="README.html"] {
+  display: none !important;
+}
+
+/* Homepage & Lesson Cards */
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.lesson-card {
+  background: var(--minerva-card-bg);
+  border-radius: 12px;
+  padding: 28px 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--minerva-border);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.lesson-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--minerva-secondary), var(--minerva-accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.lesson-card:hover::before {
+  transform: scaleX(1);
+}
+
+.lesson-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  border-color: var(--minerva-secondary);
+}
+
+.lesson-card h3 {
+  color: var(--minerva-primary);
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -0.2px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lesson-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lesson-card li {
+  margin: 8px 0;
+  padding: 10px 12px 10px 32px;
+  position: relative;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.lesson-card li:hover {
+  background: var(--minerva-hover);
+  transform: translateX(4px);
+}
+
+.lesson-card li::before {
+  content: "→";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--minerva-secondary);
+  font-weight: 700;
+  font-size: 1.1em;
+  transition: all 0.2s ease;
+}
+
+.lesson-card li:hover::before {
+  left: 14px;
+  color: var(--minerva-accent);
+}
+
+.lesson-card a {
+  color: var(--minerva-text);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+.lesson-card a:hover {
+  color: var(--minerva-secondary);
+}
+
+/* TABLE OF CONTENTS (RIGHT SIDEBAR) */
+#quarto-margin-sidebar {
+  display: flex !important;
+  flex-direction: column;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 250px !important;
+  min-width: 250px !important;
+  position: relative !important;
+}
+
+nav[role="doc-toc"] {
+  background: white;
+  border: 1px solid var(--minerva-border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 70px; /* Slightly higher for new layout */
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+/* Lock page grid so sidebar doesn't animate width */
+body.nav-sidebar .page-columns {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr var(--quarto-margin-width,250px);
+  align-items: start;
+}
+body.nav-sidebar .page-columns .sidebar { grid-column: 1; }
+body.nav-sidebar .page-columns main { grid-column: 2; }
+body.nav-sidebar .page-columns #quarto-margin-sidebar { grid-column: 3; }
+
+/* If margin sidebar disabled, fallback to two columns */
+body.nav-sidebar .page-columns:not(.page-rows-contents) #quarto-margin-sidebar:not(:is(.quarto-layout-cell)) { display:block; }
+@media (max-width: 1200px) {
+  body.nav-sidebar .page-columns { grid-template-columns: var(--sidebar-width) 1fr; }
+  body.nav-sidebar .page-columns #quarto-margin-sidebar { display:none; }
+}
+/* Persistent visibility: ensure opacity stays unless explicitly faded */
+/* Remove fading behavior: always fully visible */
+nav[role="doc-toc"] { opacity: 1 !important; }
+
+nav[role="doc-toc"]:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+nav[role="doc-toc"]::-webkit-scrollbar { width: 6px; }
+nav[role="doc-toc"]::-webkit-scrollbar-track { background: transparent; }
+nav[role="doc-toc"]::-webkit-scrollbar-thumb { background: var(--minerva-border); border-radius: 3px; }
+nav[role="doc-toc"]::-webkit-scrollbar-thumb:hover { background: var(--minerva-secondary); }
+
+nav[role="doc-toc"] > h2 {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: var(--minerva-primary);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--minerva-secondary);
+}
+
+nav[role="doc-toc"] ul, #TOC ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav[role="doc-toc"] ul li, #TOC ul li {
+  margin: 6px 0;
+}
+
+nav[role="doc-toc"] ul li a, #TOC ul li a {
+  color: var(--minerva-text-light);
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 6px 12px;
+  display: block;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+nav[role="doc-toc"] ul li a:hover, #TOC ul li a:hover {
+  background: var(--minerva-hover);
+  border-left-color: var(--minerva-secondary);
+  color: var(--minerva-secondary);
+  padding-left: 16px;
+}
+
+nav[role="doc-toc"] ul li a.active, #TOC ul li a.active {
+  background: rgba(59, 130, 246, 0.1);
+  border-left-color: var(--minerva-secondary);
+  color: var(--minerva-secondary);
+  font-weight: 600;
+}
+
+nav[role="doc-toc"] ul ul, #TOC ul ul {
+  padding-left: 16px;
+  margin-top: 4px;
+}
+
+nav[role="doc-toc"] ul ul li a, #TOC ul ul li a {
+  font-size: 0.85em;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  #quarto-margin-sidebar {
+    display: none !important; /* Hide TOC on smaller desktops */
+  }
+}
+
+@media (max-width: 991px) {
+  .sidebar, #quarto-sidebar {
+    transform: translateX(-100%);
+  }
+  
+  #quarto-sidebar.show {
+    transform: translateX(0) !important;
+    box-shadow: 4px 0 16px rgba(0,0,0,0.1) !important;
+  }
+  
+  body.nav-sidebar .quarto-container {
+    padding-left: 15px !important;
+  }
+
+  #quarto-content {
+    padding: 1.5rem;
+    margin: 1rem !important;
+  }
+  
+  .lesson-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 58px !important;
+  }
+  .navbar {
+    min-height: 58px;
+  }
+  #quarto-content {
+    padding: 1rem;
+    margin: 0.5rem !important;
+  }
+  
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.2em; }
+  
+  .sidebar, #quarto-sidebar {
+    top: 58px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+  
+  #quarto-content {
+    padding: 0.75rem;
+    margin: 0.25rem !important;
+    border-radius: 6px;
+  }
+  
+  .sidebar, #quarto-sidebar {
+    width: 85% !important;
+    max-width: 300px !important;
+  }
+}
+
+
+
+/* Utility Classes */
+.minerva-footer {
+  margin-top: 80px;
+  padding: 48px 32px 32px;
+  background: linear-gradient(135deg, var(--minerva-primary) 0%, var(--minerva-primary-light) 100%);
+  color: white;
+  border-top: 3px solid var(--minerva-secondary);
+}
+
+.sponsor-section {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.sponsor-section h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: white;
+  letter-spacing: -0.3px;
+}
+
+.sponsor-section p {
+  font-size: 1em;
+  opacity: 0.9;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.sponsor-button {
+  display: inline-block;
+  padding: 12px 32px;
+  background: linear-gradient(135deg, var(--minerva-secondary), var(--minerva-secondary-light));
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.sponsor-button:hover {
+  background: linear-gradient(135deg, var(--minerva-accent), var(--minerva-accent-light));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.5);
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 0.95em;
+}
+
+.footer-link:hover {
+  color: var(--minerva-secondary-light);
+  transform: translateY(-2px);
+}
+
+.footer-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .minerva-footer {
+    padding: 32px 20px 24px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

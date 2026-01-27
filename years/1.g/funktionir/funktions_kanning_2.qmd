@@ -1,0 +1,35 @@
+﻿---
+title: "Funktións kanning 2"
+---
+
+## Monotoniviðurskifti
+
+Tá vit kanna eina funktión vilja vit ikki bara kanna hvar hon er, men eisini hvussu hon sær út. Í hesum liggur at kanna hvussu hefti variablin $y$ broytist í mun til óhefta variabulin $x$. Tað vil siga at vit skulu kunna siga okkurt um nær grafurin veksur og minkar, tvs í hvørjum $x$ og $y$ intervallum grafurin fer upp og niður, ella er konstantur. Hetta kalla vit at finna **monotoniviðurskiftini** hjá einari funktión.
+
+### Vaksandi funktión
+
+Ein funktión er **vaksandi** í einum intervalli um:
+
+$$\text{um } x_1 < x_2 \text{ so er } f(x_1) < f(x_2)$$
+
+### Fallandi funktión
+
+Ein funktión er **fallandi** um:
+
+$$\text{um } x_1 < x_2 \text{ so er } f(x_1) > f(x_2)$$
+
+### Konstant funktión
+
+Ein funktión er **konstant** um øll $x$-virðini hava sama $y$-virði.
+
+## Ekstrema
+
+Tá vit kanna hvar grafurin veksur og minkar, er nátturligt at spyrja hvar grafurin hevur størst og minst virði. Hetta kunnu vit kalla aldutoppar og aldudalar, sum vit saman kalla **topppunkt**. 
+
+Øll størstu og minstuvirðini hjá einum grafi kalla vit **ekstrema**. Hjá einum ekstremum er:
+- **Ekstremumstaðið:** $x$-virðið
+- **Ekstremumsvirðið:** $y$-virðið
+
+
+## Filmur 
+{{< video https://youtu.be/TEKFLjXEUug >}}

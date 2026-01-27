@@ -1,0 +1,9 @@
+﻿---
+title: "Prógv: 1.kvadratsetningur algebraiskt"
+---
+
+## Prógv
+
+Her sæst hvussu 1. kvadratsetningur prógvast algebraiskt.
+## Filmur 
+{{< video https://youtu.be/UolqY76Zo8w?si=6cOebz4jjvIFcGeS >}}

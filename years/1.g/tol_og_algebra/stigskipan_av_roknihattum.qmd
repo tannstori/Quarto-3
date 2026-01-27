@@ -1,0 +1,43 @@
+﻿---
+title: "Stigskipan av rokniháttum"
+---
+
+## Stigskipan av rokniháttum
+
+Tá vit rokna brúka vit ofta fleiri ymiskar roknihættir í einum roknistykkið, tað kann til dømis vera leggja til, trekkja frá, falda osv. Men raðfylgjan av útrokningunum er ikki líkamikið. 
+
+### Dømil - Tvey ymisk úrslit
+
+Sum dømi kunnu vit rokna:
+
+
+$$5 + 2 \cdot 7 = 7 \cdot 7 = 49$$
+
+
+
+$$5 + 2 \cdot 7 = 5 + 14 = 19$$
+
+Her síggja vit at vit fáa tvey ymisk úrslit alt eftir um vit leggja til fyrst ella um vit falda fyrst.
+
+## Stigskipanin
+
+Fyri at hetta ikki skal skapa trupuleikar tá fleiri skulu rokna tey somu roknustykkini, hava vit eina stigskipan av roknihættunum:
+
+1. **Ferðrót og potensar**
+2. **Falda og býta**
+3. **Leggja til og trekkja frá**
+
+## Klombur
+
+Um vit vilja víkja frá stigskipanini brúka við klombur. 
+
+Um vit taka tað fyrsta dømi aftur, so er tað rætta at falda fyrst:
+
+$$5 + 2 \cdot 7 = 5 + 14 = 19$$
+
+Men um vit vilja hava at ein leggur til fyrst brúka vit klombur á hendan hátt:
+
+$$(5 + 2) \cdot 7 = 7 \cdot 7 = 49$$
+
+## Filmur 
+{{< video https://youtu.be/NSBuRIYEQ9E?si=PFdGiHTeOp0XOP5d >}}

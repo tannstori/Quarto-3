@@ -1,0 +1,48 @@
+﻿---
+title: "Annuitetsuppsparing setningur"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er annuitetsuppsparing?
+
+Annuitetsuppsparing er, tá tú leggur sama upphædd inn hvønn termin, og rentan verður løgd afturat.
+
+### formil
+
+$$
+K_n = y \cdot \frac{(1 + r)^n - 1}{r}
+$$
+
+har:
+- $K_n$ er endaliga kapitalurin eftir $n$ terminar
+- $y$ er terminsgjaldið
+- $r$ er rentusatsurin (um termin)
+- $n$ er talið av terminum
+
+### Dømi
+
+Tú leggur 1,000 kr inn hvønn mánað í 10 ár við 5% árligu rentu.
+
+Mánaðarlig renta: $r = \frac{0.05}{12} = 0.004167$
+
+Tal av mánaðum: $n = 10 \times 12 = 120$
+
+$$
+K_{120} = 1{,}000 \cdot \frac{(1.004167)^{120} - 1}{0.004167}
+$$
+
+$$
+K_{120} = 1{,}000 \cdot \frac{1.6470 - 1}{0.004167} = 1{,}000 \cdot 155.27 = 155{,}270 \text{ kr}
+$$
+
+Tú hevur lagt inn $1{,}000 \times 120 = 120{,}000$ kr, men hevur 155,270 kr!
+
+## Filmur 
+{{< video https://youtu.be/bSvlhRb51eQ?si=ZOpu0ZQ8DT0gH9wR >}}

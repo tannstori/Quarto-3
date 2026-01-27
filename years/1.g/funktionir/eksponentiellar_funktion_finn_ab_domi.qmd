@@ -1,0 +1,130 @@
+﻿---
+title: "Finn a og b - dømi"
+---
+
+### Dømi 1: Tvey punkt
+
+Givið: 
+$$
+f(0) = 5 \text{   og   } f(2) = 20
+$$
+
+**Finn b:**
+$$
+f(0) = b \cdot a^0 = b = 5
+$$
+
+**Finn a:**
+$$
+f(2) = 5 \cdot a^2 = 20
+$$
+
+$$
+a^2 = 4
+$$
+
+$$
+a = 2
+$$
+
+**Funktión:**
+$$
+f(x) = 5 \cdot 2^x
+$$
+
+### Dømi 2: 
+
+Givið: $f(1) = 6$ og $f(3) = 24$
+
+**Líkningaskipan:**
+$$
+6 = b \cdot a^1
+$$
+$$
+24 = b \cdot a^3
+$$
+
+**Být næsta líkningina við tann fyrra:**
+$$
+\frac{24}{6} = \frac{b \cdot a^3}{b \cdot a} = a^2
+$$
+
+$$
+a^2 = 4
+$$
+
+$$
+a = 2
+$$
+
+**Finn b:**
+$$
+6 = b \cdot 2
+$$
+
+$$
+b = 3
+$$
+
+**Loysn:**
+$$
+f(x) = 3 \cdot 2^x
+$$
+
+### Dømi 3: Praktiskt
+Talið av bakterium veksur frá 100 til 400 uppá 6 tímar.
+
+**Við $x$ í tímum:**
+$$
+100 = b \cdot a^0 \Rightarrow b = 100
+$$
+
+$$
+400 = 100 \cdot a^6
+$$
+
+$$
+a^6 = 4
+$$
+
+$$
+a = 4^{\frac{1}{6}} = 2^{\frac{2}{6}} = 2^{\frac{1}{3}} \approx 1.26
+$$
+
+**Funktión:**
+$$
+f(x) = 100 \cdot 1.26^x
+$$
+
+Hetta merkir ein 26% vøkstur um tíman.
+
+### Dømi 4: 
+
+Eitt radioaktivt evnið fellur frá 80 g aktivum tilfari til 20 g ígjøgnum 10 ár.
+
+$$
+b = 80
+$$
+
+$$
+20 = 80 \cdot a^{10}
+$$
+
+$$
+a^{10} = 0.25
+$$
+
+$$
+a = 0.25^{0.1} \approx 0.87
+$$
+
+**Funktión:**
+$$
+f(x) = 80 \cdot 0.87^x
+$$
+
+Hetta merkir ein 13% minking um árið.
+
+
+## Filmur 
+{{< video https://youtu.be/FQDa_EGn_Tc?si=PRPf_CaCQeEF8nZF >}}

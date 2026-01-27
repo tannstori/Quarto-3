@@ -1,0 +1,53 @@
+﻿---
+title: "Frágreiðandi hagtøl óbólkað"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat eru frágreiðandi hagtøl?
+
+Frágreiðandi hagtøl lýsa og samantaka dáta á einfaldari hátt.
+
+### Miðmát
+
+Mát sum lýsa miðtalið í dátunum:
+
+1. **Miðalvirði (mean):** $\bar{x} = \frac{\sum x_i}{n}$
+2. **Median:** Miðverdið í rað dátum
+3. **Typutal (modus):** Oftasta virðið
+
+### Spreiðingarmát
+
+Mát sum lýsa hvussu nógv dátini eru spreidd:
+
+1. **Vídd:** Størstur - Minstur
+2. **Spjaðing:** $s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$
+3. **Standardfrávík:** $s = \sqrt{s^2}$
+4. **IQR:** $Q3 - Q1$
+
+### Dømi
+
+Dáta: 3, 5, 7, 7, 8, 9, 11
+
+**Miðmát:**
+- Miðalvirði: $\bar{x} = 7.14$
+- Median: $7$
+- Typutal: $7$
+
+**Spreiðingarmát:**
+- Vídd: $11 - 3 = 8$
+- Standardfrávík: $s \approx 2.67$
+
+### Tá við óbólkaðum dátum
+
+Vit brúka hesi mát, tá vit hava einstøk dátapunkt, ikki bólkar av dátum.
+
+
+## Filmur 
+{{< video https://youtu.be/eNiC9X4AbgE?si=D2cBhLWd7OfVvDJ9 >}}

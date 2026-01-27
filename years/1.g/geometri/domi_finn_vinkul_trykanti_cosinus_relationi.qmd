@@ -1,0 +1,89 @@
+﻿---
+title: "Dømi: Finn vinkul í trýkanti við cosinus relatiónini"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### formil
+
+$$
+\cos(C) = \frac{a^2 + b^2 - c^2}{2ab}
+$$
+
+### Dømi 1: Finna vinkul
+
+Givið: $a = 7$, $b = 9$, $c = 5$
+
+Finna vinkul $C$:
+
+$$
+\cos(C) = \frac{7^2 + 9^2 - 5^2}{2 \cdot 7 \cdot 9} = \frac{49 + 81 - 25}{126} = \frac{105}{126} \approx 0.833
+$$
+
+$$
+C = \arccos(0.833) \approx 33.6°
+$$
+
+### Dømi 2: Finna allar vinklar
+
+Givið: $a = 8$, $b = 6$, $c = 10$
+
+**Finna A:**
+$$
+\cos(A) = \frac{6^2 + 10^2 - 8^2}{2 \cdot 6 \cdot 10} = \frac{36 + 100 - 64}{120} = \frac{72}{120} = 0.6
+$$
+
+$$
+A = \arccos(0.6) \approx 53.1°
+$$
+
+**Finna B:**
+$$
+\cos(B) = \frac{8^2 + 10^2 - 6^2}{2 \cdot 8 \cdot 10} = \frac{64 + 100 - 36}{160} = \frac{128}{160} = 0.8
+$$
+
+$$
+B = \arccos(0.8) \approx 36.9°
+$$
+
+**Finna C:**
+$$
+C = 180° - 53.1° - 36.9° = 90°
+$$
+
+Hetta er ein rættvinklaður trýkantur!
+
+### Dømi 3: Negativ cosinus
+
+Givið: $a = 5$, $b = 6$, $c = 10$
+
+$$
+\cos(C) = \frac{5^2 + 6^2 - 10^2}{2 \cdot 5 \cdot 6} = \frac{25 + 36 - 100}{60} = \frac{-39}{60} \approx -0.65
+$$
+
+$$
+C = \arccos(-0.65) \approx 130.5°
+$$
+
+Negativur cosinus merkir, at vinkulin er størri enn 90° (stumpvinklaður).
+
+### Dømi 4: Er trýkanturin møguligur?
+
+Givið: $a = 3$, $b = 4$, $c = 10$
+
+$$
+\cos(C) = \frac{3^2 + 4^2 - 10^2}{2 \cdot 3 \cdot 4} = \frac{9 + 16 - 100}{24} = \frac{-75}{24} \approx -3.125
+$$
+
+Tí $\cos(C) < -1$, er henda trýkanturin **ikki møguligur**!
+
+Trýhyrndungaroyskið er ikki hildið: $c$ er ov stórur.
+
+## Filmur 
+{{< video https://youtu.be/SCctnNKMWwE?si=XBu3llJc0tiMTkKQ >}}

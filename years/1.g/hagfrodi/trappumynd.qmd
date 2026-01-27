@@ -1,0 +1,65 @@
+﻿---
+title: "Trappumynd"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er trappumynd?
+
+Trappumynd (histogram) er ein grafiskur framstellingur av bólkaðum dátum, har hyppigheitin verður víst sum høgdin á søylum.
+
+### Uppbygging
+
+- **X-ás:** Intervøl (bólkar)
+- **Y-ás:** Hyppigheit ella relativt hyppigheit
+- **Søylur:** Samanhangandi (eingin luft ímillum)
+
+### Dømi
+
+Aldursbýti í einum fyritøku:
+
+| Aldur  | Hyppigheit |
+|--------|------------|
+| 20-30  | 5          |
+| 30-40  | 12         |
+| 40-50  | 18         |
+| 50-60  | 8          |
+| 60-70  | 2          |
+
+Í trappumyndini verða hesar tølini vístar sum søylur.
+
+### Munur á trappumynd og stabbamynd
+
+**Trappumynd:**
+- Kontinuerlig dáta (t.d. aldur, hædd)
+- Søylur samanhangandi
+- Bólkaðar dáta
+
+**Stabbamynd:**
+- Diskret dáta (t.d. nøvn, bólkar)
+- Luft millum søylur
+- Kategoriskur dáta
+
+### Hvat vit síggja
+
+Trappumynd vísir:
+- Hvar eru flestu dátini?
+- Hvussu eru dátini útspreidd?
+- Er býtið symmetriskt?
+- Eru úthoyrissvirði?
+
+### Forma
+
+- **Symmetriskt:** Líka mungu søylur á báðum síðum
+- **Skævt til hægru:** Long hali til hægru
+- **Skævt til vinstru:** Long hali til vinstru
+
+
+## Filmur 
+{{< video https://youtu.be/J9UuJkgCf8g?si=YRdWCGp2Krymfvxg >}}

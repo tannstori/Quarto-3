@@ -1,0 +1,10 @@
+﻿---
+title: "Brot - falda og býta"
+---
+
+## Innleiðing
+
+Her vísa vit hvussu vit falda og býta við einum broti.
+
+## Filmur 
+{{< video https://youtu.be/jvw76RbLG0g?si=wNpeWraOcbXR96gl >}}

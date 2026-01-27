@@ -1,0 +1,54 @@
+﻿---
+title: "Treytað sannlíkindi"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Definisión
+
+Treytað sannlíkindi er sannlíkindið fyri, at A hendir, givið at B longu er hent.
+
+Vit skriva tað sum:
+
+$$
+P(A|B)
+$$
+
+### formil
+
+$$
+P(A|B) = \frac{P(A \cap B)}{P(B)}
+$$
+
+### Dømi
+
+Ein kassi hevur 3 reyðar og 2 bláar kúlur. 
+
+Vit toga tvær kúlur uttan at leggja fyrru aftur.
+
+Hvat er sannlíkindið fyri, at onnur kúlan er reyð, um fyrra kúlan var reyð?
+
+**Fyrra kasta:**
+$$
+P(\text{reyð}_1) = \frac{3}{5}
+$$
+
+**Annaða kasta (treytað):**
+$$
+P(\text{reyð}_2|\text{reyð}_1) = \frac{2}{4} = \frac{1}{2}
+$$
+
+**Báðar reyðar:**
+$$
+P(\text{báðar reyðar}) = \frac{3}{5} \cdot \frac{2}{4} = \frac{6}{20} = \frac{3}{10}
+$$
+
+
+## Filmur 
+{{< video https://youtu.be/4oZmrZe66jE?si=pT_FdC2PqRwi_PjF >}}

@@ -1,0 +1,67 @@
+﻿---
+title: "Annuitetsuppsparing prógv"
+---
+
+## Prógv
+
+Henda undirvísing prgvar evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Upphav
+
+Vit leggja inn eitt gjald $y$ hvønn termin í $n$ terminar við rentu $r$ um termin.
+
+### Framtíðarvirði
+
+Fyrsta gjaldið veksur í $n$ terminar:
+$$
+y \cdot (1+r)^{n}
+$$
+
+Annað gjaldið veksur í $(n-1)$ terminar:
+$$
+y \cdot (1+r)^{n-1}
+$$
+
+Síðsta gjaldið veksur í 1 termin:
+$$
+y \cdot (1+r)^{1}
+$$
+
+### Samanlagt
+
+$$
+K_n = y \cdot (1+r) + y \cdot (1+r)^2 + ... + y \cdot (1+r)^n
+$$
+
+### Geometrisk røð
+
+Hetta er ein geometrisk røð við fyrsta limi $y \cdot (1+r)$ og kvotan $(1+r)$.
+
+$$
+K_n = y \cdot (1+r) \cdot \frac{(1+r)^n - 1}{(1+r) - 1}
+$$
+
+### Einfalding
+
+$$
+K_n = y \cdot (1+r) \cdot \frac{(1+r)^n - 1}{r}
+$$
+
+Ella meira einfalt:
+
+$$
+K_n = y \cdot \frac{(1+r)^{n+1} - (1+r)}{r} = y \cdot \frac{(1+r)^n - 1}{r} \cdot (1+r)
+$$
+
+Men ofta brúkt forma er:
+
+$$
+K_n = y \cdot \frac{(1+r)^n - 1}{r}
+$$
+
+## Filmur 
+{{< video https://youtu.be/apFfeLmMeBY?si=jUw_7qHd_oZIjPaR >}}

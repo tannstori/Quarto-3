@@ -1,0 +1,1186 @@
+/*-- scss:defaults --*/
+
+// ============================================
+// MINERVA THEME - Custom SCSS for Quarto
+// ============================================
+// Base theme: Flatly (calm, professional, educational)
+// Designed for high-school mathematics education
+// ============================================
+
+// --------------------------------------------
+// FONTS (Google Fonts - Free)
+// --------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
+$font-family-sans-serif: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+$headings-font-family: "Source Sans 3", sans-serif;
+
+// --------------------------------------------
+// COLOR PALETTE - Academic & Calm
+// --------------------------------------------
+
+// Primary colors (deep navy - trust & stability)
+$primary:       #2c3e50;
+$secondary:     #95a5a6;
+$success:       #18bc9c;
+$info:          #3498db;
+$warning:       #f39c12;
+$danger:        #e74c3c;
+$light:         #f8f9fa;
+$dark:          #1a252f;
+
+// Custom Minerva colors
+$minerva-blue:      #3498db;
+$minerva-teal:      #18bc9c;
+$minerva-purple:    #9b59b6;
+$minerva-orange:    #e67e22;
+
+// Background & surface colors
+$body-bg:           #ffffff;
+$body-color:        #2c3e50;
+$code-bg:           #f8f9fa;
+
+// Link colors
+$link-color:        $minerva-blue;
+$link-hover-color:  darken($minerva-blue, 15%);
+
+// --------------------------------------------
+// TYPOGRAPHY
+// --------------------------------------------
+$font-size-base:    1.05rem;
+$line-height-base:  1.75;
+$paragraph-margin-bottom: 1.25rem;
+
+// Headings
+$headings-font-weight:    600;
+$headings-line-height:    1.3;
+$headings-margin-bottom:  0.75rem;
+
+$h1-font-size: 2.25rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.4rem;
+$h4-font-size: 1.2rem;
+$h5-font-size: 1.1rem;
+
+// --------------------------------------------
+// SPACING & LAYOUT
+// --------------------------------------------
+$border-radius:     0.5rem;
+$border-radius-lg:  0.75rem;
+$border-radius-sm:  0.35rem;
+
+$box-shadow:        0 2px 8px rgba(0, 0, 0, 0.08);
+$box-shadow-lg:     0 8px 24px rgba(0, 0, 0, 0.12);
+
+// Navbar
+$navbar-padding-y:  0.75rem;
+
+// Sidebar
+$sidebar-bg:        #f8f9fa;
+$sidebar-fg:        $body-color;
+
+// TOC
+$toc-color:         $secondary;
+$toc-font-size:     0.9rem;
+$toc-active-border: $primary;
+
+
+/*-- scss:rules --*/
+
+// ============================================
+// BASE STYLES
+// ============================================
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-family-sans-serif;
+  color: $body-color;
+  background-color: $body-bg;
+  letter-spacing: -0.01em;
+}
+
+// ============================================
+// TYPOGRAPHY ENHANCEMENTS
+// ============================================
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  color: $primary;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-weight: 700;
+  border-bottom: 3px solid $minerva-teal;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-weight: 600;
+  position: relative;
+  padding-left: 0.75rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    bottom: 0.25em;
+    width: 4px;
+    background: linear-gradient(180deg, $minerva-blue, $minerva-teal);
+    border-radius: 2px;
+  }
+}
+
+h3 {
+  color: lighten($primary, 10%);
+}
+
+// Improve paragraph readability
+p {
+  max-width: 75ch; // Optimal reading width
+}
+
+// Better list styling
+ul, ol {
+  padding-left: 1.5rem;
+  
+  li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+  }
+}
+
+// ============================================
+// LINKS
+// ============================================
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+// ============================================
+// NAVBAR - Clean & Professional
+// ============================================
+
+.navbar {
+  background-color: $primary !important;
+  box-shadow: $box-shadow;
+  padding: 0.5rem 1rem;
+  
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: -0.02em;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    padding: 0.6rem 1rem !important;
+    border-radius: $border-radius-sm;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    &.active {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  }
+}
+
+// Search styling
+.aa-DetachedSearchButton {
+  border-radius: $border-radius !important;
+}
+
+// ============================================
+// SIDEBAR - Educational Navigation
+// ============================================
+
+#quarto-sidebar {
+  background-color: $sidebar-bg;
+  border-right: 1px solid darken($sidebar-bg, 5%);
+  padding-top: 1rem;
+  
+  .sidebar-title {
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $secondary;
+    padding: 0.75rem 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .sidebar-item {
+    margin: 0.15rem 0.5rem;
+    border-radius: $border-radius-sm;
+    transition: all 0.2s ease;
+    
+    .sidebar-item-text {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.95rem;
+    }
+    
+    &:hover {
+      background-color: darken($sidebar-bg, 4%);
+    }
+    
+    &.active {
+      background-color: rgba($minerva-blue, 0.1);
+      border-left: 3px solid $minerva-blue;
+      
+      .sidebar-item-text {
+        color: $minerva-blue;
+        font-weight: 600;
+      }
+    }
+  }
+  
+  // Section headers in sidebar
+  .sidebar-section .sidebar-item-text {
+    font-weight: 600;
+    color: $primary;
+  }
+  
+  // Collapse icons
+  .bi-chevron-right,
+  .bi-chevron-down {
+    font-size: 0.75rem;
+    opacity: 0.6;
+  }
+}
+
+// Sidebar scroll fix
+#quarto-sidebar .sidebar-section.collapse {
+  height: auto !important;
+  transition: height 0.3s ease;
+}
+
+// ============================================
+// TABLE OF CONTENTS (Right sidebar)
+// ============================================
+
+#TOC {
+  font-size: $toc-font-size;
+  padding: 1rem;
+  
+  .toc-title {
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $secondary;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: $secondary;
+    padding: 0.3rem 0;
+    display: block;
+    border-left: 2px solid transparent;
+    padding-left: 0.75rem;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+      border-left-color: lighten($primary, 30%);
+    }
+    
+    &.active {
+      color: $minerva-blue;
+      font-weight: 600;
+      border-left-color: $minerva-blue;
+    }
+  }
+  
+  // Nested TOC items
+  ul ul {
+    padding-left: 0.75rem;
+    font-size: 0.9em;
+  }
+}
+
+// ============================================
+// MAIN CONTENT AREA
+// ============================================
+
+#quarto-content {
+  padding-top: 1rem;
+}
+
+.content {
+  padding: 1.5rem 2rem;
+}
+
+// Page title styling
+.quarto-title {
+  margin-bottom: 2rem;
+  
+  h1.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+}
+
+// ============================================
+// MATH CONTENT - Enhanced Readability
+// ============================================
+
+// Display math (block equations)
+.math.display {
+  font-size: 1.1em;
+  padding: 1.5rem 1rem;
+  margin: 1.5rem 0;
+  background: linear-gradient(135deg, rgba($minerva-blue, 0.03) 0%, rgba($minerva-teal, 0.03) 100%);
+  border-left: 4px solid $minerva-teal;
+  border-radius: 0 $border-radius $border-radius 0;
+  overflow-x: auto;
+  
+  // For wide equations
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: lighten($secondary, 20%);
+    border-radius: 3px;
+  }
+}
+
+// Inline math
+.math.inline {
+  font-size: 1.05em;
+  padding: 0 0.2em;
+}
+
+// MathJax specific
+mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+// ============================================
+// CALLOUTS - Educational Emphasis
+// ============================================
+
+.callout {
+  border-radius: $border-radius;
+  margin: 1.5rem 0;
+  box-shadow: $box-shadow;
+  border-left-width: 4px;
+  
+  .callout-header {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  
+  .callout-body {
+    padding: 1rem 1.25rem;
+  }
+}
+
+// Custom callout colors
+.callout-note {
+  background-color: rgba($minerva-blue, 0.05);
+  border-left-color: $minerva-blue;
+}
+
+.callout-tip {
+  background-color: rgba($minerva-teal, 0.05);
+  border-left-color: $minerva-teal;
+}
+
+.callout-warning {
+  background-color: rgba($warning, 0.05);
+  border-left-color: $warning;
+}
+
+.callout-important {
+  background-color: rgba($minerva-purple, 0.05);
+  border-left-color: $minerva-purple;
+}
+
+.callout-caution {
+  background-color: rgba($danger, 0.05);
+  border-left-color: $danger;
+}
+
+// ============================================
+// CODE BLOCKS
+// ============================================
+
+pre {
+  background-color: $code-bg;
+  border: 1px solid darken($code-bg, 5%);
+  border-radius: $border-radius;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+code {
+  font-family: $font-family-monospace;
+  font-size: 0.9em;
+  padding: 0.15em 0.4em;
+  background-color: $code-bg;
+  border-radius: $border-radius-sm;
+  color: $minerva-purple;
+}
+
+pre code {
+  padding: 0;
+  background: none;
+  color: inherit;
+}
+
+// Copy button styling
+.code-copy-button {
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+  
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// ============================================
+// CARDS - Topic/Lesson Cards
+// ============================================
+
+.lesson-card, .topic-card, .card {
+  background: $body-bg;
+  border: 1px solid darken($light, 5%);
+  border-radius: $border-radius-lg;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: $box-shadow;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $box-shadow-lg;
+  }
+  
+  h3, h4 {
+    color: $primary;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    
+    li {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid $light;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      a {
+        display: flex;
+        align-items: center;
+        
+        &:before {
+          content: '→';
+          margin-right: 0.5rem;
+          color: $minerva-teal;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+// Card grid layout
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+// ============================================
+// VIDEO EMBEDS
+// ============================================
+
+.quarto-video {
+  margin: 2rem 0;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  box-shadow: $box-shadow-lg;
+}
+
+// Responsive video container
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; // 16:9 aspect ratio
+  height: 0;
+  overflow: hidden;
+  border-radius: $border-radius-lg;
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+// ============================================
+// TABLES
+// ============================================
+
+table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  
+  th {
+    background-color: $primary;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  
+  td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid $light;
+  }
+  
+  tr:hover {
+    background-color: rgba($minerva-blue, 0.03);
+  }
+}
+
+// ============================================
+// FOOTER
+// ============================================
+
+.nav-footer {
+  background-color: $primary;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  
+  a {
+    color: rgba(255, 255, 255, 0.9);
+    
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+// Custom Minerva Footer
+.minerva-footer {
+  background: linear-gradient(135deg, $primary 0%, lighten($primary, 5%) 100%);
+  color: white;
+  padding: 3rem 2rem;
+  margin-top: 4rem;
+  text-align: center;
+
+  .sponsor-section {
+    margin-bottom: 2rem;
+
+    h1, h3 {
+      color: white;
+      margin: 0.5rem 0;
+      border: none;
+    }
+
+    h3 {
+      font-size: 1rem;
+      opacity: 0.8;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.8);
+      margin: 1rem 0;
+    }
+
+    .sponsor-button {
+      display: inline-block;
+      background: linear-gradient(135deg, $minerva-purple, lighten($minerva-purple, 10%));
+      color: white;
+      padding: 12px 24px;
+      border-radius: $border-radius;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin-top: 0.5rem;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba($minerva-purple, 0.4);
+      }
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    .footer-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .footer-copyright {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    p {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  }
+}
+
+// ============================================
+// BACK TO TOP BUTTON
+// ============================================
+
+#quarto-back-to-top {
+  background-color: $primary;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-lg;
+  
+  &:hover {
+    background-color: lighten($primary, 10%);
+  }
+}
+
+// ============================================
+// RESPONSIVE DESIGN
+// ============================================
+
+// Tablets
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .lesson-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .math.display {
+    font-size: 1em;
+    padding: 1rem 0.75rem;
+  }
+}
+
+// Mobile
+@media (max-width: 767.98px) {
+  body {
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.35rem;
+    padding-left: 0.5rem;
+    
+    &::before {
+      width: 3px;
+    }
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+  
+  pre {
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+  
+  .callout {
+    margin: 1rem 0;
+    
+    .callout-body {
+      padding: 0.75rem 1rem;
+    }
+  }
+  
+  .math.display {
+    font-size: 0.95em;
+    padding: 0.75rem 0.5rem;
+    margin: 1rem 0;
+  }
+}
+
+// ============================================
+// PRINT STYLES
+// ============================================
+
+@media print {
+  .navbar, 
+  #quarto-sidebar, 
+  #TOC, 
+  .nav-footer,
+  #quarto-back-to-top {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 11pt;
+  }
+  
+  .math.display {
+    background: none;
+    border: none;
+    padding: 0.5rem 0;
+  }
+}
+
+// ============================================
+// UTILITY CLASSES
+// ============================================
+
+// Content sections
+.content-section {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid $light;
+  
+  &:first-child {
+    border-top: none;
+    margin-top: 0;
+  }
+}
+
+// Page header
+.page-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, rgba($primary, 0.03) 0%, rgba($minerva-blue, 0.03) 100%);
+  border-radius: $border-radius-lg;
+  
+  h1 {
+    border-bottom: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    color: $secondary;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Highlight box for important content
+.highlight-box {
+  background: linear-gradient(135deg, rgba($minerva-teal, 0.08) 0%, rgba($minerva-blue, 0.05) 100%);
+  border: 1px solid rgba($minerva-teal, 0.2);
+  border-radius: $border-radius;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+// ============================================
+// HOMEPAGE HERO SECTION
+// ============================================
+
+.hero-section {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background: linear-gradient(135deg, $primary 0%, lighten($primary, 8%) 100%);
+  color: white;
+  margin: 0 0 60px 0;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 4px 12px rgba($primary, 0.3);
+  border-radius: $border-radius-lg;
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, lighten($minerva-blue, 20%), lighten($minerva-purple, 15%), #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  p {
+    font-size: 1.2em;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: white;
+  }
+}
+
+// ============================================
+// HOMEPAGE CONTAINERS
+// ============================================
+
+.course-cards-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.intro-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 30px;
+  background: rgba($minerva-blue, 0.05);
+  border-radius: $border-radius-lg;
+  border: 1px solid rgba($minerva-blue, 0.1);
+
+  h2 {
+    color: $primary;
+    font-size: 1.8em;
+    margin-bottom: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+    
+    &::before {
+      display: none;
+    }
+  }
+
+  p {
+    color: $secondary;
+    font-size: 1.05em;
+    line-height: 1.6;
+  }
+}
+
+// ============================================
+// COURSE CARDS (Homepage)
+// ============================================
+
+.course-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.course-card {
+  background: white;
+  border-radius: $border-radius-lg;
+  padding: 32px 24px;
+  box-shadow: $box-shadow;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 1px solid $light;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 5px;
+    background: linear-gradient(90deg, $minerva-blue, $minerva-purple);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: $border-radius-lg $border-radius-lg 0 0;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $box-shadow-lg;
+    border-color: $minerva-blue;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  h3 {
+    color: $primary;
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  p {
+    color: $secondary;
+    font-size: 0.95em;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+
+  .btn {
+    background: linear-gradient(135deg, $minerva-blue, lighten($minerva-blue, 10%));
+    color: white !important;
+    padding: 12px 28px;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 0.95em;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(135deg, darken($minerva-blue, 10%), $minerva-blue);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba($minerva-blue, 0.3);
+      color: white !important;
+    }
+  }
+}
+
+// ============================================
+// TOPIC GRID (Year index pages)
+// ============================================
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.topic-card {
+  background: white;
+  border-radius: $border-radius-lg;
+  padding: 28px 24px;
+  box-shadow: $box-shadow;
+  border: 1px solid $light;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, $minerva-blue, $minerva-purple);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: $border-radius-lg $border-radius-lg 0 0;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $box-shadow-lg;
+    border-color: $minerva-blue;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  h3 {
+    color: $primary;
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  p {
+    color: $secondary;
+    font-size: 0.95em;
+    margin-bottom: 16px;
+  }
+
+  a {
+    color: $minerva-blue;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: darken($minerva-blue, 15%);
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    &::after {
+      content: '→';
+      font-size: 1.2em;
+    }
+  }
+}
+
+// ============================================
+// WARNING BOX
+// ============================================
+
+.warning {
+  background: rgba($warning, 0.1);
+  border: 1px solid rgba($warning, 0.3);
+  border-radius: $border-radius;
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  color: darken($warning, 20%);
+  font-size: 0.95rem;
+}
+
+// ============================================
+// ANIMATIONS (subtle)
+// ============================================
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.content {
+  animation: fadeIn 0.3s ease-out;
+}
+
+// ============================================
+// RESPONSIVE - Homepage & Index pages
+// ============================================
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding: 60px 20px 40px;
+    margin: 0 0 40px 0;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+  }
+
+  .intro-text {
+    padding: 24px;
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+
+  .course-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .course-card {
+    padding: 28px 20px;
+  }
+
+  .topic-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    padding: 50px 15px 35px;
+
+    h1 {
+      font-size: 1.75em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .intro-text {
+    padding: 20px;
+
+    h2 {
+      font-size: 1.3em;
+    }
+
+    p {
+      font-size: 0.95em;
+    }
+  }
+}

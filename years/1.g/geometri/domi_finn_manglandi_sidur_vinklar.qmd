@@ -1,0 +1,86 @@
+﻿---
+title: "Dømi: Finn manglandi síður og vinklar í rættvinklaðum trýkantum"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### Dømi 1: Finna síðu við sinus
+
+Givið: Vinkul 30°, hypotenusa 10 cm
+
+Finna mótstøðu katetur:
+
+$$
+\sin(30°) = \frac{a}{10}
+$$
+
+$$
+a = 10 \cdot \sin(30°) = 10 \cdot 0.5 = 5 \text{ cm}
+$$
+
+### Dømi 2: Finna síðu við cosinus
+
+Givið: Vinkul 60°, hypotenusa 8 cm
+
+Finna løggjandi katetur:
+
+$$
+\cos(60°) = \frac{b}{8}
+$$
+
+$$
+b = 8 \cdot \cos(60°) = 8 \cdot 0.5 = 4 \text{ cm}
+$$
+
+### Dømi 3: Finna vinkul
+
+Givið: Mótstøðu katetur 3 cm, hypotenusa 5 cm
+
+Finna vinkul:
+
+$$
+\sin(\theta) = \frac{3}{5} = 0.6
+$$
+
+$$
+\theta = \arcsin(0.6) \approx 36.87°
+$$
+
+### Dømi 4: Fulla uppgávan
+
+Givið: Ein vinkul 40°, ein katetur (løggjandi) 7 cm
+
+Finna alt annað:
+
+**Hypotenusa:**
+$$
+\cos(40°) = \frac{7}{c}
+$$
+
+$$
+c = \frac{7}{\cos(40°)} \approx \frac{7}{0.766} \approx 9.14 \text{ cm}
+$$
+
+**Mótstøðu katetur:**
+$$
+\tan(40°) = \frac{a}{7}
+$$
+
+$$
+a = 7 \cdot \tan(40°) \approx 7 \cdot 0.839 \approx 5.87 \text{ cm}
+$$
+
+**Annar vinkul:**
+$$
+\beta = 90° - 40° = 50°
+$$
+
+
+## Filmur 
+{{< video https://youtu.be/HFwsq3nWWvc?si=uqyMUDE01eUwUIo3 >}}

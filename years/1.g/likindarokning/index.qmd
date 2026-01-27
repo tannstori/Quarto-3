@@ -1,0 +1,31 @@
+﻿---
+title: "Líkindarokning"
+sidebar: sidebar-1g
+---
+
+
+:::{.lesson-grid}
+
+:::{.lesson-card}
+### 🎲 Grundleggjandi Hugtøk
+- [Líkindarokning](likindarokning.qmd)
+- [Líkindarokning 2](likindarokning_2.qmd)
+- [Líkindaøkið](likindaokid.qmd)
+:::
+
+:::{.lesson-card}
+### 🎯 Hendingar
+- [Hendingar](hendingar.qmd)
+- [Hendingar dømi](hendingar_domi.qmd)
+- [Óheftar hendingar](oheftar_hendingar.qmd)
+:::
+
+:::{.lesson-card}
+### 🔗 Treytað Sannlíkindi
+- [Treytað sannlíkindi](treytad_sannlikindi.qmd)
+:::
+
+:::
+
+
+

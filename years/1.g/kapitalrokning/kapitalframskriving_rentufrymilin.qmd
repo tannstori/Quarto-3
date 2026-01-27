@@ -1,0 +1,38 @@
+﻿---
+title: "Kapitalframskriving rentufrymilin"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Rentufrymilin
+
+Rentufrymilin er brúkt til at rokna, hvussu nógv eitt innlegg veksur við rentu yvir tíð.
+
+### formil
+
+$$
+K_n = K_0 \cdot (1 + r)^n
+$$
+
+har:
+- $K_n$ er kapitalurin eftir $n$ tíðarskeiðir
+- $K_0$ er byrjanarkapitalurin
+- $r$ er rentan (sum desimaltal)
+- $n$ er talið av tíðarskeiðum
+
+### Dømi
+
+Um tú leggur 10,000 kr í bank við 5% árligu rentu, hvussu nógv hevur tú eftir 3 ár?
+
+$$
+K_3 = 10{,}000 \cdot (1 + 0.05)^3 = 10{,}000 \cdot 1.157625 = 11{,}576.25 \text{ kr}
+$$
+
+## Filmur 
+{{< video https://youtu.be/rH73gcj-3vg?si=Mjw6Phf7LDqG1FkM >}}

@@ -1,0 +1,67 @@
+﻿---
+title: "Innleiðing"
+---
+
+**Potensfunktiónir** avmynda prosentvøkstur.
+Hetta gera tær soleiðis, at ein fastur prosentvøkstur eftir x-ásanum  elvir til ein fastan prosentvøkstur eftir y-ásanum.
+
+
+### Formil
+Potensfunktiónir hava forskriftina:
+
+$$
+f(x) = b \cdot x^a
+$$
+
+### Prosentvøkstur
+Um vit hava $f(x) = b \cdot x^a$ og $x$ økist við einum faktor $k$ (t.e. $k = 1 + p$, har ið $p$ er prosentøkingin), so:
+$$
+f(kx) = b\,(kx)^a= k^a\,f(x).
+$$
+Tí er lutfalsliga broytingin í f $k^a − 1$ %. Fyri smáar broytingar vita vit at:
+$$
+(1+p)^b \approx 1 + a\,p,
+$$
+so %-vísa broytingin í $f$ er tætt við $a$ ferðir prosentbroytingina í x.
+
+Dømi: Um $a = 3$ og $x$ økist 10% ($p = 0.10$), so vøkstur í $f$ er $(1.1)^3 − 1 \approx 0.331 = 33.1$% (sum er tætt við $3 \cdot 10\% = 30\%$).
+
+
+### Eginleikar
+
+**Tá $a > 0$:**
+- Funktiónin er altíð positiv
+
+**Tá $a < 0$:**
+- Funktiónin er altíð negativ
+
+**Tá $b > 0$:**
+- Funktiónin er vaksandi 
+
+**Tá $b < 0$:**
+- Funktiónin er fallandi
+
+### Serligi føri
+
+- $a = 1$: Linjurøtt funktión
+- $a = 2$: Kvadratisk funktioón
+- $a = \frac{1}{2}$: Kvadratrót
+- $a = -1$: Resiprokk 
+
+
+### Finn a og b, dømi
+$$
+f(x) = 2x^3
+$$
+Her er $b = 2$ og $a = 3$.
+$$
+f(x) = -\frac{1}{2}x^{-2} = -\frac{1}{2x^2}
+$$
+Her er $b = -\frac{1}{2}$ og $a = -2$.
+
+
+## Filmur 
+{{< video https://www.youtube.com/watch?v=W3J6A6v2LPM >}}
+
+
+

@@ -1,0 +1,10 @@
+﻿---
+title: "Brot 1"
+---
+
+## Brot
+
+Her er ein innleiðsla til hvat eitt brot er.
+
+## Filmur 
+{{< video https://youtu.be/y1oSllAi_jU?si=wqp0MSuaSNmRXMWP >}}

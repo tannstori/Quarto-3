@@ -1,0 +1,60 @@
+﻿---
+title: "Potensroknireglur 3"
+---
+
+## Potensur av einum brotið
+
+Um vit hava potens av einum brotið, til dømis:
+
+$$\left(\frac{2}{5}\right)^3 = \frac{2}{5} \cdot \frac{2}{5} \cdot \frac{2}{5}$$
+
+Um vit falda brotini saman fáa vit:
+
+$$\frac{2}{5} \cdot \frac{2}{5} \cdot \frac{2}{5} = \frac{2 \cdot 2 \cdot 2}{5 \cdot 5 \cdot 5} = \frac{2^3}{5^3}$$
+
+Tvs vit bara flyta eksponentin inn á teljara og nevnara:
+
+$$\left(\frac{2}{5}\right)^3 = \frac{2^3}{5^3}$$
+
+## Roknireglan fyri potensur av einum brotið
+
+Sum gevur okkum potensrokniregluna fyri potensur av einum brotí:
+
+$$\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$$
+
+har $b \neq 0$.
+
+## Negativan eksponent
+
+Nú hava vit víst hvussu positivir potensar rigga, men hvussu so um vit hava ein potens við negativum eksponenti. Vit byrja við einum dømi:
+
+$$\frac{4^2}{4^6}$$
+
+Fyrst umrokna vit til ein potens:
+
+$$\frac{4^2}{4^6} = 4^{2-6} = 4^{-4}$$
+
+Men hetta kunnu vit jú eisini rokna sum:
+
+$$\frac{4^2}{4^6} = \frac{4 \cdot 4}{4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4} = \frac{1}{4^4}$$
+
+Hetta vísir okkum so:
+
+$$4^{-4} = \frac{1}{4^4}$$
+
+## Roknireglan fyri negativan eksponent
+
+Generelt kunnu vit so skriva at:
+
+$$a^{-n} = \frac{1}{a^n}$$
+
+har $a \neq 0$. Eitt umráðandi dømi, ið er gott at minnast er at:
+
+$$a^{-1} = \frac{1}{a}$$
+
+har $a \neq 0$.
+
+
+## Filmur 
+{{< video https://youtu.be/H5QGClWeXPg?si=DOXe4QJ1ryouIKzW >}}
+

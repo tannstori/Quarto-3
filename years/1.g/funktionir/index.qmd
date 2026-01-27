@@ -1,0 +1,78 @@
+﻿---
+title: "Funktiónir"
+sidebar: sidebar-1g
+---
+
+```{r}
+#| echo: false
+#| output: asis
+
+library(yaml)
+
+# Function to extract title from QMD file
+get_qmd_title <- function(file) {
+  lines <- readLines(file, warn = FALSE, encoding = "UTF-8")
+  yaml_start <- which(lines == "---")[1]
+  yaml_end <- which(lines == "---")[2]
+  
+  if (is.na(yaml_start) || is.na(yaml_end)) return(basename(file))
+  
+  yaml_content <- paste(lines[(yaml_start + 1):(yaml_end - 1)], collapse = "\n")
+  metadata <- tryCatch(yaml.load(yaml_content), error = function(e) list())
+  
+  return(metadata$title %||% tools::file_path_sans_ext(basename(file)))
+}
+
+# Get all QMD files in current directory (excluding index.qmd)
+qmd_files <- list.files(pattern = "\\.qmd$", full.names = FALSE)
+qmd_files <- qmd_files[qmd_files != "index.qmd"]
+
+# Define categories with specific file patterns (in order you want them displayed)
+category_patterns <- list(
+  "📈 Potensfunktiónir" = "^potens",
+  "📊 Linjurættar Funktiónir" = "^linjurattar",
+  "⚡ Eksponentiellar Funktiónir" = "^(eksponentiellar|mangli)",
+  "📉 Logaritmur" = "^logaritmur",
+  "🔍 Funktiónskanning" = "^funktions_kanning"
+)
+
+
+# Group files by category
+categories <- list()
+categorized_files <- c()
+
+for (category_name in names(category_patterns)) {
+  pattern <- category_patterns[[category_name]]
+  files <- grep(pattern, qmd_files, value = TRUE, ignore.case = TRUE)
+  if (length(files) > 0) {
+    categories[[category_name]] <- files
+    categorized_files <- c(categorized_files, files)
+  }
+}
+
+# Add uncategorized files to "Other" category
+uncategorized <- setdiff(qmd_files, categorized_files)
+if (length(uncategorized) > 0) {
+  categories[["📚 Annað"]] <- uncategorized
+}
+
+# Generate lesson cards
+cat(":::{.lesson-grid}\n\n")
+
+for (category_name in names(categories)) {
+  files <- categories[[category_name]]
+  cat(":::{.lesson-card}\n")
+  cat("###", category_name, "\n")
+  
+  for (file in sort(files)) {
+    title <- get_qmd_title(file)
+    cat("- [", title, "](", file, ")\n", sep = "")
+  }
+  
+  cat(":::\n\n")
+}
+
+cat(":::")
+```
+
+

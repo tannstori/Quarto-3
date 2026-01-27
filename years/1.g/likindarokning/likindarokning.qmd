@@ -1,0 +1,32 @@
+﻿---
+title: "Líkindarokning"
+---
+
+## Innleiðing
+
+Henda undirvísing innleiðir evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er sannlíkindi?
+
+Sannlíkindi er eitt mát fyri hvussu sannlíkt tað er, at nakað hendir.
+
+### formil
+
+$$
+P(A) = \frac{\text{Tal av gunstligum úrslitum}}{\text{Tal av møguligum úrslitum}}
+$$
+
+### Dømi
+
+Tær eru 6 møgulig úrslit, tá vit kasta einum terningi. Sannlíkindið fyri at fáa ein 6-ara er:
+
+$$
+P(6) = \frac{1}{6}
+$$
+
+## Filmur 
+{{< video https://youtu.be/ofFqhg23qCo?si=bHTS12mo02Ku0L5u >}}

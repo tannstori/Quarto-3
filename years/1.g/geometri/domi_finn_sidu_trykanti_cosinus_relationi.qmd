@@ -1,0 +1,106 @@
+﻿---
+title: "Dømi: Finn síðu í trýkanti við cosinus relatiónini"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### formil
+
+$$
+c^2 = a^2 + b^2 - 2ab \cos(C)
+$$
+
+### Dømi 1: Finna síðu
+
+Givið: $a = 7$, $b = 10$, $C = 55°$
+
+$$
+c^2 = 7^2 + 10^2 - 2 \cdot 7 \cdot 10 \cdot \cos(55°)
+$$
+
+$$
+c^2 = 49 + 100 - 140 \cdot 0.574
+$$
+
+$$
+c^2 = 149 - 80.36 = 68.64
+$$
+
+$$
+c = \sqrt{68.64} \approx 8.29
+$$
+
+### Dømi 2: Rættvinklaður trýkantur
+
+Givið: $a = 3$, $b = 4$, $C = 90°$
+
+$$
+c^2 = 3^2 + 4^2 - 2 \cdot 3 \cdot 4 \cdot \cos(90°)
+$$
+
+$$
+c^2 = 9 + 16 - 0 = 25
+$$
+
+$$
+c = 5
+$$
+
+Hetta er gamla 3-4-5 trýkanturin!
+
+### Dømi 3: Diagonal í parallellogram
+
+Ein parallellogram hevur síður 6 cm og 9 cm, og ein av vinklunum er 70°.
+
+Finna diagonalina:
+
+$$
+d^2 = 6^2 + 9^2 - 2 \cdot 6 \cdot 9 \cdot \cos(70°)
+$$
+
+$$
+d^2 = 36 + 81 - 108 \cdot 0.342
+$$
+
+$$
+d^2 = 117 - 36.94 = 80.06
+$$
+
+$$
+d = \sqrt{80.06} \approx 8.95 \text{ cm}
+$$
+
+### Dømi 4: Avstand millum tvey punkt
+
+Tvey bøir liggja á einum vatninum. Frá einum punkti á strond:
+- Avstand til fyrra bátin: 80 m
+- Avstand til seinna bátin: 120 m
+- Vinkul millum sýnilinjurnar: 40°
+
+Hvussu langt eru bátirnir sundur?
+
+$$
+d^2 = 80^2 + 120^2 - 2 \cdot 80 \cdot 120 \cdot \cos(40°)
+$$
+
+$$
+d^2 = 6400 + 14400 - 19200 \cdot 0.766
+$$
+
+$$
+d^2 = 20800 - 14707.2 = 6092.8
+$$
+
+$$
+d = \sqrt{6092.8} \approx 78.06 \text{ m}
+$$
+
+
+## Filmur 
+{{< video https://youtu.be/iKunuLRsZhc?si=L89IP8DqRxo30aru >}}

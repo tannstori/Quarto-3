@@ -1,0 +1,57 @@
+﻿---
+title: "Sinus og cosinus í rættvinklaðum trýkantum"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Definisiónir
+
+Í einum rættvinklaðum trýkanti við vinkul $\theta$:
+
+**Sinus:**
+$$
+\sin(\theta) = \frac{\text{Mótstøðu katetur}}{\text{Hypotenusa}} = \frac{a}{c}
+$$
+
+**Cosinus:**
+$$
+\cos(\theta) = \frac{\text{Løggjandi katetur}}{\text{Hypotenusa}} = \frac{b}{c}
+$$
+
+**Tangens:**
+$$
+\tan(\theta) = \frac{\text{Mótstøðu katetur}}{\text{Løggjandi katetur}} = \frac{a}{b}
+$$
+
+### Minnireglur
+
+**SOH-CAH-TOA:**
+- **S**in = **O**pposite/**H**ypotenuse
+- **C**os = **A**djacent/**H**ypotenuse
+- **T**an = **O**pposite/**A**djacent
+
+### Serlig virði
+
+| Vinkul | sin | cos | tan |
+|--------|-----|-----|-----|
+| 0°     | 0   | 1   | 0   |
+| 30°    | 1/2 | √3/2| √3/3|
+| 45°    | √2/2| √2/2| 1   |
+| 60°    | √3/2| 1/2 | √3  |
+| 90°    | 1   | 0   | ∞   |
+
+### Pythagoreiskt samband
+
+$$
+\sin^2(\theta) + \cos^2(\theta) = 1
+$$
+
+
+## Filmur 
+{{< video https://youtu.be/XsaKr8WPZLU?si=ehkUutJU2NBYb3Pv >}}

@@ -1,0 +1,18 @@
+<script>
+// Minimal navbar handler
+document.addEventListener('DOMContentLoaded', function() {
+  const path = window.location.pathname;
+  const backButton = document.querySelector('.navbar-nav .nav-link[href="index.qmd"]');
+  const navbarBrand = document.querySelector('.navbar-brand');
+  
+  if (path.endsWith('index.html') && !path.includes('/years/')) {
+    if (backButton) backButton.style.display = 'none';
+  } else if (path.includes('/1.g/')) {
+    if (navbarBrand) navbarBrand.textContent = '';
+    if (backButton) backButton.href = path.includes('index.html') && path.split('/').length <= 6 ? '../../index.html' : '../index.html';
+  } else if (path.includes('/2.g/')) {
+    if (navbarBrand) navbarBrand.textContent = '';
+    if (backButton) backButton.href = path.includes('index.html') && path.split('/').length <= 6 ? '../../index.html' : '../index.html';
+  }
+});
+</script>

@@ -1,0 +1,70 @@
+﻿---
+title: "S rás"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er S rás?
+
+S rás (kumulative hyppigheitsrás) vísir hvussu nógvir dátapunkt eru minni enn ella líkir við hvørt virði.
+
+### Uppbygging
+
+- **X-ás:** Virðini
+- **Y-ás:** Kumulative hyppigheit (ofta í prosentum)
+- **Rás:** Vaksa frá 0% til 100%
+
+### Dømi
+
+Dáta um aldur:
+
+| Aldur  | Hyppigheit | Kumulative |
+|--------|------------|------------|
+| 0-20   | 10         | 10         |
+| 20-40  | 25         | 35         |
+| 40-60  | 30         | 65         |
+| 60-80  | 20         | 85         |
+| 80-100 | 15         | 100        |
+
+### Hvat kunnu vit lesa?
+
+Frá S rás kunnu vit lesa:
+
+1. **Median:** Tað virðið, har rásin fer ígjøgnum 50%
+2. **Fjórðingsmørk:**
+   - Q1 við 25%
+   - Q3 við 75%
+3. **Prosentiler:** Hvørt prosentil
+
+### Dømi: Finna median
+
+Um vit hava 100 dátapunkt og vilja finna median, hyggja vit at hvar rásin fer ígjøgnum 50 (50. datapunktið).
+
+### Forma
+
+S-rásin hevur oftast S-forma, tí:
+- Hon byrjar lágt (fá virði í byrjan)
+- Vaksar skjótast í miðini (flest virði)
+- Jamnast út ovantil (fá virði í enda)
+
+### Nýtsla
+
+S rás er serliga nýtilig til:
+- Finna prosentiler
+- Samanberja tveir býti
+- Vísa kumulativa vøksturin
+- Ásetna median og fjórðingsmørk
+
+### Samanberjan
+
+Vit kunnu leggja fleiri S-rásir í sama grafin til at samanbera ymisk býti.
+
+
+## Filmur 
+{{< video https://youtu.be/-73hm00pp_8?si=cdtDEbyDmKVH8Lp3 >}}

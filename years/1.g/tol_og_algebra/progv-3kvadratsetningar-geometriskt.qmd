@@ -1,0 +1,10 @@
+﻿---
+title: "Prógv: 3.kvadratsetningar geometriskt"
+---
+
+## Prógv
+
+Her sæst hvussu 3. kvadratsetningur prógvast geometriskt.
+
+## Filmur 
+{{< video https://youtu.be/0BzvhQ5-jJw?si=SlZAQJg0pdY9yQIt >}}

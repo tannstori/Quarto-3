@@ -1,0 +1,11 @@
+﻿---
+title: "Loysa tvær líkningar við tveimum ókendum - koefficienthátturin"
+---
+
+## Koefficienthátturin
+
+Hesin háttur gongur út uppá at burturbeina ein ókendan, so at vit enda við einari líkning við einum ókendum. Fyri at kunna burturbeina ein ókendan, vilja vit fyrst fáa tølini frammanfyri ein av teimum ókendu at vera tað sama talið í báðum líkningunum. Síðani kunnu vit plussa ella minussa eina líkning frá hinari, alt eftir hvat forteknið er.
+
+
+## Filmur 
+{{< video https://youtu.be/claqesKCZQ0?si=ETaW9d4Ny-1nL4lu >}}

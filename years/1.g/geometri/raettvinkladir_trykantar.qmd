@@ -1,0 +1,56 @@
+﻿---
+title: "Rættvinklaðir trýkantar"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Definisión
+
+Ein rættvinklaður trýkantur hevur ein vinkul, sum er 90°.
+
+### Eginleikar
+
+- Ein vinkul er 90° (rættvinkul)
+- Teir onnur tveir vinklarnir leggja saman til 90°
+- Longsta síðan (mótstøða rættvinklinum) eitur hypotenusa
+- Hinar síðurnar eita katetur
+
+### Pythagoras setningur
+
+$$
+a^2 + b^2 = c^2
+$$
+
+har $c$ er hypotenusa og $a$, $b$ eru katetirnar.
+
+### Serligi rættvinklaðir trýkantar
+
+**45-45-90 trýkantur:**
+- Síður í lutfalli: $1 : 1 : \sqrt{2}$
+
+**30-60-90 trýkantur:**
+- Síður í lutfalli: $1 : \sqrt{3} : 2$
+
+### Dømi
+
+Ein rættvinklaður trýkantur hevur katetur 3 og 4.
+
+Finna hypotenusa:
+$$
+c^2 = 3^2 + 4^2 = 9 + 16 = 25
+$$
+
+$$
+c = 5
+$$
+
+Hetta er ein "3-4-5" trýkantur - ein av teimum mest kendu pythagoreiskum trýkantum.
+
+## Filmur 
+{{< video https://youtu.be/-VZuibABRjU?si=uXCU7udmwyZJwRt9 >}}

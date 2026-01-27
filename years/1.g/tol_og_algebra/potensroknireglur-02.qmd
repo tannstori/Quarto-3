@@ -1,0 +1,47 @@
+﻿---
+title: "Potensroknireglur 2"
+---
+
+## Potensar av potensum
+
+Um vit hava ein potens av einum potensi:
+
+$$(11^3)^4 = 11^3 \cdot 11^3 \cdot 11^3 \cdot 11^3$$
+
+So brúka vit bara rokniregluna fyri at falda potensar við sama grundtalið:
+
+$$11^3 \cdot 11^3 \cdot 11^3 \cdot 11^3 = 11^{3+3+3+3} = 11^{12}$$
+
+## Roknireglan fyri potensar av einum potensi
+
+Sum gevur okkum at roknireglan fyri potensar av einum potensi verður:
+
+$$(a^m)^n = a^{m \cdot n}$$
+
+## Potensurin av einum produkti
+
+Um vit hava eitt produkt í einum potensi:
+
+$$(3x)^3 = 3x \cdot 3x \cdot 3x = 3 \cdot 3 \cdot 3 \cdot x \cdot x \cdot x = 3^3 x^3$$
+
+Tað vil siga at vit flyta bara eksponentin inn á báðar liðirnar í produktinum:
+
+$$(3x)^3 = 3^3 \cdot x^3$$
+
+## Roknireglan fyri potensin av einum produkti
+
+Hetta gevur okkum potensrokniregluna:
+
+$$(a \cdot b)^n = a^n \cdot b^n$$
+
+$$
+(ab)^n = a^n b^n
+$$
+
+$$
+\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}
+$$
+
+## Filmur 
+{{< video https://youtu.be/Mx7gINff2Wo?si=7DpMhME82kktHQH3 >}}
+

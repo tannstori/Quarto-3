@@ -1,0 +1,70 @@
+﻿---
+title: "Dømi: Sinus og cosinus - vinklar í eindarsirklinum"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### Eindarsirklurin
+
+Eindarsirklurin hevur radius 1 og miðpunkt í (0, 0).
+
+Fyri hvønn vinkul $\theta$:
+- $x$-koordinata er $\cos(\theta)$
+- $y$-koordinata er $\sin(\theta)$
+
+### Dømi 1: Finna koordinatar
+
+Finna koordinatarnar fyri vinkul 60° á eindarsirklinum.
+
+$$
+x = \cos(60°) = \frac{1}{2}
+$$
+
+$$
+y = \sin(60°) = \frac{\sqrt{3}}{2}
+$$
+
+Punkt: $\left(\frac{1}{2}, \frac{\sqrt{3}}{2}\right)$
+
+### Dømi 2: Negativir vinklar
+
+Finna $\sin(-30°)$ og $\cos(-30°)$:
+
+$$
+\sin(-30°) = -\sin(30°) = -\frac{1}{2}
+$$
+
+$$
+\cos(-30°) = \cos(30°) = \frac{\sqrt{3}}{2}
+$$
+
+### Dømi 3: Vinklar størri enn 90°
+
+Finna $\sin(120°)$ og $\cos(120°)$:
+
+120° = 180° - 60°
+
+$$
+\sin(120°) = \sin(60°) = \frac{\sqrt{3}}{2}
+$$
+
+$$
+\cos(120°) = -\cos(60°) = -\frac{1}{2}
+$$
+
+### Kvadrantar
+
+- **Kvadrant I (0°-90°):** sin > 0, cos > 0
+- **Kvadrant II (90°-180°):** sin > 0, cos < 0
+- **Kvadrant III (180°-270°):** sin < 0, cos < 0
+- **Kvadrant IV (270°-360°):** sin < 0, cos > 0
+
+
+## Filmur 
+{{< video https://youtu.be/vHVkEQPLhdQ?si=lOqI-e8bPuuApQYV >}}

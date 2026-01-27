@@ -1,0 +1,38 @@
+﻿---
+title: "Líkindaøkið"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Definisión
+
+Líkindaøkið er mengið av øllum møguligum úrslitum í einum royndum.
+
+### Dømi
+
+Fyri ein terning er líkindaøkið:
+
+$$
+S = \{1, 2, 3, 4, 5, 6\}
+$$
+
+Fyri eina mynt er líkindaøkið:
+
+$$
+S = \{\text{krúnur}, \text{skjaldur}\}
+$$
+
+### Eginleikar
+
+- Øll sannlíkindi eru millum 0 og 1
+- Summan av øllum sannlíkindum er 1
+
+
+## Filmur 
+{{< video https://youtu.be/aLPdDa82Nuw?si=egZ-urbu1GjyTiZp >}}

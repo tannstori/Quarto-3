@@ -1,0 +1,13 @@
+﻿---
+title: "Andengradspolynomium og -ligning"
+sidebar: sidebar-2g
+---
+This section contains physics lessons for 8. klasse, including electricity.
+
+- [Lesson 1: Electricity](lesson-01-electricity.qmd)
+
+For example, Ohm's law in circuit theory:
+$$
+V = I\,R.
+$$
+

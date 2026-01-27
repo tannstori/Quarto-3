@@ -1,0 +1,82 @@
+﻿---
+title: ""
+sidebar: sidebar-2g
+---
+
+```{=HTML}
+<div class="page-header">
+  <h1>📊 Støddfrøði B - Øll Evni</h1>
+  <p>Vælkomin til Støddfrøði B! Her finnur tú framkomnar lektir fyri 2.g.</p>
+  <div class="warning">
+    ⚠️ <strong>Gev gætur!</strong> B-stig er ikki liðugt enn. Hetta er bara placeholder tilfar ið ikki gevur meining.
+  </div>
+</div>
+```
+
+<div class="topic-grid">
+
+<div class="topic-card">
+### 📐 2. Gradspoly
+Kvadratiskar funktiónir og líkningar
+
+[Vel evni](2.gradspoly/index.qmd)
+</div>
+
+<div class="topic-card">
+### 📈 Differentialrokning
+Avleiddar funktiónir og funktiónsanalysa
+
+[Vel evni](differentialrokning/index.qmd)
+</div>
+
+<div class="topic-card">
+### 📊 Funktiónir
+Framkomnar funktiónir
+
+[Vel evni](funktionir/index.qmd)
+</div>
+
+<div class="topic-card">
+### 💰 Hagfrøði
+Framkomin hagfrøði
+
+[Vel evni](hagfrodi/index.qmd)
+</div>
+
+<div class="topic-card">
+### 🔷 Plangeometri
+Geometri í planinum
+
+[Vel evni](plangeometri/index.qmd)
+</div>
+
+<div class="topic-card">
+### 📉 Regression
+Data og trendir
+
+[Vel evni](regression/index.qmd)
+</div>
+
+<div class="topic-card">
+### 🎲 Sannlíkindarokning & Komb.
+Kombinatórikk og sannlíkindi
+
+[Vel evni](sannlíkindarokning_komb/index.qmd)
+</div>
+
+<div class="topic-card">
+### 🔺 Trigonometri
+Framkomin trigonometri
+
+[Vel evni](trigonometri/index.qmd)
+</div>
+
+<div class="topic-card">
+### ➡️ Vektorar 2D
+Vektorrokning í tveimum dimensjónum
+
+[Vel evni](vektorar_2d/index.qmd)
+</div>
+
+</div>
+

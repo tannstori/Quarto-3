@@ -1,0 +1,69 @@
+﻿---
+title: "Dømi: Finn vinkul í rættvinklaðum trýkanti við sinus formlinum"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### Dømi 1: Grunnleggjandi
+
+Givið: Mótstøðu katetur 4 cm, hypotenusa 8 cm
+
+$$
+\sin(\theta) = \frac{4}{8} = 0.5
+$$
+
+$$
+\theta = \arcsin(0.5) = 30°
+$$
+
+### Dømi 2: Decimal virði
+
+Givið: Mótstøðu katetur 7 cm, hypotenusa 10 cm
+
+$$
+\sin(\theta) = \frac{7}{10} = 0.7
+$$
+
+$$
+\theta = \arcsin(0.7) \approx 44.43°
+$$
+
+### Dømi 3: Stigin
+
+Ein stigin 6 m longur røkur 5 m upp á eina vegg. Hvat er vinkulin millum stigin og jørðina?
+
+$$
+\sin(\theta) = \frac{5}{6} \approx 0.833
+$$
+
+$$
+\theta = \arcsin(0.833) \approx 56.44°
+$$
+
+### Dømi 4: Tjald
+
+Eitt tjaldlineyggi er 3 m langt og festur 2.5 m upp á tjaldbúni. Hvat er vinkulin millum lineyggi og jørð?
+
+$$
+\sin(\theta) = \frac{2.5}{3} \approx 0.833
+$$
+
+$$
+\theta = \arcsin(0.833) \approx 56.44°
+$$
+
+### Ábendingar
+
+- Hugsa um at broyta kalkulator til DEG (degrees) ella RAD (radians)
+- Stekk altíð um útslitið gevur meining
+- Annar vinkul er $90° - \theta$
+
+
+## Filmur 
+{{< video https://youtu.be/HFwsq3nWWvc?si=8lp5FossXtidDsRL >}}

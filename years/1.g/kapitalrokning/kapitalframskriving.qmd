@@ -1,0 +1,39 @@
+﻿---
+title: "Kapitalframskriving"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er kapitalframskriving?
+
+Kapitalframskriving er, tá ein kapitalur veksur yvir tíð, oftast vegna rentu.
+
+### Ymisk slag
+
+1. **Einfald renta:** Renta verður bert roknað av byrjanarkapitalinum
+2. **Samsett renta:** Renta verður roknað av kapitalinum inklusive fyrru rentur
+
+### Samsett renta
+
+$$
+K_n = K_0 \cdot (1 + r)^n
+$$
+
+### Einfald renta
+
+$$
+K_n = K_0 \cdot (1 + n \cdot r)
+$$
+
+### Munur
+
+Samsett renta gevur størri vøkstur yvir tíð, tí at rentan av rentuni eisini verður lagd afturat.
+
+## Filmur 
+{{< video https://youtu.be/QYRi1zGohRo?si=AcEZrwjCu4YVV5sC >}}

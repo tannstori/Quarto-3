@@ -1,0 +1,55 @@
+﻿---
+title: "Potensroknireglur - falda potensar við sama grundtalið"
+---
+
+## Falda potensar við sama grundtalið
+
+Um vit falda tveir potensar við sama grundtalið:
+
+$$8^2 \cdot 8^3 = (8 \cdot 8) \cdot (8 \cdot 8 \cdot 8) = 8 \cdot 8 \cdot 8 \cdot 8 \cdot 8 = 8^5$$
+
+Hetta kann eisini skrivast sum:
+
+$$8^2 \cdot 8^3 = 8^{2+3} = 8^5$$
+
+## Fyrsta potensroknireglan
+
+Hetta gevur tí fyrstu potensrokniregluna:
+
+$$a^n \cdot a^m = a^{n+m}$$
+
+Sum vil siga at um vit falda tveir potensar við sama grundtalið so leggja vit bara eksponentarnar saman.
+
+$$
+a^m \cdot a^n = a^{m+n}
+$$
+
+$$
+\frac{a^m}{a^n} = a^{m-n}
+$$
+
+$$
+(a^m)^n = a^{mn}
+$$
+
+## Býta potensar við sama grundtalið
+
+Um vit býta tveir potensar við sama grundtalið:
+
+$$\frac{6^5}{6^2} = \frac{6 \cdot 6 \cdot 6 \cdot 6 \cdot 6}{6 \cdot 6} = \frac{6 \cdot 6 \cdot 6}{1} = 6^3$$
+
+Hetta kann eisini skrivast sum:
+
+$$\frac{6^5}{6^2} = 6^{5-2} = 6^3$$
+
+## Næsta potensroknireglan
+
+Hetta gevur so tí næstu potensrokniregluna:
+
+$$\frac{a^n}{a^m} = a^{n-m}$$
+
+Sum vil siga at um vit býta tveir potensar við sama grundtalið so finna vit bara munin á eksponentunum.
+
+
+## Filmur 
+{{< video https://youtu.be/3kv1ATHASiQ?si=O3ilqaxowWsHehFf >}}

@@ -1,0 +1,52 @@
+﻿---
+title: "Annuitetslán prógv"
+---
+
+## Prógv
+
+Henda undirvísing prgvar evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Upphav
+
+Vit vilja finna eitt fast gjald $y$, sum skal betalast hvønn termin í $n$ terminar, so at eitt lán $L$ við rentu $r$ verður gjaldað av.
+
+### Nútíðarvirði av gjøldum
+
+Nútíðarvirðið av øllum terminsgjøldum skal vera líka mikið sum lánsupphæddin:
+
+$$
+L = y \cdot (1+r)^{-1} + y \cdot (1+r)^{-2} + ... + y \cdot (1+r)^{-n}
+$$
+
+### Geometrisk røð
+
+Hetta er ein geometrisk røð við fyrsta limi $y \cdot (1+r)^{-1}$ og kvotan $(1+r)^{-1}$.
+
+Summan av geometriskari røð er:
+
+$$
+L = y \cdot (1+r)^{-1} \cdot \frac{1 - (1+r)^{-n}}{1 - (1+r)^{-1}}
+$$
+
+### Einfalding
+
+$$
+L = y \cdot \frac{(1+r)^{-1} - (1+r)^{-(n+1)}}{1 - (1+r)^{-1}}
+$$
+
+$$
+L = y \cdot \frac{1 - (1+r)^{-n}}{r}
+$$
+
+### Loysn
+
+$$
+y = \frac{L \cdot r}{1 - (1+r)^{-n}} = \frac{L \cdot r \cdot (1+r)^n}{(1+r)^n - 1}
+$$
+
+## Filmur 
+{{< video https://youtu.be/fQb2mesOEx8?si=HoliUxaLpL9IHmnl >}}

@@ -1,0 +1,57 @@
+﻿---
+title: "Miðalvirðið - kanska slettast"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Miðalvirðið
+
+Hetta er ein ekstra lektiónur um miðalvirðið, sum møguliga ikki verður brúkt.
+
+### Grunnformul
+
+$$
+\bar{x} = \frac{\sum x_i}{n}
+$$
+
+### Eginleikar
+
+- Summað av frávikum frá miðalvirðinum er ávegis 0
+- Miðalvirðið minimerizar summað av kvadratuðum frávikum
+
+### Matematiskt
+
+$$
+\sum_{i=1}^{n} (x_i - \bar{x}) = 0
+$$
+
+### Dømi
+
+Um dátini eru: 2, 4, 6
+
+Miðalvirði: $\bar{x} = 4$
+
+Frávík: 
+- $(2-4) = -2$
+- $(4-4) = 0$
+- $(6-4) = 2$
+
+Summa av frávikum: $-2 + 0 + 2 = 0$ ✓
+
+### Serligi eginleikur
+
+Um vit leggja somu talið $c$ afturat øllum dátum, so veksur miðalvirðið eisini við $c$.
+
+$$
+\overline{x + c} = \bar{x} + c
+$$
+
+
+## Filmur 
+{{< video https://youtu.be/zRoI7zasny0?si=K8-mEEDIZQffi3qX >}}

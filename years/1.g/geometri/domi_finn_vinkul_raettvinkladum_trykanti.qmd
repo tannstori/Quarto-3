@@ -1,0 +1,75 @@
+﻿---
+title: "Dømi: Finn vinkul i rættvinklaðum trýkanti"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### Dømi 1: Við tangens
+
+Givið: Mótstøðu katetur 5 cm, løggjandi katetur 3 cm
+
+$$
+\tan(\theta) = \frac{5}{3} \approx 1.667
+$$
+
+$$
+\theta = \arctan(1.667) \approx 59.04°
+$$
+
+### Dømi 2: Við cosinus
+
+Givið: Løggjandi katetur 12 cm, hypotenusa 15 cm
+
+$$
+\cos(\theta) = \frac{12}{15} = 0.8
+$$
+
+$$
+\theta = \arccos(0.8) \approx 36.87°
+$$
+
+### Dømi 3: Val av trigonometriskum funksjóni
+
+Givið: Tvær katetir 6 cm og 8 cm
+
+**Nýt tangens:**
+$$
+\tan(\alpha) = \frac{6}{8} = 0.75
+$$
+
+$$
+\alpha = \arctan(0.75) \approx 36.87°
+$$
+
+**Annar vinkul:**
+$$
+\beta = 90° - 36.87° = 53.13°
+$$
+
+### Dømi 4: Hálki
+
+Ein hálki 50 m longur røkur 12 m í hædd. Hvat er halkivinkulin?
+
+$$
+\sin(\theta) = \frac{12}{50} = 0.24
+$$
+
+$$
+\theta = \arcsin(0.24) \approx 13.89°
+$$
+
+### Val av formil
+
+- Vita mótstøðu og hypotenusa? → Nýt **sinus**
+- Vita løggjandi og hypotenusa? → Nýt **cosinus**
+- Vita báðar katetir? → Nýt **tangens**
+
+
+## Filmur 
+{{< video https://youtu.be/erDX_XaLnhA?si=Mto1vKRr26luSrg2 >}}

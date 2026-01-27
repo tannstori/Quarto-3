@@ -1,0 +1,42 @@
+﻿---
+title: "Annuitetslán setningur"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er annuitetslán?
+
+Eitt annuitetslán er eitt lán, har tú betalar sama upphædd hvønn termin. Hvørt gjald inniheldur bæði rentu og avdrátt.
+
+### formil
+
+$$
+y = \frac{L \cdot r \cdot (1 + r)^n}{(1 + r)^n - 1}
+$$
+
+har:
+- $y$ er terminsgjaldið
+- $L$ er lánsupphæddin
+- $r$ er rentusatsurin (um termin)
+- $n$ er talið av terminum
+
+### Alternativ skriving
+
+$$
+y = L \cdot \frac{r}{1 - (1 + r)^{-n}}
+$$
+
+### Eginleikar
+
+- Sama terminsgjald hvønn termin
+- Rentuparturin minkir yvir tíð
+- Avdrátturparturin veksur yvir tíð
+
+## Filmur 
+{{< video https://youtu.be/vvrgPY2KJP0?si=24J2ZCzVrgEU6Mwz >}}

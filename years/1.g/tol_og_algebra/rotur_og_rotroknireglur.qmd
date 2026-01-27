@@ -1,0 +1,11 @@
+﻿---
+title: "Røtur og rótroknireglur"
+---
+
+## Innleiðing
+
+Her er ein samanumtøka.
+
+
+## Filmur 
+{{< video https://youtu.be/i8sva3Y7y0U?si=IqPVC9kudy31J2pB >}}

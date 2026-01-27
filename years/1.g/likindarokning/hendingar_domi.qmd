@@ -1,0 +1,41 @@
+﻿---
+title: "Hendingar dømi"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Dømi 1: Terningakast
+
+Hvat er sannlíkindið fyri at fáa eitt primtal?
+
+Primtøl á einum terningi: {2, 3, 5}
+
+$$
+P(\text{primtal}) = \frac{3}{6} = \frac{1}{2}
+$$
+
+### Dømi 2: Tova spælkort
+
+Hvat er sannlíkindið fyri at draga eitt hjartakort úr einum fullfórknum stokki?
+
+$$
+P(\text{hjarta}) = \frac{13}{52} = \frac{1}{4}
+$$
+
+### Dømi 3: Myntakast
+
+Hvat er sannlíkindið fyri at fáa tvær krúnur í røð?
+
+$$
+P(\text{KK}) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
+$$
+
+
+## Filmur 
+{{< video https://youtu.be/NzbTa9p6QWA?si=HpUwfohlEj0yEwib >}}

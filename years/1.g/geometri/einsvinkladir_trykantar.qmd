@@ -1,0 +1,54 @@
+﻿---
+title: "Einsvinklaðir trýkantar"
+---
+
+## Hvat eru einsvinklaðir tríkantar?
+
+Vit siga, at tveir tríkantar eru einsvinklaðir, um teirra vinklar eru parvist líka stórir.
+
+Einsvinklaðir tríkantar hava sama skap, og tann einasti munurin á teimum verður, at tann ein er ein stórleiki/lítleiki av teimum øðrum.
+<!-- inset mynd her -->
+Á teikningini kunnu vit síggja at:
+
+
+$$\angle A = \angle D$$
+$$\angle B = \angle E$$
+$$\angle C = \angle F$$
+
+Tí eru teir tveir tríkantar einsvinklaðir.
+
+Um ein við symbolum vilt skriva, at teir eru einsvinklaðir, skrivur ein:
+
+$$\triangle ABC \sim \triangle DEF$$
+
+## Samsvarandi síður
+
+Tær síður ið liggja framfyri líkar vinklum kallast samsvarandi. Til dømis eru $a$ og $d$ samsvarandi síður á teikningini, tí teir liggja framfyri vinklum $A$ og $D$, ið eru líka stórir. Síðurnar $b$ og $e$ eru eisini samsvarandi, og eins eru $c$ og $f$.
+
+## Skalafaktorin
+
+Sum nevnt omanfyri verður $\triangle DEF$ ein stórleiki av $\triangle ABC$.
+
+Tað finnast tí eitt målstokk-lutfall millum tey tveir tríkanta. Um vit siga, at teir eru í målstokk $1:k$, so geldur at:
+
+$$d = k \cdot a$$
+$$e = k \cdot b$$
+$$f = k \cdot c$$
+
+Hetta merkir, at lutfallið millum tær samsvarandi síður verður konstant:
+
+$$\frac{d}{a} = \frac{e}{b} = \frac{f}{c} = k$$
+
+Hetta er ein væl mikilvíslig eiginleiki hjá einsvinkluðum tríkantum, sum man millum annað brúkar til at útskýra kosinus og sinus.
+
+## Lutfall innan sama tríkanta
+
+Målstokk-lutfallið merkir eisini, at lutfallið millum tvær síður í sama tríkantanum verður hið sama sum lutfallið millum tær samsvarandi síður í øðrum tríkantanum. Til dømis:
+
+$$\frac{a}{b} = \frac{k \cdot a}{k \cdot b} = \frac{d}{e}$$
+
+Her lengdu vit brotið við $k$, frameftir síðan síggja vit at $d = k \cdot a$ og $e = k \cdot b$.
+
+## Filmur 
+{{< video https://youtu.be/FFSOeIOqUNU?si=fd3pgK_08eblsUGc >}}
+

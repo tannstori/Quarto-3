@@ -1,0 +1,8 @@
+﻿---
+title: "Eksponentiellar funktión helvt"
+---
+
+
+## Filmur 
+{{< video https://youtu.be/j5VFCc4TOx8?si=Vk3GQOhmKna8JHQe >}}
+

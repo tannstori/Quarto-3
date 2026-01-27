@@ -1,0 +1,75 @@
+﻿---
+title: "Dømi: Sinusfellan"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### Dømi 1: Tvær loysnir
+
+Givið: $a = 5$, $b = 7$, $A = 35°$
+
+**Finna B:**
+$$
+\frac{\sin(35°)}{5} = \frac{\sin(B)}{7}
+$$
+
+$$
+\sin(B) = \frac{7 \sin(35°)}{5} = \frac{7 \cdot 0.574}{5} \approx 0.804
+$$
+
+**Tveir møguligir vinklar:**
+$$
+B_1 = \arcsin(0.804) \approx 53.5°
+$$
+
+$$
+B_2 = 180° - 53.5° = 126.5°
+$$
+
+**Stekk báðar:**
+
+Trýkantur 1: $A = 35°$, $B_1 = 53.5°$, $C_1 = 91.5°$ ✓
+
+Trýkantur 2: $A = 35°$, $B_2 = 126.5°$, $C_2 = 18.5°$ ✓
+
+Báðir eru gyldigir!
+
+### Dømi 2: Ein loysn
+
+Givið: $a = 10$, $b = 7$, $A = 50°$
+
+$$
+\sin(B) = \frac{7 \sin(50°)}{10} = \frac{7 \cdot 0.766}{10} \approx 0.536
+$$
+
+$$
+B_1 = \arcsin(0.536) \approx 32.4°
+$$
+
+$$
+B_2 = 180° - 32.4° = 147.6°
+$$
+
+**Stekk:**
+Um $B_2 = 147.6°$: $A + B_2 = 50° + 147.6° = 197.6° > 180°$ ✗
+
+Einans $B_1 = 32.4°$ er gyldug.
+
+### Dømi 3: Eingin loysn
+
+Givið: $a = 3$, $b = 8$, $A = 25°$
+
+Hædd: $h = 8 \sin(25°) \approx 3.38$
+
+Tí $a = 3 < h = 3.38$, er **eingin loysn** møgulig!
+
+Síðan $a$ er ov stutt til at røkka.
+
+## Filmur 
+{{< video https://youtu.be/PDwGjtSjD9Y?si=-1hH3Ad4_yMLf4ZG >}}

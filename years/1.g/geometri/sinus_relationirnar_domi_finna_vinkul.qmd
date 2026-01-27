@@ -1,0 +1,78 @@
+﻿---
+title: "Sinus relatiónirnar dømi - finna vinkul"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### formil
+
+$$
+\frac{\sin(A)}{a} = \frac{\sin(B)}{b} = \frac{\sin(C)}{c}
+$$
+
+### Dømi 1: Finna vinkul
+
+Givið: $a = 8$, $b = 10$, $A = 40°$
+
+Finna $B$:
+
+$$
+\frac{\sin(40°)}{8} = \frac{\sin(B)}{10}
+$$
+
+$$
+\sin(B) = \frac{10 \sin(40°)}{8} = \frac{10 \cdot 0.643}{8} \approx 0.804
+$$
+
+$$
+B = \arcsin(0.804) \approx 53.5°
+$$
+
+### Dømi 2: Finna triði vinkul
+
+Frá Dømi 1, vita $A = 40°$ og $B = 53.5°$
+
+$$
+C = 180° - 40° - 53.5° = 86.5°
+$$
+
+### Dømi 3: Túristi
+
+Ein túristi stendur 100 m frá einum túrni. Vinkulin til topp av túrni er 30°. Túrnurin heldur 10° til víku.
+
+Finna hæddina á túrni (nýt sinusrelatiónina í trýkantinum).
+
+### Dømi 4: Tveir møguligir vinklar
+
+Givið: $a = 5$, $b = 7$, $A = 30°$
+
+$$
+\frac{\sin(30°)}{5} = \frac{\sin(B)}{7}
+$$
+
+$$
+\sin(B) = \frac{7 \cdot 0.5}{5} = 0.7
+$$
+
+$$
+B_1 = \arcsin(0.7) \approx 44.4°
+$$
+
+$$
+B_2 = 180° - 44.4° = 135.6°
+$$
+
+Báðir kunnu vera rætt! Hetta eitur "tvíræða føri" (ambiguous case).
+
+### Ábending
+
+Altíð stekk, um vinkul eru møguligir (summað skal vera minni enn 180°).
+
+## Filmur 
+{{< video https://youtu.be/0p669dSzD6Y?si=cKs_aIMmE44WVL5x >}}

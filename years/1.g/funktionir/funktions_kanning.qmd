@@ -1,0 +1,32 @@
+﻿---
+title: "Funktións kanning"
+sidebar: sidebar-1g
+toc: true
+toc-location: right
+---
+
+## Funktións kanning
+
+Tá vit arbeiða við funktiónum, vilja vit ofta avmynda funktiónir grafisk. Hetta gera vit við at tekna hvussu $x$ og $y$ hanga saman, út frá einari líkning. Um vit hava ein graf, kunnu vit útfrá honum kunnu vit gera eina tulking av samanhangin, hetta kalla vit **funktiónskanning**.
+
+Her skulu vit við eygunum gera nakrar eygleiðingar av einum geometriskum skapið, sum vit kunnu eftirrokna algebraiskt. Tað vil siga at vit kanna tað geometriska sum er grafurin, og finna eina forskrift, sum er tað algebraiska.
+
+## Frummongd og virðismongd
+
+Tá vit kanna funktiónir, hava vit brúk fyri at vita hvat **frummongd** og **virðismongd** er.
+
+### Frummongdin
+
+Frummongdin hjá einari funktión er intervallið eftir $x$-ásini, har funktiónin er til. Frummongdin hjá $f$ skrivast sum $\text{Fm}(f)$.
+
+### Virðismongdin
+
+Virðismongdin hjá einari funktión er intervallið eftir $y$-ásanum, har $f$ er til. Virðismongdin hjá $f$ skriva vit sum $\text{Vm}(f)$.
+
+## Økið av funktiónini
+
+Frummongdin og virðismongdin sigur okkum um økið ið funktiónin er til. Hetta økið er ein fýrakantur, sum er innibyrgdur av minstu og størstuvirðunum hjá $\text{Fm}(f)$ og $\text{Vm}(f)$ - hetta er bara um funktiónin er avmarkað.
+
+
+## Filmur 
+{{< video https://youtu.be/hR0UROwcF9M >}}

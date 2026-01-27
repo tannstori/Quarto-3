@@ -1,0 +1,72 @@
+﻿---
+title: "Dømi: Pythagoras"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### Dømi 1: Finna hypotenusa
+
+Katetur: $a = 5$, $b = 12$
+
+$$
+c^2 = 5^2 + 12^2 = 25 + 144 = 169
+$$
+
+$$
+c = \sqrt{169} = 13
+$$
+
+### Dømi 2: Finna katetur
+
+Hypotenusa: $c = 10$, ein katetur: $a = 6$
+
+$$
+b^2 = c^2 - a^2 = 10^2 - 6^2 = 100 - 36 = 64
+$$
+
+$$
+b = \sqrt{64} = 8
+$$
+
+### Dømi 3: Diagonal í rektangul
+
+Ein rektangul er 8 cm longur og 6 cm breiður. Hvussu long er diagonalurin?
+
+$$
+d^2 = 8^2 + 6^2 = 64 + 36 = 100
+$$
+
+$$
+d = 10 \text{ cm}
+$$
+
+### Dømi 4: Hædd í javnsíðaðum trýkanti
+
+Ein javnsíðaður trýkantur hevur síður 10 cm. Finna hæddina.
+
+Hægdin skiftir trýkantin í tveir rættvinklaða trýkantar við katetur 5 cm og hypotenusa 10 cm.
+
+$$
+h^2 = 10^2 - 5^2 = 100 - 25 = 75
+$$
+
+$$
+h = \sqrt{75} = 5\sqrt{3} \approx 8.66 \text{ cm}
+$$
+
+### Dømi 5: Avstand millum punkt
+
+Finna avstondin millum punktini (1, 2) og (4, 6).
+
+$$
+d = \sqrt{(4-1)^2 + (6-2)^2} = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5
+$$
+
+## Filmur 
+{{< video https://youtu.be/QMvGoKKjDNw?si=-ZOteegsBO_fJka7 >}}

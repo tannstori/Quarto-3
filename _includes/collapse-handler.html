@@ -1,0 +1,66 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all content sections
+  const sections = document.querySelectorAll('.content-section');
+  
+  sections.forEach(section => {
+    const heading = section.querySelector('h2');
+    const grid = section.querySelector('.lesson-grid');
+    
+    if (!heading || !grid) return;
+    
+    // Check if this section should be collapsed on load based on URL hash
+    const sectionId = heading.textContent.trim().toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-');
+    
+    const urlHash = window.location.hash.substring(1).toLowerCase();
+    
+    // Collapse all sections by default
+    heading.classList.add('collapsed');
+    grid.classList.add('collapsed');
+    
+    // If URL matches this section, expand it
+    if (urlHash && sectionId.includes(urlHash)) {
+      heading.classList.remove('collapsed');
+      grid.classList.remove('collapsed');
+    }
+    
+    // Add click handler
+    heading.addEventListener('click', function() {
+      // Toggle collapsed state
+      heading.classList.toggle('collapsed');
+      grid.classList.toggle('collapsed');
+    });
+  });
+  
+  // Handle hash changes (when user clicks anchor links)
+  window.addEventListener('hashchange', function() {
+    const hash = window.location.hash.substring(1).toLowerCase();
+    
+    if (!hash) return;
+    
+    // Find and expand the matching section
+    sections.forEach(section => {
+      const heading = section.querySelector('h2');
+      const grid = section.querySelector('.lesson-grid');
+      
+      if (!heading || !grid) return;
+      
+      const sectionId = heading.textContent.trim().toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-');
+      
+      if (sectionId.includes(hash)) {
+        heading.classList.remove('collapsed');
+        grid.classList.remove('collapsed');
+        
+        // Scroll to section smoothly
+        setTimeout(() => {
+          heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    });
+  });
+});
+</script>

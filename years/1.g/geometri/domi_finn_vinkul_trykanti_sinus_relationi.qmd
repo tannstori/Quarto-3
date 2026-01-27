@@ -1,0 +1,83 @@
+﻿---
+title: "Dømi: Finn vinkul í trýkanti við sinus relatiónini"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### formil
+
+$$
+\frac{\sin(A)}{a} = \frac{\sin(B)}{b} = \frac{\sin(C)}{c}
+$$
+
+### Dømi 1: Finna vinkul
+
+Givið: $a = 7$, $b = 9$, $A = 38°$
+
+Finna $B$:
+
+$$
+\frac{\sin(38°)}{7} = \frac{\sin(B)}{9}
+$$
+
+$$
+\sin(B) = \frac{9 \sin(38°)}{7} = \frac{9 \cdot 0.616}{7} \approx 0.792
+$$
+
+$$
+B = \arcsin(0.792) \approx 52.4°
+$$
+
+### Dømi 2: Finna triðja vinkul
+
+Frá Dømi 1:
+
+$$
+C = 180° - 38° - 52.4° = 89.6°
+$$
+
+### Dømi 3: Vegmerking
+
+Tvær vegar møtast við einum vinkli. Frá einum punkti á einari veg til eitt punkt á onnari veg er 50 m. Avstondin frá krossvegnum til fyrra punktið er 35 m. Vinkulin við krossvegnum er 65°.
+
+Finna vinkulin á onnari veg.
+
+$$
+\frac{\sin(65°)}{50} = \frac{\sin(B)}{35}
+$$
+
+$$
+\sin(B) = \frac{35 \sin(65°)}{50} = \frac{35 \cdot 0.906}{50} \approx 0.634
+$$
+
+$$
+B = \arcsin(0.634) \approx 39.3°
+$$
+
+### Dømi 4: Trýhyrningur afturat hesi
+
+Givið: $a = 12$, $c = 15$, $C = 75°$
+
+Finna $A$:
+
+$$
+\frac{\sin(A)}{12} = \frac{\sin(75°)}{15}
+$$
+
+$$
+\sin(A) = \frac{12 \sin(75°)}{15} = \frac{12 \cdot 0.966}{15} \approx 0.773
+$$
+
+$$
+A = \arcsin(0.773) \approx 50.7°
+$$
+
+
+## Filmur 
+{{< video https://youtu.be/OqUJW6Nb6iA?si=gKNL00sj7i4Jyhju >}}

@@ -1,0 +1,76 @@
+﻿---
+title: "Stabbamynd v2"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er stabbamynd?
+
+Stabbamynd (bar chart) er ein grafiskur framstellingur av kategoriskum dátum, har hyppigheitin verður víst sum søylur (stabbar).
+
+### Uppbygging
+
+- **X-ás:** Kategoriar
+- **Y-ás:** Hyppigheit ella virði
+- **Søylur:** Luft millum teir (ikki samanhangandi)
+
+### Dømi
+
+Nøvn á bilar, fólk eiga:
+
+| Bilmerkið | Tal       |
+|-----------|-----------|
+| Toyota    | 15        |
+| Ford      | 12        |
+| Honda     | 8         |
+| Volkswagen| 10        |
+| Audi      | 5         |
+
+### Sløg av stabbamyndum
+
+**1. Einfald stabbamynd:**
+Ein søyla fyri hvørja kategori
+
+**2. Samanbera stabbamynd:**
+Fleiri søylur síða við síðu fyri hvørja kategori
+
+**3. Stabbad stabbamynd:**
+Søylur stabbaðar ovurfyri hvørja aðra
+
+### Loddrættar ella vatnrættar
+
+Stabbamyndir kunnu vera:
+- **Loddrættar:** Søylur standa (vanligast)
+- **Vatnrættar:** Søylur liggja
+
+### Munur frá trappumynd
+
+| Eginleiki      | Stabbamynd    | Trappumynd   |
+|----------------|---------------|--------------|
+| Dátasløg       | Kategoriskt   | Kontinuerligt|
+| Luft millum    | Ja            | Nei          |
+| Raðfesting     | Kann roytast  | Fast         |
+
+### Tá stabbamynd er góð
+
+- Samanberja kategoriar
+- Vísa forskel millum bólkar
+- Framheva einstøk virði
+- Einfald at lesa
+
+### Litirnýtsla
+
+Ymiskir litir kunnu brúkast til at:
+- Framheva týdningarmiklar kategoriar
+- Flokka relatera dáta
+- Gera myndina meira áhugaverda
+
+
+## Filmur 
+{{< video https://youtu.be/3H3xFYyKeZ0?si=354urqjPayTf49Ec >}}

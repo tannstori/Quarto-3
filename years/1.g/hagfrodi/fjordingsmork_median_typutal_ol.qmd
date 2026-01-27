@@ -1,0 +1,69 @@
+﻿---
+title: "Fjórðingsmørk median typutal ol"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Allir høvuðsmátini
+
+Her hyggja vit at øllum týdningarmiklu háttinum at lýsa dáta.
+
+### 1. Median
+
+Miðverdið, tá dátini eru rað:
+- Odda tal av dátum: Miðsta virðið
+- Jøvn tal av dátum: Miðalvirðið av teimum tveimum miðstu
+
+### 2. Fjórðingsmørk (Q1, Q2, Q3)
+
+- **Q1:** Median av neðru helvtini
+- **Q2:** Median av øllum dátum
+- **Q3:** Median av ovaru helvtini
+
+### 3. Typutal (Modus)
+
+Tað virðið, sum kemur oftast fyri.
+
+### 4. Miðalvirði
+
+$$
+\bar{x} = \frac{\sum x_i}{n}
+$$
+
+### 5. Vídd (Range)
+
+$$
+\text{Vídd} = \text{Max} - \text{Min}
+$$
+
+### 6. IQR
+
+$$
+IQR = Q3 - Q1
+$$
+
+### Dømi
+
+Dáta: 1, 3, 3, 4, 5, 6, 6, 7, 8, 9
+
+- **Median:** 5.5 (miðal av 5 og 6)
+- **Q1:** 3 
+- **Q3:** 7
+- **Typutal:** 3 og 6 (bæði koma tvær ferðir fyri)
+- **Miðalvirði:** 5.2
+- **Vídd:** 8
+- **IQR:** 4
+
+### Boxplot
+
+Hesi mát verða brúkt til at gera eitt boxplot (kassamynd), sum vísir dátini grafiskt.
+
+
+## Filmur 
+{{< video https://youtu.be/5KL9r_7lFBM?si=P03RJFhy2mN3XoMG >}}

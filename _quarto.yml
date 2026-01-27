@@ -1,0 +1,369 @@
+# ========================================
+# Minerva Website Configuration
+# ========================================
+# Modern educational platform for Faroese mathematics
+# Theme: Flatly (calm, academic, excellent readability)
+
+project:
+  type: website
+  output-dir: docs
+
+execute:
+  freeze: auto
+  cache: true
+
+format:
+  html:
+    theme:
+      light:
+        - flatly
+        - styles/custom.scss
+    math: true
+    mainfont: "Source Sans 3"
+    monofont: "JetBrains Mono"
+    include-after-body:
+      - _includes/navbar-handler.html
+      - _includes/footer.html
+      - _includes/collapse-handler.html
+    smooth-scroll: true
+    highlight-style: github
+    
+    # Table of Contents
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    toc-title: "Á hesi síðu"
+    toc-expand: 2
+    
+    # Links & Code
+    code-link: true
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+    link-external-icon: true
+    
+    # Optimized Layout Grid
+    grid:
+      sidebar-width: 280px
+      body-width: 850px
+      margin-width: 220px
+      gutter-width: 2rem
+
+website:
+  title: "Minerva"
+  site-url: "https://tannstori.github.io/Quarto_2.0"
+  favicon: images/favicon.png
+  search:
+    location: navbar
+    type: overlay
+  page-navigation: true
+  back-to-top-navigation: true
+  reader-mode: true
+  
+  # Top Navigation Bar
+  navbar:
+    background: primary
+    collapse-below: lg
+    pinned: true
+    search: true
+    left:
+      - icon: house-door-fill
+        text: "Heim"
+        href: index.qmd
+      - text: "1.g"
+        href: years/1.g/index.qmd
+      - text: "2.g"
+        href: years/2.g/index.qmd
+    right:
+      - icon: info-circle
+        text: "Um Okkum"
+        href: about.qmd
+  
+  # Left Sidebar Navigation
+  # Each year level has its own sidebar (sidebar-1g, sidebar-2g, etc.)
+  # Lesson pages specify which sidebar to use in their frontmatter
+  sidebar:
+    # ========================================
+    # 1.g (First Year) - Støddfrøði C
+    # ========================================
+    - id: sidebar-1g  # Referenced in lesson frontmatter
+      title: "📐 Støddfrøði C"
+      style: "floating"  # Always visible on desktop
+      collapse-level: 1  # Auto-collapse subsections
+      contents:
+        - text: "🏠 Aftur til øll evni"  # Back to year overview
+          href: years/1.g/index.qmd
+        - text: "---"  # Horizontal separator
+        - section: "📚 Tøl og Algebra"
+          href: years/1.g/tol_og_algebra/index.qmd
+          collapsed: true
+          contents:
+            - section: "Grundleggjandi Tal-ástøði"
+              collapsed: true
+              contents:
+                - years/1.g/tol_og_algebra/tol-naturlig_og_heiltol.qmd
+                - years/1.g/tol_og_algebra/tol-makad_og_stok.qmd
+                - years/1.g/tol_og_algebra/tol-rationel_og_irrationel.qmd
+                - years/1.g/tol_og_algebra/eginleikar_hja_tolum.qmd
+                - years/1.g/tol_og_algebra/eginleikar_hja_tolum-domi.qmd
+                - years/1.g/tol_og_algebra/stigskipan_av_roknihattum.qmd
+            - section: "Brot"
+              collapsed: true
+              contents:
+                - years/1.g/tol_og_algebra/brot-01.qmd
+                - years/1.g/tol_og_algebra/brot-02.qmd
+                - years/1.g/tol_og_algebra/brot-stytta_og_leingja.qmd
+                - years/1.g/tol_og_algebra/brot-stytta_og_leingja-02.qmd
+                - years/1.g/tol_og_algebra/brot-stytta_og_leingja-domi.qmd
+                - years/1.g/tol_og_algebra/brot-falda_og_byta.qmd
+            - section: "Kvadratsetningar"
+              collapsed: true
+              contents:
+                - years/1.g/tol_og_algebra/kvadratsetningar-introduktion.qmd
+                - years/1.g/tol_og_algebra/kvadratsetningar-domi.qmd
+                - years/1.g/tol_og_algebra/progv-1kvadratsetningur-algebraiskt.qmd
+                - years/1.g/tol_og_algebra/progv-1kvadratsetningur-geometriskt.qmd
+                - years/1.g/tol_og_algebra/progv-2kvadratsetningur-algebraiskt.qmd
+                - years/1.g/tol_og_algebra/progv-2kvadratsetningur-geometriskt.qmd
+                - years/1.g/tol_og_algebra/progv-3kvadratsetningur-algebraiskt.qmd
+                - years/1.g/tol_og_algebra/progv-3kvadratsetningar-geometriskt.qmd
+            - section: "Potensar"
+              collapsed: true
+              contents:
+                - years/1.g/tol_og_algebra/potensar.qmd
+                - years/1.g/tol_og_algebra/potensroknireglur.qmd
+                - years/1.g/tol_og_algebra/potensroknireglur-02.qmd
+                - years/1.g/tol_og_algebra/potensroknireglur-03.qmd
+                - years/1.g/tol_og_algebra/primtol.qmd
+            - section: "Líkningar"
+              collapsed: true
+              contents:
+                - years/1.g/tol_og_algebra/loysa_tvaer_likningar-substitution.qmd
+                - years/1.g/tol_og_algebra/loysa_tvaer_likningar-koefficienthatturin.qmd
+                - years/1.g/tol_og_algebra/loysa_tvaer_likningar-grafiskt.qmd
+            - section: "Røtur og Talmongdir"
+              collapsed: true
+              contents:
+                - years/1.g/tol_og_algebra/tol-rationel_og_irrationel.qmd
+                - years/1.g/tol_og_algebra/rotroknireglur.qmd
+                - years/1.g/tol_og_algebra/rotroknireglur-02.qmd
+                - years/1.g/tol_og_algebra/rotur_og_rotroknireglur.qmd
+        - section: "📈 Funktiónir"
+          href: years/1.g/funktionir/index.qmd
+          collapsed: true
+          contents:
+            - section: "📈 Potensfunktiónir"
+              collapsed: true
+              contents:
+                - years/1.g/funktionir/potensfunktionir_a_o_b.qmd
+                - years/1.g/funktionir/potensfunktionir_2.qmd
+                - years/1.g/funktionir/potensfunktionir_1.qmd
+            - section: "📊 Linjurættar Funktiónir"
+              collapsed: true
+              contents:
+                - years/1.g/funktionir/linjurattar_funktionir_1.qmd
+                - years/1.g/funktionir/linjurattar_funktionir_2.qmd
+                - years/1.g/funktionir/linjurattar_funktionir_a_og_b.qmd
+                - years/1.g/funktionir/linjurattar_funktionir_a_og_b_progv.qmd
+                - years/1.g/funktionir/linjurattar_funktionir_domi.qmd
+            - section: "🔍 Funktiónskanning"
+              collapsed: true
+              contents:
+                - years/1.g/funktionir/funktions_kanning.qmd
+                - years/1.g/funktionir/funktions_kanning_2.qmd
+            - section: "📉 Logaritmur"
+              collapsed: true
+              contents:
+                - years/1.g/funktionir/logaritmur_1.qmd
+                - years/1.g/funktionir/logaritmur_2.qmd
+                - years/1.g/funktionir/logaritmur_roknireglur.qmd
+            - section: "⚡ Eksponentiellar Funktiónir"
+              collapsed: true
+              contents:
+                - years/1.g/funktionir/mangli_at_uploada_eksponentiellar_funktionir.qmd
+                - years/1.g/funktionir/eksponentiellar_funktion_helvt.qmd
+                - years/1.g/funktionir/eksponentiellar_funktion_tvi_helt.qmd
+                - years/1.g/funktionir/eksponentiellar_funktion_tvi_progv.qmd
+                - years/1.g/funktionir/eksponentiellar_funktion_finn_ab.qmd
+                - years/1.g/funktionir/eksponentiellar_funktion_finn_ab_domi.qmd
+        - section: "📐 Geometri"
+          href: years/1.g/geometri/index.qmd
+          collapsed: true
+          contents:
+            - section: "🔺 Trýkantar - Grundleggjandi"
+              collapsed: true
+              contents:
+                - years/1.g/geometri/einsvinkladir_trykantar.qmd
+                - years/1.g/geometri/domi_einsvinkladir_trykantar.qmd
+                - years/1.g/geometri/javnbeintir_og_javnsidadir_trykantar.qmd
+                - years/1.g/geometri/progv_vinkulsamlogan_i_trykantum.qmd
+            - section: "📐 Pythagoras"
+              collapsed: true
+              contents:
+                - years/1.g/geometri/raettvinkladir_trykantar.qmd
+                - years/1.g/geometri/domi_pythagoras.qmd
+                - years/1.g/geometri/domi_pythagoras_2.qmd
+                - years/1.g/geometri/progv_pythagoras.qmd
+            - section: "Sinus og Cosinus"
+              collapsed: true
+              contents:
+                - years/1.g/geometri/sinus_og_cosinus_i_raettvinkladum_trykantum.qmd
+                - years/1.g/geometri/domi_sinus_cosinus_vinklar_eindarsirklinum.qmd
+                - years/1.g/geometri/domi_sinus_cosinus_vinklar_eindarsirklinum_2.qmd
+                - years/1.g/geometri/progv_sinus_cosinus_raettvinkladum_trykantum.qmd
+                - years/1.g/geometri/domi_finn_manglandi_sidur_vinklar.qmd
+                - years/1.g/geometri/domi_finn_vinkul_sinus_formlinum.qmd
+                - years/1.g/geometri/domi_finn_vinkul_raettvinkladum_trykanti.qmd
+            - section: "📏 Areal"
+              collapsed: true
+              contents:
+                - years/1.g/geometri/progv_formil_areal_trykanti.qmd
+                - years/1.g/geometri/domi_finn_areal_trykanti_sinus.qmd
+                - years/1.g/geometri/progv_areal_trykanti_sinus.qmd
+            - section: "🎯 Sinus Relatiónin"
+              collapsed: true
+              contents:
+                - years/1.g/geometri/introduktion_progv_sinus_relationum.qmd
+                - years/1.g/geometri/sinus_relationirnar_domi_finna_vinkul.qmd
+                - years/1.g/geometri/sinusfellan.qmd
+                - years/1.g/geometri/domi_sinusfellan.qmd
+                - years/1.g/geometri/domi_finn_longdina_sidu_sinus_relationi.qmd
+                - years/1.g/geometri/domi_finn_vinkul_trykanti_sinus_relationi.qmd
+            - section: "🎲 Cosinus Relatiónin"
+              collapsed: true
+              contents:
+                - years/1.g/geometri/introduktion_progv_cosinus_relationum.qmd
+                - years/1.g/geometri/domi_finn_vinkul_trykanti_cosinus_relationi.qmd
+                - years/1.g/geometri/domi_finn_sidu_trykanti_cosinus_relationi.qmd
+        - section: "📊 Hagfrøði"
+          href: years/1.g/hagfrodi/index.qmd
+          collapsed: true
+          contents:
+            - section: "📊 Grundleggjandi Hugtøk"
+              collapsed: true
+              contents:
+                - years/1.g/hagfrodi/population_og_stakroynd.qmd
+                - years/1.g/hagfrodi/obolkadar_observationir.qmd
+                - years/1.g/hagfrodi/bolkadar_observationir.qmd
+            - section: "📈 Myndir og Framsetingar"
+              collapsed: true
+              contents:
+                - years/1.g/hagfrodi/pinnamynd.qmd
+                - years/1.g/hagfrodi/stabbamynd_v2.qmd
+                - years/1.g/hagfrodi/trappumynd.qmd
+            - section: "📊 Miðalvirði og Spjaðing"
+              collapsed: true
+              contents:
+                - years/1.g/hagfrodi/midalvirdid_2.qmd
+                - years/1.g/hagfrodi/midalvirdid_og_spjading.qmd
+                - years/1.g/hagfrodi/midalvirdid_domi.qmd
+                - years/1.g/hagfrodi/midalvirdid_kanska_slettast.qmd
+            - section: "📉 Frágreiðandi Hagtøl"
+              collapsed: true
+              contents:
+                - years/1.g/hagfrodi/fjordingsmork_og_typutalid.qmd
+                - years/1.g/hagfrodi/fjordingsmork_median_typutal_ol.qmd
+                - years/1.g/hagfrodi/fragreidandi_hagtol_obolkad.qmd
+                - years/1.g/hagfrodi/summationstekin_v2.qmd
+                - years/1.g/hagfrodi/s_ras.qmd
+        - section: "🎲 Líkindarokning"
+          href: years/1.g/likindarokning/index.qmd
+          collapsed: true
+          contents:
+            - section: "🎲 Grundleggjandi Hugtøk"
+              collapsed: true
+              contents:
+                - years/1.g/likindarokning/likindarokning.qmd
+                - years/1.g/likindarokning/likindarokning_2.qmd
+                - years/1.g/likindarokning/likindaokid.qmd
+            - section: "🎯 Hendingar"
+              collapsed: true
+              contents:
+                - years/1.g/likindarokning/hendingar.qmd
+                - years/1.g/likindarokning/hendingar_domi.qmd
+                - years/1.g/likindarokning/oheftar_hendingar.qmd
+            - section: "🔗 Treytað Sannlíkindi"
+              collapsed: true
+              contents:
+                - years/1.g/likindarokning/treytad_sannlikindi.qmd
+        - section: "💰 Kapitalrokning"
+          href: years/1.g/kapitalrokning/index.qmd
+          collapsed: true
+          contents:
+            - section: "💯 Prosent"
+              collapsed: true
+              contents:
+                - years/1.g/kapitalrokning/Prosent.qmd
+                - years/1.g/kapitalrokning/prosentrokning.qmd
+                - years/1.g/kapitalrokning/prosentrokning_domi.qmd
+            - section: "📈 Kapitalframskriving"
+              collapsed: true
+              contents:
+                - years/1.g/kapitalrokning/kapitalframskriving_rentufrymilin.qmd
+                - years/1.g/kapitalrokning/rentufrymilin_domi.qmd
+                - years/1.g/kapitalrokning/kapitalframskriving.qmd
+                - years/1.g/kapitalrokning/kapitalframskriving_domi.qmd
+                - years/1.g/kapitalrokning/effektiv_renta.qmd
+            - section: "🏦 Annuitetslán"
+              collapsed: true
+              contents:
+                - years/1.g/kapitalrokning/intro_til_annuitet.qmd
+                - years/1.g/kapitalrokning/annuitetslán_setningur.qmd
+                - years/1.g/kapitalrokning/annuitetslán_prógv.qmd
+                - years/1.g/kapitalrokning/annuitetslán_domi.qmd
+            - section: "💰 Annuitetsuppsparing"
+              collapsed: true
+              contents:
+                - years/1.g/kapitalrokning/annuitetsuppsparing_setningur.qmd
+                - years/1.g/kapitalrokning/annuitetsuppsparing_prógv.qmd
+                - years/1.g/kapitalrokning/summationstekin_v2.qmd
+    - id: sidebar-2g
+      title: "2.g"
+      style: "floating"
+      collapse-level: 1
+      contents:
+        - section: "2. Gradspoly"
+          href: years/2.g/2.gradspoly/index.qmd
+          contents:
+            - years/2.g/2.gradspoly/index.qmd
+            - years/2.g/2.gradspoly/lesson-01-electricity.qmd
+        - section: "Differentialrokning"
+          href: years/2.g/differentialrokning/index.qmd
+          contents:
+            - years/2.g/differentialrokning/index.qmd
+            - years/2.g/differentialrokning/lesson-01-functions.qmd
+        - section: "Funktionir"
+          href: years/2.g/funktionir/index.qmd
+          contents:
+            - years/2.g/funktionir/index.qmd
+            - years/2.g/funktionir/lesson-01-functions.qmd
+        - section: "Hagfrøði"
+          href: years/2.g/hagfrodi/index.qmd
+          contents:
+            - years/2.g/hagfrodi/index.qmd
+            - years/2.g/hagfrodi/lesson-01-functions.qmd
+        - section: "Plangeometri"
+          href: years/2.g/plangeometri/index.qmd
+          contents:
+            - years/2.g/plangeometri/index.qmd
+            - years/2.g/plangeometri/lesson-01-functions.qmd
+        - section: "Regression"
+          href: years/2.g/regression/index.qmd
+          contents:
+            - years/2.g/regression/index.qmd
+            - years/2.g/regression/lesson-01-functions.qmd
+        - section: "Sannlíkindarokning & Komb."
+          href: years/2.g/sannlíkindarokning_komb/index.qmd
+          contents:
+            - years/2.g/sannlíkindarokning_komb/index.qmd
+            - years/2.g/sannlíkindarokning_komb/lesson-01-functions.qmd
+        - section: "Trigonometri"
+          href: years/2.g/trigonometri/index.qmd
+          contents:
+            - years/2.g/trigonometri/index.qmd
+            - years/2.g/trigonometri/lesson-01-functions.qmd
+        - section: "Vektorar 2D"
+          href: years/2.g/vektorar_2d/index.qmd
+          contents:
+            - years/2.g/vektorar_2d/index.qmd
+            - years/2.g/vektorar_2d/lesson-01-functions.qmd

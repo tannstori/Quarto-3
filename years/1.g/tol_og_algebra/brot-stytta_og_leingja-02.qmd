@@ -1,0 +1,20 @@
+﻿---
+title: "Brot - stytta og leingja 2"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### More Examples
+
+$$
+\frac{6}{9} = \frac{2}{3}
+$$
+
+## Filmur 
+{{< video https://youtu.be/iZtGn6oZYkg?si=wuH6aTs7oZwL496f >}}

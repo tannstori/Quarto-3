@@ -1,0 +1,12 @@
+﻿---
+title: "Kvadratsetningar dømi"
+---
+
+## Dømi
+
+Her sæst eitt dømi uppá hvussu ein kan brúka kvadratsetningarnar.
+
+## Filmur 
+https://www.youtube.com/watch?v=9VcYesYRQAg
+{{< video https://youtu.be/sZSpLuFQvlw?si=RNCc0Yjpm5N37OMz >}}
+

@@ -1,0 +1,55 @@
+﻿---
+title: "Miðalvirðið 2"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Útrokning av miðalvirðinum
+
+Miðalvirðið er summað av øllum virðum deilt við talinum av virðum.
+
+### formil
+
+$$
+\bar{x} = \frac{x_1 + x_2 + ... + x_n}{n} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$
+
+### Dømi
+
+Finna miðalvirðið av: 4, 7, 3, 8, 5
+
+$$
+\bar{x} = \frac{4 + 7 + 3 + 8 + 5}{5} = \frac{27}{5} = 5.4
+$$
+
+### Vigtað miðalvirði
+
+Tá ymisk virði hava ymiskar vigtir:
+
+$$
+\bar{x}_w = \frac{\sum_{i=1}^{n} w_i \cdot x_i}{\sum_{i=1}^{n} w_i}
+$$
+
+### Dømi við vigtum
+
+Prógv 1: 80 (vigtin 30%)
+Prógv 2: 90 (vigtin 70%)
+
+$$
+\bar{x}_w = \frac{80 \cdot 0.3 + 90 \cdot 0.7}{0.3 + 0.7} = \frac{24 + 63}{1} = 87
+$$
+
+### Eginleikar
+
+- Miðalvirðið verður ávirka av øllum virðum
+- Úthoyrissvirði ávirka nógv
+- Gott mát fyri miðtalið tá dátini eru symmetriskt útspreidd
+
+## Filmur 
+{{< video https://youtu.be/VIdzPd5llMQ?si=9XfZ8mg4BCgQdML5 >}}

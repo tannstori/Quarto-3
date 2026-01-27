@@ -1,0 +1,39 @@
+﻿---
+title: "Effektiv renta"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er effektiv renta?
+
+Effektiv renta er tann veruliga árliga rentan, tá renta verður løgd afturat fleiri ferðir um árið.
+
+### formil
+
+$$
+r_{\text{eff}} = \left(1 + \frac{r}{m}\right)^m - 1
+$$
+
+har:
+- $r_{\text{eff}}$ er effektiva rentan
+- $r$ er nominalu árliga rentan
+- $m$ er talið av terminum um árið
+
+### Dømi
+
+Ein banki tilbjóðar 6% árliga rentu, men renta verður løgd afturat hvønn mánað (12 ferðir um árið).
+
+$$
+r_{\text{eff}} = \left(1 + \frac{0.06}{12}\right)^{12} - 1 = (1.005)^{12} - 1 = 0.0617 = 6.17\%
+$$
+
+Tann effektiva rentan er 6.17%, ikki 6%.
+
+## Filmur 
+{{< video https://youtu.be/SrvDtoIJrhg?si=Ufp4Otyf7s_jOKQr >}}

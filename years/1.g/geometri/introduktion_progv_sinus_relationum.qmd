@@ -1,0 +1,80 @@
+﻿---
+title: "Introduktión og prógv av sinus relatiónunum"
+---
+
+## Innleiðing og Prógv
+
+Henda undirvísing innleiðir evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Sinus relatiónin (Sinussetningin)
+
+Í hvørjum trýkanti:
+
+$$
+\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}
+$$
+
+Ella:
+
+$$
+\frac{\sin(A)}{a} = \frac{\sin(B)}{b} = \frac{\sin(C)}{c}
+$$
+
+### Prógv
+
+**Byrja við arealformulinum:**
+
+$$
+A = \frac{1}{2} ab \sin(C) = \frac{1}{2} bc \sin(A) = \frac{1}{2} ac \sin(B)
+$$
+
+**Tak tey fyrstu tveimum:**
+$$
+\frac{1}{2} ab \sin(C) = \frac{1}{2} bc \sin(A)
+$$
+
+$$
+ab \sin(C) = bc \sin(A)
+$$
+
+$$
+a \sin(C) = c \sin(A)
+$$
+
+$$
+\frac{a}{\sin(A)} = \frac{c}{\sin(C)}
+$$
+
+**Líknandi fyri onnur pør:**
+Vit kunnu vísa á sama hátt at:
+
+$$
+\frac{a}{\sin(A)} = \frac{b}{\sin(B)}
+$$
+
+### Nýtsla
+
+Sinusrelatiónin er nýtilig, tá vit:
+1. Vita tvær síður og ein vinkul (ikki ímillum)
+2. Vita tveir vinklar og eina síðu
+
+### Dømi
+
+Givið: $a = 7$, $A = 30°$, $B = 45°$
+
+Finna $b$:
+
+$$
+\frac{7}{\sin(30°)} = \frac{b}{\sin(45°)}
+$$
+
+$$
+b = \frac{7 \sin(45°)}{\sin(30°)} = \frac{7 \cdot \frac{\sqrt{2}}{2}}{0.5} = 7\sqrt{2} \approx 9.90
+$$
+
+## Filmur 
+{{< video https://youtu.be/9vnrKjUsfZk?si=79vS3XuM6FrqwZnQ >}}

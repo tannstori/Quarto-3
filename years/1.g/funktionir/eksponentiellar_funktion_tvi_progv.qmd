@@ -1,0 +1,10 @@
+﻿---
+title: "Eksponentiellar funktión tví prógv"
+---
+
+## Prógv
+
+
+
+## Filmur 
+{{< video https://youtu.be/glVS2KyA5xw?si=duLO_9FKEFHlZw2l >}}

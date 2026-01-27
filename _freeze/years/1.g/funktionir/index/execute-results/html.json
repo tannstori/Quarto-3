@@ -1,0 +1,15 @@
+{
+  "hash": "d11a703493f59efab3142907a9845d92",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Funktiónir\"\nsidebar: sidebar-1g\n---\n\n:::{.lesson-grid}\n\n:::{.lesson-card}\n### 📈 Potensfunktiónir \n- [Potensfunktiónir 1](potensfunktionir_1.qmd)\n- [Potensfunktiónir 2](potensfunktionir_2.qmd)\n- [Innleiðing](potensfunktionir_a_o_b.qmd)\n:::\n\n:::{.lesson-card}\n### 📊 Linjurættar Funktiónir \n- [Linjurættar funktiónir 1](linjurattar_funktionir_1.qmd)\n- [Linjurættar funktiónir 2](linjurattar_funktionir_2.qmd)\n- [Linjurættar funktiónir a og b](linjurattar_funktionir_a_og_b.qmd)\n- [Linjurættar funktiónir a og b prógv](linjurattar_funktionir_a_og_b_progv.qmd)\n- [Linjurættar funktiónir dømi](linjurattar_funktionir_domi.qmd)\n:::\n\n:::{.lesson-card}\n### ⚡ Eksponentiellar Funktiónir \n- [Eksponentiellar funktión finn ab](eksponentiellar_funktion_finn_ab.qmd)\n- [Finn a og b - dømi](eksponentiellar_funktion_finn_ab_domi.qmd)\n- [Eksponentiellar funktión helvt](eksponentiellar_funktion_helvt.qmd)\n- [Eksponentiellar funktión tví helt](eksponentiellar_funktion_tvi_helt.qmd)\n- [Eksponentiellar funktión tví prógv](eksponentiellar_funktion_tvi_progv.qmd)\n- [Mangli at uploada hetta - Eksponentiellar funktiónir](mangli_at_uploada_eksponentiellar_funktionir.qmd)\n:::\n\n:::{.lesson-card}\n### 📉 Logaritmur \n- [Logaritmur 1](logaritmur_1.qmd)\n- [Logaritmur 2](logaritmur_2.qmd)\n- [Logaritmur roknireglur](logaritmur_roknireglur.qmd)\n:::\n\n:::{.lesson-card}\n### 🔍 Funktiónskanning \n- [Funktións kanning](funktions_kanning.qmd)\n- [Funktións kanning 2](funktions_kanning_2.qmd)\n:::\n\n:::{.lesson-card}\n### 📚 Annað \n- [Populatión og stakroynd](population_og_stakroynd.qmd)\n:::\n\n:::\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

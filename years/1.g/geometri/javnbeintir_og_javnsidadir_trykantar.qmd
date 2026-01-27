@@ -1,0 +1,60 @@
+﻿---
+title: "Javnbeintir og javnsíðaðir trýkantar"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Javnbeintir trýkantar
+
+Ein javnbeintir trýkantur hevur tvær síður, sum eru líka langar.
+
+**Eginleikar:**
+- Tvær síður eru líka langar
+- Tveir vinklar (við grunninum) eru líka stórir
+- Hægdin frá toppi til grunninum halverar grunnin og er vinkelrætt
+
+### Javnsíðaðir trýkantar
+
+Ein javnsíðaður trýkantur hevur allar tríggjar síður líka langar.
+
+**Eginleikar:**
+- Allar síður eru líka langar
+- Allir vinklar eru 60°
+- Serliga symmetriskur
+
+### Formlar
+
+**Javnsíðaður trýkantur við síðu $a$:**
+
+**Hædd:**
+$$
+h = \frac{a\sqrt{3}}{2}
+$$
+
+**Areal:**
+$$
+A = \frac{a^2\sqrt{3}}{4}
+$$
+
+### Dømi
+
+Ein javnsíðaður trýkantur hevur síður 6 cm.
+
+**Hædd:**
+$$
+h = \frac{6\sqrt{3}}{2} = 3\sqrt{3} \approx 5.20 \text{ cm}
+$$
+
+**Areal:**
+$$
+A = \frac{6^2\sqrt{3}}{4} = \frac{36\sqrt{3}}{4} = 9\sqrt{3} \approx 15.59 \text{ cm}^2
+$$
+
+## Filmur 
+{{< video https://youtu.be/Nf2qDtveGT8?si=xuWBaxHu3xSCQ06b >}}

@@ -1,0 +1,10 @@
+﻿---
+title: "Prógv: 2.kvadratsetningur geometriskt"
+---
+
+## Prógv
+
+Her sæst hvussu 2. kvadratsetningur prógvast geometriskt.
+
+## Filmur 
+{{< video https://youtu.be/aW59OmmpXto?si=fZm2dSc6T-bCV0Ne >}}

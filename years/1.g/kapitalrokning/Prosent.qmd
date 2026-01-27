@@ -1,0 +1,35 @@
+﻿---
+title: "Prosent"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er prosent?
+
+Prosent merkir "av hundrað" og er ein máti at vísa eitt brot av einum heild.
+
+### formil
+
+$$
+\text{Prosent} = \frac{\text{Partur}}{\text{Heild}} \times 100\%
+$$
+
+### Dømi
+
+$$
+\frac{1}{4} = 0.25 = 25\%
+$$
+
+$$
+\frac{1}{2} = 0.50 = 50\%
+$$
+
+
+## Filmur 
+{{< video https://youtu.be/veuMctKFhXs?si=0Ue7IyagM8NtJesl >}}

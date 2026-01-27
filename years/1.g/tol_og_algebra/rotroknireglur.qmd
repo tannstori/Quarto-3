@@ -1,0 +1,11 @@
+﻿---
+title: "Rótroknireglur"
+---
+
+## Innleiðing
+
+Her forklára vit hvat røtur.
+
+
+## Filmur 
+{{< video https://youtu.be/P1CgSEucCcU?si=Pc6Doa075w3vpfzx >}}

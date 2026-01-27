@@ -1,0 +1,79 @@
+﻿---
+title: "Summatiónstekin v2"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Sigma tekin
+
+Summatiónstekin (Σ) er ein matematiskur háttur at skriva summur.
+
+### Grundforma
+
+$$
+\sum_{i=1}^{n} x_i = x_1 + x_2 + x_3 + ... + x_n
+$$
+
+### Nýtsla í hagtølum
+
+**Miðalvirði:**
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$
+
+**Spjaðing:**
+$$
+s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
+$$
+
+**Summa av kvadratum:**
+$$
+\sum_{i=1}^{n} x_i^2 = x_1^2 + x_2^2 + ... + x_n^2
+$$
+
+### Reglur
+
+**Konstant úr:**
+$$
+\sum_{i=1}^{n} c \cdot x_i = c \sum_{i=1}^{n} x_i
+$$
+
+**Skifting:**
+$$
+\sum_{i=1}^{n} (x_i + y_i) = \sum_{i=1}^{n} x_i + \sum_{i=1}^{n} y_i
+$$
+
+**Summa av konstanti:**
+$$
+\sum_{i=1}^{n} c = n \cdot c
+$$
+
+### Dømi 1
+
+$$
+\sum_{i=1}^{5} 2i = 2 \cdot 1 + 2 \cdot 2 + 2 \cdot 3 + 2 \cdot 4 + 2 \cdot 5 = 30
+$$
+
+### Dømi 2
+
+$$
+\sum_{i=1}^{4} i^2 = 1^2 + 2^2 + 3^2 + 4^2 = 1 + 4 + 9 + 16 = 30
+$$
+
+### Tvífaldað summatiónstekin
+
+$$
+\sum_{i=1}^{m} \sum_{j=1}^{n} x_{ij}
+$$
+
+Hetta summerar um tvær víðdir.
+
+
+## Filmur 
+{{< video https://youtu.be/9SE7k-wHeMQ?si=cM59iIbOb7qAEWki >}}

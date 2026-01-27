@@ -1,0 +1,57 @@
+﻿---
+title: "Prógv: Pythagoras"
+---
+
+## Prógv
+
+Henda undirvísing prgvar evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Setningur
+
+Í einum rættvinklaðum trýkanti við katetur $a$ og $b$ og hypotenusa $c$ geldur:
+
+$$
+a^2 + b^2 = c^2
+$$
+
+### Prógv (Geometriskt)
+
+**Konstruktión:**
+1. Byrja við ein rættvinklaðan trýkant við síður $a$, $b$, og $c$
+2. Set fýra líka trýkantar saman til eitt stórt kvadrat
+
+**Stóra kvadratið:**
+- Síðulongd: $a + b$
+- Areal: $(a + b)^2 = a^2 + 2ab + b^2$
+
+**Innihald:**
+- 4 trýkantar, hvør við areal $\frac{1}{2}ab$
+- 1 miðkvaðrat við síðulongd $c$
+
+**Samløgd:**
+$$
+(a + b)^2 = 4 \cdot \frac{1}{2}ab + c^2
+$$
+
+$$
+a^2 + 2ab + b^2 = 2ab + c^2
+$$
+
+$$
+a^2 + b^2 = c^2
+$$
+
+### Alternativt prógv
+
+Vit kunnu eisini nýta einsvinkling av trýkantum, sum verða gjørd, tá vit draga hæddina til hypotenusu.
+
+### Historisk týdning
+
+Pythagorasarnir kendu til hetta sambandið longu fyri 2500 árum síðan, og tað er ein av teimum mest kendum setningum í matematikki.
+
+## Filmur 
+{{< video https://youtu.be/R60ugemHcAg?si=FBYlTw9cwKfZr4da >}}

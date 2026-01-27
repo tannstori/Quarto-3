@@ -1,0 +1,11 @@
+﻿---
+title: "Brot - stytta og leingja"
+---
+
+## Innleiðing
+
+Her rokna vit eitt dømi uppá hvussu ein styttur og leingir eitt brot.
+
+
+## Filmur 
+{{< video https://youtu.be/DDYcWsH6Qhg?si=pIPUwveHNzTaYVZe >}}

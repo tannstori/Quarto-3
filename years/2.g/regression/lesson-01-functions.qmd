@@ -1,0 +1,18 @@
+﻿---
+title: "Functions"
+---
+Henda undirvísing fevnir um evnið.
+
+<!-- TODO: Replace with real lesson video -->
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+
+For example, evaluate the linear function:
+$$
+f(x) = 2x + 1.
+$$
+
+- Define a function as a rule mapping inputs \(x\) to outputs \(f(x)\)
+- Evaluate \(f(x)=2x+1\) for different values of \(x\)
+- Plot linear functions and interpret slope and intercept
+- Understand domain and range of simple functions
+

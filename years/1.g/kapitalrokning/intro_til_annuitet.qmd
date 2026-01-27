@@ -1,0 +1,47 @@
+﻿---
+title: "Intro til annuitet"
+---
+
+## Innleiðing
+
+Henda undirvísing innleiðir evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er annuitet?
+
+Annuitet merkir eitt regluligt gjald av somu stødd, sum verður gjørt í einum ávísum tíðarskeið.
+
+### Tvey høvuðsslag
+
+1. **Annuitetslán:** Tú tekur eitt lán og betalar av við fasta gjøldum
+2. **Annuitetsuppsparing:** Tú sparar við at leggja inn fasta gjøld
+
+### Lógikkin
+
+**Annuitetslán:**
+- Tú fært pengar í byrjan
+- Tú betalar tilbaka í terminum
+- Hvørt gjald inniheldur rentu og avdrátt
+
+**Annuitetsuppsparing:**
+- Tú leggur inn pengar hvønn termin
+- Rentan verður løgd afturat
+- Tú fært ein stóran sum til enda
+
+### Týdning
+
+Annuitetar gera tað lætt at planleiggja fíggjarligu málini:
+- Húslán, billán (annuitetslán)
+- Pinsión, sparingar (annuitetsuppsparing)
+
+### Høvuðseginleikar
+
+- Fast gjald hvønn termin
+- Sama rentan yvir heila tíðarskeiðið
+- Kann roknast út við formulum
+
+## Filmur 
+{{< video https://youtu.be/66DL-H0n_Ns?si=aq6VvEsfmb_EDrMG >}}

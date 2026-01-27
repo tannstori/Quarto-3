@@ -1,0 +1,79 @@
+﻿---
+title: "Dømi: Finn longdina á síðu við sinus relatiónini"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### formil
+
+$$
+\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}
+$$
+
+### Dømi 1: Finna eina síðu
+
+Givið: $A = 40°$, $B = 60°$, $a = 8$ cm
+
+Finna $b$:
+
+$$
+\frac{8}{\sin(40°)} = \frac{b}{\sin(60°)}
+$$
+
+$$
+b = \frac{8 \sin(60°)}{\sin(40°)} = \frac{8 \cdot 0.866}{0.643} \approx 10.78 \text{ cm}
+$$
+
+### Dømi 2: Finna triðju síðu
+
+Halda fram frá Dømi 1:
+
+$$
+C = 180° - 40° - 60° = 80°
+$$
+
+$$
+\frac{8}{\sin(40°)} = \frac{c}{\sin(80°)}
+$$
+
+$$
+c = \frac{8 \sin(80°)}{\sin(40°)} = \frac{8 \cdot 0.985}{0.643} \approx 12.26 \text{ cm}
+$$
+
+### Dømi 3: Avstand millum tvey bøir
+
+Tveir observatórar eru 100 m sundur. Teir síggja eitt skip og máta vinklar:
+- Observatór A: 45° til skip
+- Observatór B: 60° til skip
+
+Hvussu langt er skipið frá observatóri A?
+
+**Vinkulin við skipið:**
+$$
+C = 180° - 45° - 60° = 75°
+$$
+
+**Avstandur:**
+$$
+\frac{100}{\sin(75°)} = \frac{a}{\sin(60°)}
+$$
+
+$$
+a = \frac{100 \sin(60°)}{\sin(75°)} = \frac{100 \cdot 0.866}{0.966} \approx 89.7 \text{ m}
+$$
+
+### Dømi 4: Parallellogram
+
+Ein parallellogram hevur síður 8 cm og 12 cm, og ein av vinklunum er 50°.
+
+Finna diagonalina (nýt sinusrelatiónina í einum av trýkantunum).
+
+
+## Filmur 
+{{< video https://youtu.be/_D33WvuCy-E?si=ZSvBly_0-zOFLMgJ >}}

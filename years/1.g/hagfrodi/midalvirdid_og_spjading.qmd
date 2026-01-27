@@ -1,0 +1,67 @@
+﻿---
+title: "Miðalvirðið og spjaðing"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Miðalvirðið
+
+Miðalvirðið vísir miðtalpunktið í dátunum.
+
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$
+
+### Spjaðing (Varianse)
+
+Spjaðing vísir hvussu nógv dátini eru spreidd kring miðalvirðið.
+
+$$
+s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
+$$
+
+### Standardfrávík
+
+Standardfrávík er kvadratrót av spjaðingini:
+
+$$
+s = \sqrt{s^2}
+$$
+
+### Dømi
+
+Dáta: 2, 4, 4, 4, 5, 5, 7, 9
+
+**Miðalvirði:**
+$$
+\bar{x} = \frac{2+4+4+4+5+5+7+9}{8} = \frac{40}{8} = 5
+$$
+
+**Spjaðing:**
+$$
+s^2 = \frac{(2-5)^2 + (4-5)^2 + ... + (9-5)^2}{7}
+$$
+
+$$
+s^2 = \frac{9 + 1 + 1 + 1 + 0 + 0 + 4 + 16}{7} = \frac{32}{7} \approx 4.57
+$$
+
+**Standardfrávík:**
+$$
+s = \sqrt{4.57} \approx 2.14
+$$
+
+### Túlking
+
+- Lítil spjaðing: Dátini eru tætt kring miðalvirðið
+- Stór spjaðing: Dátini eru víða spreidd
+
+
+## Filmur 
+{{< video https://youtu.be/VIdzPd5llMQ?si=68RiiUzEyvZvwj8D >}}

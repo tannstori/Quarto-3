@@ -1,0 +1,79 @@
+﻿---
+title: "Eksponentiellar funktión tví helt"
+---
+
+### Tvífalingartíð
+
+Tvífalingartíð er tann tíðin, tað tekur fyri eitt virði at tvífaldast.
+
+### Formil
+
+$$
+f(x) = b \cdot 2^{\frac{x}{T_2}}
+$$
+
+har:
+- $b$ er byrjanarvirðið
+- $T_2$ er tvífalingartíðin
+
+### Dømi: Bakterier
+
+Ein bakteriepopulatión tvífaldast hvørjar 3 tímar. Byrjanartalið er 1000.
+
+$$
+f(x) = 1000 \cdot 2^{\frac{x}{3}}
+$$
+
+**Eftir 9 tímar:**
+$$
+f(9) = 1000 \cdot 2^{\frac{9}{3}} = 1000 \cdot 2^3 = 1000 \cdot 8 = 8000
+$$
+
+### Sambandi við vakstrarfaktor
+
+Um vakstrarfaktorurin er $a$:
+
+$$
+a = 2^{\frac{1}{T_2}}
+$$
+
+### Dømi: Fíggjarligur vøkstur
+
+Ein íløga tvífaldast hvørt 10. ár. 
+Um tú gert eina íløgu á 5000 kr, hvussu nógv hevur tú eftir 30 ár?
+
+$$
+f(30) = 5000 \cdot 2^{\frac{30}{10}} = 5000 \cdot 2^3 = 5000 \cdot 8 = 40{,}000 \text{ kr}
+$$
+
+### Finna tvífalingartíðina
+
+Um vakstrarfaktorurin er $b$ um tíðarskeið, er tvífalingartíðin:
+
+$$
+T_2 = \frac{\log(2)}{\log(a)}
+$$
+
+### Dømi: 5% árligur vøkstur
+
+Um fólkatalið veksur við 5% um árið, hvat er tvífalingartíðin?
+
+Vøkstursfaktur: $a = 1.05$
+
+$$
+T_2 = \frac{\log(2)}{\log(1.05)} = \frac{0.301}{0.021} \approx 14.2 \text{ ár}
+$$
+
+### 72-reglan
+
+Ein einfaldur tummilfingra-regul:
+
+$$
+T_2 \approx \frac{72}{\text{prosent vøkstur}}
+$$
+
+Fyri 5%: $T_2 \approx \frac{72}{5} = 14.4$ ár 
+
+
+## Filmur 
+{{< video https://youtu.be/rdYhGm685mM?si=Pu6zg0GBibfl4JLY >}}

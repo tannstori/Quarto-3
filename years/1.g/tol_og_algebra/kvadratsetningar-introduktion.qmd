@@ -1,0 +1,18 @@
+﻿---
+title: "Kvadratsetningar introduktión"
+---
+
+## Innleiðing
+
+Kvadratsetningarna brúka vit ofta tá vit skulu stytta eitt ella fleiri úttrykk. Vit brúka kvadratsetningarnar tá vit hava eitt roknistykki har ein parantes stendur í øðrum. Tá eitt úttrykk stendur í øðrum, kallast tað eitt kvadrat, tað er her kvadratsetningarnir koma frá.
+
+## Kvadratsetningar
+
+Soleiðis síggja kvadratsetningarnir út:
+
+1. $(a + b)^2 = a^2 + 2ab + b^2$
+2. $(a - b)^2 = a^2 - 2ab + b^2$
+3. $(a + b)(a - b) = a^2 - b^2$
+
+## Filmur 
+{{< video https://youtu.be/sZSpLuFQvlw?si=axxMDGFpOYgNsRT_ >}}

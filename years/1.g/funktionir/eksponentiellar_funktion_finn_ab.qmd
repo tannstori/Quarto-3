@@ -1,0 +1,69 @@
+﻿---
+title: "Eksponentiellar funktión finn ab"
+---
+
+### Finn b
+
+Parameturin $b$ er byrjanarvirðið, tvs. funktiónsvirðið tá ið $x = 0$:
+
+$$
+f(0) = b \cdot a^0 = b \cdot 1 = b
+$$
+
+So $b = f(0)$.
+
+### Finna a
+
+Tá vit vita $b$ og eitt annað punkt $(x_1, y_1)$:
+
+$$
+y_1 = b \cdot a^{x_1}
+$$
+
+$$
+a^{x_1} = \frac{y_1}{b}
+$$
+
+$$
+a = \left(\frac{y_1}{b}\right)^{\frac{1}{x_1}}
+$$
+
+### Finna a og b frá tveimum punktum
+
+Givið $(x_1, y_1)$ og $(x_2, y_2)$:
+
+**Líkningaskipan:**
+$$
+y_1 = a \cdot b^{x_1}
+$$
+$$
+y_2 = a \cdot b^{x_2}
+$$
+
+**Loysn:**
+Deil annan líkningin við fyrra:
+
+$$
+\frac{y_2}{y_1} = b^{x_2 - x_1}
+$$
+
+$$
+a = \left(\frac{y_2}{y_1}\right)^{\frac{1}{x_2 - x_1}}
+$$
+
+So finna $b$ frá einum av punktunum.
+
+### Eisini ber til at...
+
+Taka logaritmuna av báðum síðum:
+
+$$
+\log(f(x)) = \log(b) + x \log(a)
+$$
+
+Hetta er linjurætt í $x$ og $\log(f(x))$.
+
+Tekna $x$ móti $\log(f(x))$ og finna linjuna.
+
+## Filmur 
+{{< video https://youtu.be/5Ce5MLSjSvA?si=7Qwgp9z8J9zkv768 >}}

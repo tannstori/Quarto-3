@@ -1,0 +1,39 @@
+﻿---
+title: "Óheftar hendingar"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Definisión
+
+Tvær hendingar A og B eru óheftar, um úrslitið av A ikki ávirkar úrslitið av B.
+
+### Multiplikasiónsreglan fyri óheftar hendingar
+
+Um A og B eru óheftar hendingar, so er:
+
+$$
+P(A \cap B) = P(A) \cdot P(B)
+$$
+
+### Dømi
+
+Kasta einum terningi tveir ferðir. Hvat er sannlíkindið fyri at fáa tveir 6-arar?
+
+$$
+P(\text{6 og 6}) = P(\text{6}) \cdot P(\text{6}) = \frac{1}{6} \cdot \frac{1}{6} = \frac{1}{36}
+$$
+
+### Víðari dømi
+
+Kasta einum terningi og eina mynt. Hendingar eru óheftar, tí úrslitið av terninginum ávirkar ikki úrslitið av myntini.
+
+
+## Filmur 
+{{< video https://youtu.be/G1YMHxinnvc?si=UXJ_JOrohXWFl76L >}}

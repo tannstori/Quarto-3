@@ -1,0 +1,17 @@
+﻿---
+title: "Hvat eru a og b"
+---
+
+## Hvat eru a og b?
+Líkningin hjá einari linjurættari funktión er
+$$y = ax + b$$
+
+Talið $b$ kalla vit fyri byrjunarvirði, sum fortelur okkum skeringspunktið við $y$-ásina. Talið $a$ kalla vit fyri halltalið. 
+
+Halltalið $a$ er eitt tal ið sigur okkum hvussu nógv $y$-virði veksur, hvørjaferð $x$-virði veksur við 1.
+Í filminum forklára vit hvat a og b eru, og hvussu virðið á teimum ávirkar hvussu grafurin hjá einari linjurættari funktión sær út.
+
+
+
+## Filmur 
+{{< video https://youtu.be/DCppZtXIqEg?si=VlNnpeJSel9F80VE >}}

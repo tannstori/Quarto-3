@@ -1,0 +1,57 @@
+﻿---
+title: "Prógv: Vinkulsamløgan í trýkantum"
+---
+
+## Prógv
+
+Henda undirvísing prgvar evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Setningur
+
+Vinkulsamløgan í hvørjum trýkanti er 180°.
+
+$$
+\alpha + \beta + \gamma = 180°
+$$
+
+### Prógv
+
+**Konstruktión:**
+1. Lat okkum hava ein trýkant ABC við vinklum $\alpha$, $\beta$, og $\gamma$
+2. Draga eina linja ígjøgnum hornpunkt A, sum er parallell við síðuni BC
+
+**Alternativir vinklar:**
+Tí línjan er parallell, so eru alternativu vinklarnir líkir:
+- Vinkul við A frá vinstru = $\beta$
+- Vinkul við A frá hægru = $\gamma$
+
+**Samanløgd:**
+Vinklarnir kring punkt A á línuni:
+$$
+\beta + \alpha + \gamma = 180°
+$$
+
+(tí teir liggja á einari línj)
+
+### Niðurstøða
+
+Tí er vinkulsamløgan í øllum trýkantum 180°.
+
+### Fylgd
+
+Fyri rættvinklaða trýkantar:
+$$
+90° + \alpha + \beta = 180°
+$$
+
+So eru teir onnur tveir vinklarnir komplementarir:
+$$
+\alpha + \beta = 90°
+$$
+
+## Filmur 
+{{< video https://youtu.be/I9BISj1btQU?si=p3ZLANMENqQH5ypY >}}

@@ -1,0 +1,63 @@
+﻿---
+title: "Sinusfellan"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er sinusfellan?
+
+Sinusfellan hendir, tá vit brúka sinusrelatiónina til at finna ein vinkul, og tað eru tveir møguligir vinklar.
+
+### Orsøk
+
+Tí at $\sin(\theta) = \sin(180° - \theta)$, kann hvørt virði av sinus svara til tveimum ymiskum vinklum.
+
+### Dømi
+
+$$
+\sin(\theta) = 0.5
+$$
+
+Tá er:
+- $\theta_1 = 30°$
+- $\theta_2 = 180° - 30° = 150°$
+
+### Tá sinusfellan hendir
+
+Sinusfellan hendir bert, tá vit:
+1. Brúka sinusrelatiónina
+2. Hava givið SSA (Síða-Síða-Vinkul, har vinkulin ikki er ímillum síðurnar)
+
+### Hvussu nógvir trýkantar?
+
+**0 trýkantar:** Eingin loysn møgulig
+**1 trýkantur:** Eina loysn
+**2 trýkantar:** Tvær loysnir
+
+### Kanna hvørja støðu
+
+Givið: Síður $a$ og $b$, vinkul $A$
+
+1. Rokna hæddina: $h = b \sin(A)$
+2. Samanber:
+   - Um $a < h$: Eingin loysn
+   - Um $a = h$: Ein loysn (rættvinklaður)
+   - Um $h < a < b$: Tvær loysnir
+   - Um $a \geq b$: Ein loysn
+
+### Dømi
+
+Givið: $a = 6$, $b = 8$, $A = 30°$
+
+Hædd: $h = 8 \sin(30°) = 4$
+
+Tí $4 < 6 < 8$, hava vit **tvær loysnir**!
+
+## Filmur 
+{{< video https://youtu.be/0p669dSzD6Y?si=AHfvWoZZg1WChVNZ >}}

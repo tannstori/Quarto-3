@@ -1,0 +1,10 @@
+﻿---
+title: "Dømi"
+---
+
+## Dømi
+
+Her vísa vit eitt dømi.
+
+## Filmur 
+{{< video https://youtu.be/HxTgEUuk0Ic >}}

@@ -1,0 +1,36 @@
+﻿---
+title: "Hvat er ein linjurøtt funktiónir"
+---
+
+## Linjurættar funktiónir
+
+Um øll punktini á einum grafi liggja í einari rættari linju, siga vit at funktiónin er linjurøtt. Til dømis:
+
+$$y = x + 3$$
+
+Út frá hesari líkningin kunnu vit siga at $y$-virðini eru heft til $x$-virðini. Vit kunnu skriva nøkur talpør inn í eina tabel, sum vit ofta kalla fyri fiskabein:
+
+| $x$ | $y = x + 3$ |
+|-----|-------------|
+| 0   | 3           |
+| 1   | 4           |
+| 3   | 6           |
+| 8   | 11          |
+| 10  | 13          |
+| 100 | 103         |
+
+## Forskriftin á einari linjurættari funktión
+
+Sum heild kunnu vit siga at ein linjurøtt funktión hevur forskriftina:
+
+$$f(x) = ax + b$$
+
+og tilsvarandi líkningina:
+
+$$y = ax + b$$
+
+Vit hava sæð at vit kunnu avmynda funktiónir í eina krossskipan. Vit forklára og vísa dømi í filminum. Á næstu síðu forklára vit hvat a og b eru, og hvussu virðini á teimum ávirka grafin.
+
+
+## Filmur 
+{{< video https://youtu.be/S0_JBolArLw?si=DiN0jZ5MzFafT3dg >}}

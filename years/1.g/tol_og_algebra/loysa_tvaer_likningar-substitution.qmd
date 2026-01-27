@@ -1,0 +1,24 @@
+﻿---
+title: "Loysa tvær líkningar við tveimum ókendum - substitutión"
+---
+
+## Innleiðing
+
+Líkningar brúkast ofta til at loysa ymisk problem frá veruleikanum, og her eru ofta fleiri ókend enn bara eitt. 
+
+Um vit hava ein bommhandil, har tú fært at vita at um tú keypir 3 slikkipinnar og 4 bommposar kostar tað 35 kr. og um tú heldur keypir 4 slikkipinnar og 2 bommposar kostar tað 20 kr. Hvussu kunnu vit finna útav hvussu nógv ein slikkipinnur kostar? og hvussu nógv ein bommposi kostar? 
+
+Her hava vit 2 ókend, tað er prísurin á slikkipinninum ($x$) og prísurin á bommposanum ($y$). Út frá hesum kunnu vit stilla tvær líkningar upp:
+
+$$3x + 4y = 35$$
+$$4x + 2y = 20$$
+
+Tað eru fleiri ymsir mátar at loysa hesa líkningina uppá, hesir gjøgnum ganga vit.
+
+## Substitutión
+
+Substitutiónshátturin gongur út uppá at isolera ein av teimum ókendu í einari av líkningnum. Síðina kunnu vit seta úttrykki inn í tí seinnu líkningina, og nú kunnu vit loysa tá vit bara hava ein ókendan.
+
+
+## Filmur 
+{{< video https://youtu.be/se_3v3SXc1w?si=ROMTviEZfLZ38Bmn >}}

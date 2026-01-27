@@ -1,0 +1,37 @@
+﻿---
+title: "Primtøl"
+---
+
+## Primtøl
+
+Øll positiv heil tøl kunnu skrivast sum eitt produkt av sær sjálvum og 1, til dømis:
+
+$$42 = 42 \cdot 1$$
+
+Hetta merkir at 1 er eitt multiplikativt neutralt element. Summi tøl kunnu skrivast sum produkt av øðrum tølum:
+
+$$42 = 2 \cdot 21$$
+
+ella
+
+$$42 = 2 \cdot 3 \cdot 7$$
+
+## Hvat er ein primtal?
+
+2, 3 og 7 eru tøl sum ikki kunnu skrivast sum produkt av øðrum tølum. Hesi tølini hava bert seg og 1 sum býtistal, tað merkir at sjálva talið og 1 eru tey einastu tølini sum kunnu deila hetta talið. 
+
+Eitt tal $p$ sum er størri enn 1, og einans kann býtast við sær sjálvum og 1 er:
+
+$$p = p \cdot 1$$
+
+kallast eitt primtal. Her eru nøkur dømir av primtølum:
+
+$$2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97$$
+
+## Primfaktorisering
+
+Øll onnur tøl ið ikki eru primtøl kunnu tí skrivast sum eitt produkt av primtølum. Hetta kallast at primfaktorisera eitt tal. 
+
+
+## Filmur 
+{{< video https://youtu.be/iuDuLYSeoQw?si=94b4cGPwCSh7C3zL >}}

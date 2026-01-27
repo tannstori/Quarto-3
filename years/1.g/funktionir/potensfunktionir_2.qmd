@@ -1,0 +1,44 @@
+﻿---
+title: "Potensfunktiónir 1"
+---
+
+### Grafar av potensfunktiónum
+
+Grafurin fyri potensfunktiónunum er sera ymiskur, alt eftir hvat virðið á $a$ er:
+
+**Makaðir potensar ($a = 2, 4, 6, ...$):**
+- Symmetriskur um $y$-ásan
+- Minstavirðið í (0, 0) (um $a > 0$)
+
+**Ómakaðir potensar ($a = 1, 3, 5, ...$):**
+- Rótasymmetriskur
+
+**Negativir potensar ($a < 0$):**
+- Hava asymptótar við $x = 0$ og $y = 0$
+- Líkist einum hyperbell
+
+### Dømi: Tekna sjálv/ur
+
+**$f(x) = x^2$:**
+- Párabul
+- Miðpunkt í (0, 0)
+- Opnar uppeftir /smílist
+
+**$f(x) = x^3$:**
+- Kubisk funktión
+- Fer ígjøgnum (0, 0)
+- Vaksa frá $-\infty$ til $ + \infty$
+
+**$f(x) = x^{-1} = \frac{1}{x}$:**
+- Hyperbola
+- Asymptótar við $x = 0$ og $y = 0$
+- Tveir bólkar
+
+### Ávirkan av $b$
+
+Parameturin $b$ broytir:
+- Amplitudu (stødd)
+- Fortekin (upp ella niður)
+
+## Filmur 
+{{< video https://www.youtube.com/watch?v=cr-PECPblVs >}}

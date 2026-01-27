@@ -1,0 +1,65 @@
+﻿---
+title: "Prógv: Sinus og cosinus í rættvinklaðum trýkantum"
+---
+
+## Prógv
+
+Henda undirvísing prgvar evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Definisiónir
+
+Fyri ein vinkul $\theta$ í einum rættvinklaðum trýkanti:
+
+$$
+\sin(\theta) = \frac{a}{c}, \quad \cos(\theta) = \frac{b}{c}
+$$
+
+### Prógv: Pythagoreiskt samband
+
+Vit vilja vísa, at $\sin^2(\theta) + \cos^2(\theta) = 1$
+
+**Byrja við definisiónunum:**
+$$
+\sin^2(\theta) + \cos^2(\theta) = \left(\frac{a}{c}\right)^2 + \left(\frac{b}{c}\right)^2
+$$
+
+$$
+= \frac{a^2}{c^2} + \frac{b^2}{c^2} = \frac{a^2 + b^2}{c^2}
+$$
+
+**Nýt Pythagoras:**
+Tí $a^2 + b^2 = c^2$:
+
+$$
+\frac{a^2 + b^2}{c^2} = \frac{c^2}{c^2} = 1
+$$
+
+### Prógv: Komplementarir vinklar
+
+Vit vilja vísa, at $\sin(\theta) = \cos(90° - \theta)$
+
+**Í rættvinklaðum trýkanti:**
+- Vinkulin er $\theta$
+- Komplementari vinkulin er $90° - \theta$
+
+**Fyri $\theta$:**
+$$
+\sin(\theta) = \frac{\text{mótstøðu}}{\text{hypotenusa}}
+$$
+
+**Fyri $90° - \theta$:**
+$$
+\cos(90° - \theta) = \frac{\text{løggjandi}}{\text{hypotenusa}}
+$$
+
+Men "løggjandi" fyri $90° - \theta$ er "mótstøðu" fyri $\theta$!
+
+Sostatt: $\sin(\theta) = \cos(90° - \theta)$ ✓
+
+
+## Filmur 
+{{< video https://youtu.be/xQo4BAjfhJQ?si=cNknexoBBb3Zz1M0 >}}

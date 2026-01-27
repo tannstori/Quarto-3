@@ -1,0 +1,32 @@
+﻿---
+title: "Tøl - náturlig og heiltøl"
+---
+
+<!-- TODO: Replace with real lesson video -->
+### Natúrlig tøl
+Tey natúrligu tølini eru tey fyrstu tølini vit menniskju byrja at brúka. Tað eru tølini sum vit kunnu telja á fingrunum 1,2,3,4 og óendaliga langt upp. Hesa tølini frámerkja vit við bókstavinum:
+
+$$\mathbb{N}$$
+
+Vit kunnu skriva tey natúrligu tølini sum eina mongd á hendan hátt:
+
+$$\mathbb{N} = \{1, 2, 3, 4, \ldots\}$$
+
+Her merkja tey trý punktumini at mongdin av tølum heldur á fram í allar ævir.
+
+### Heil tøl
+
+Nú hava vit tey positivu heiltølini í einari mongd. Um vit leggja tey negativu heiltølini og 0 afturat, fáa vit tey heilu tølini. Tey heilu tølini eru frámerkt við bókstavinum:
+
+$$\mathbb{Z}$$
+
+Vit kunnu skriva tey heilu tølini sum ein mongd á hendan hátt:
+
+$$\mathbb{Z} = \{\ldots, -4, -3, -2, -1, 0, 1, 2, 3, 4, \ldots\}$$
+
+Tað er ymiskt hvørjar siðvenjurnar eru um ein hevur 0 við í teimum natúrligu tølinum ella ikki. Men um ein hevur 0 við í teimum natúrligu tølunum, verður mongdin frá merkt á hendan hátt:
+
+$$\mathbb{N}_0 = \{0, 1, 2, 3, 4, \ldots\}$$
+
+## Filmur 
+{{< video https://youtu.be/Fxb_PSuxJtE?si=HhzNW_QbT0LFLWPk >}}

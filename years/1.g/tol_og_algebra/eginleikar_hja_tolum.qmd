@@ -1,0 +1,58 @@
+﻿---
+title: "Eginleikar hjá tølum"
+---
+
+## Eginleikar hjá tølum
+
+Til tey reelu tølini hoyra nakrar reglur, sum eisini kunnu kallast eginleikar.
+
+## Additión
+
+Fyri additión eru hesir eginleikarnir galdandi:
+
+### Kommutativ lóg
+
+$$a + b = b + a$$
+
+### Associativ lóg
+
+$$a + (b + c) = (a + b) + c$$
+
+### Neutralt element
+
+$$a + 0 = a$$
+
+### Øvugt tal (Invers)
+
+$$a + (-a) = 0$$
+
+
+## Multiplikation
+
+Fyri multiplikation (ganga) eru hesir eginleikar galdandi:
+
+### Kommutativ lóg
+
+$$a \cdot b = b \cdot a$$
+
+### Associativ lóg
+
+$$a \cdot (b \cdot c) = (a \cdot b) \cdot c$$
+
+### Distributiv lóg
+
+$$a \cdot (b + c) = a \cdot b + a \cdot c$$
+
+### Neutralt element
+
+$$a \cdot 1 = a$$
+
+### Øvugt tal (Invers)
+
+$$a \cdot \frac{1}{a} = 1, \quad a \neq 0$$
+
+
+
+
+## Filmur 
+{{< video https://youtu.be/ZnwK6ea3Ytk?si=tdr15TfnAiBgsMbc >}}

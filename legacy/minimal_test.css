@@ -1,0 +1,19 @@
+/* MINIMAL TEST - NO SIDEBAR CSS AT ALL */
+/* Only keeping the vertical collapse fix */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ========================================
+   QUARTO SIDEBAR FIX - Force Vertical Collapse ONLY
+   ======================================== */
+#quarto-sidebar .sidebar-section.collapse {
+  height: auto !important;
+  transition: height 0.35s ease !important;
+}
+
+/* Basic body styling */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Everything else will use Quarto defaults */

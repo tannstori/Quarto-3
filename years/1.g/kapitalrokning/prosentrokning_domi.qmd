@@ -1,0 +1,38 @@
+﻿---
+title: "Prosentrokning dømi"
+---
+
+## Dømi
+
+Henda undirvísing gevur dmi um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+### Dømi 1: Finna prosenttali
+
+Ein vøra kostar 80 kr og verður seld fyri 100 kr. Hvussu stór er vinningurin í prosentum?
+
+$$
+\text{Vinningur} = \frac{100 - 80}{80} \times 100\% = \frac{20}{80} \times 100\% = 25\%
+$$
+
+### Dømi 2: Finna prosentpartin
+
+Hvat er 15% av 200 kr?
+
+$$
+\text{Partur} = \frac{15}{100} \times 200 = 30 \text{ kr}
+$$
+
+### Dømi 3: Finna heildin
+
+45 kr er 30% av hvussu nógvum?
+
+$$
+\text{Heild} = \frac{45}{30} \times 100 = 150 \text{ kr}
+$$
+
+## Filmur 
+{{< video https://youtu.be/MfJfDm7PEQQ?si=iAWwJRgGFFEekCU7 >}}

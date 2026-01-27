@@ -1,0 +1,12 @@
+﻿---
+title: "Loysa tvær líkningar við tveimum ókendum - grafiskt"
+---
+
+## Grafisk loysnin
+
+Í summum førum kunnu vit loysa tvær líkningar við tveimum ókendum við at brúka grafar. Vit byrja við at isolera ein av teimum ókendu í báðum líkningunum. Síðani tekna við báðar grafarnar í eina krossskipan. Krosstalið hjá skurðpunktinum er loysnin til líkningarnar.
+
+
+
+## Filmur 
+{{< video https://youtu.be/Wi93OUxB-FU?si=L7ZwxB9W4VzCYdux >}}

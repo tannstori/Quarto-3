@@ -1,0 +1,11 @@
+﻿---
+title: "Prógv: 3.kvadratsetningur algebraiskt"
+---
+
+## Prógv
+
+Her sæst hvussu 3. kvadratsetningur prógvast algebraiskt.
+
+
+## Filmur 
+{{< video https://youtu.be/ZR6RFA3UvrI?si=zu3wKL4xB2nacZvp >}}

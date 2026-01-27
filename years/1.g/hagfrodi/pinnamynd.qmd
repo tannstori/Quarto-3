@@ -1,0 +1,49 @@
+﻿---
+title: "Pinnamynd"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er pinnamynd?
+
+Pinnamynd er ein einfaldur máti at vísa dáta, har hvør datapunktur verður vístur sum eitt punkt.
+
+### Tá pinnamynd er nýtilig
+
+- Tá vit hava fá dáta
+- Tá vit vilja síggja lutfalsliga smá virði
+- Tá vit vilja síggja hvussu dátini eru útspreidd
+
+### Dømi
+
+Um vit hava følgjandi tøl: 2, 3, 3, 4, 4, 4, 5, 5, 6
+
+Pinnamynd vísir:
+```
+  ×
+× × ×
+× × × × ×
+─────────────
+2 3 4 5 6
+```
+
+### Fyrimunir
+
+- Einfaldar at gera
+- Lætt at lesa
+- Vísir øll dátini
+
+### Avmarkingar
+
+- Ikki góðar við nógvum dátum
+- Ikki góðar við stórum talum
+
+
+## Filmur 
+{{< video https://youtu.be/9H5D_R-AzeU?si=M9XoTstMZXbJrNKL >}}

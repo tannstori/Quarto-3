@@ -1,0 +1,28 @@
+﻿---
+title: "Líkindarokning 2"
+---
+
+## Innleiðing
+
+Henda undirvísing heldur fram vi evniðnum.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Víðkaðir hugtøk
+
+Her hyggja vit at meira trupulum sannlíkindum.
+
+### Fleiri dømi
+
+Hvat er sannlíkindið fyri at fáa javn tal, tá vit kasta einum terningi?
+
+$$
+P(\text{javn}) = \frac{3}{6} = \frac{1}{2}
+$$
+
+Tí tað eru 3 javn tøl (2, 4, 6) av 6 møguligum.
+
+## Filmur 
+{{< video https://youtu.be/_PZFoFbpy28?si=9yh2iwD5XF1mhfzh >}}

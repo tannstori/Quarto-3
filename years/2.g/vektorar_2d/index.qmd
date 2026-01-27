@@ -1,0 +1,13 @@
+﻿---
+title: "Vektorar í 2D"
+sidebar: sidebar-2g
+---
+This section contains math lessons for 8. klasse, covering intermediate topics.
+
+- [Lesson 1: Functions](lesson-01-functions.qmd)
+
+For example, a simple linear function:
+$$
+f(x) = 2x + 1.
+$$
+

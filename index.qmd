@@ -1,0 +1,47 @@
+---
+title: "  "
+page-layout: custom
+title-block-banner: false
+---
+
+```{=HTML}
+<div class="hero-section">
+  <h1>Vælkomin til Minerva!</h1>
+  <p>Eitt gullnám av støddfrøðisfilmum - læra støddfrøði á tínum egna máti</p>
+</div>
+```
+
+<div class="course-cards-container">
+
+<div class="intro-text">
+
+## Vel støðið
+Stígum fast og rembist, nú annað skinn verður tikið um bak.
+
+</div>
+
+<div class="course-cards">
+
+<div class="course-card">
+
+### 📐 Støddfrøði C
+
+
+
+[Vel Støddfrøði C →](years/1.g/index.qmd){.btn}
+
+</div>
+
+<div class="course-card">
+
+### 📊 Støddfrøði B
+
+
+
+[Vel Støddfrøði B →](years/2.g/index.qmd){.btn}
+
+</div>
+
+</div>
+
+</div>

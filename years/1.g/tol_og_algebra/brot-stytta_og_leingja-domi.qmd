@@ -1,0 +1,11 @@
+﻿---
+title: "Brot - stytta og leingja dømi"
+---
+
+## Dømi
+
+Her vísa vit hvussu ein leingir og styttir brot.
+
+## Filmur 
+{{< video https://youtu.be/wRMsI7VPZdQ?si=hUYNZDtskMgAqq1O >}}
+

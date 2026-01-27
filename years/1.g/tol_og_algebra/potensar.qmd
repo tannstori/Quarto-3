@@ -1,0 +1,32 @@
+﻿---
+title: "Potensar"
+---
+
+## Innleiðing
+
+Í støddfrøði eru nógvir snildir mátar vit brúka fyri at sleppa undan at skriva ov nógv upp. Til dømis skriva vit
+
+$$5 \cdot 4$$
+
+ístaðin fyri
+
+$$5 + 5 + 5 + 5$$
+
+Her síggja vit at falda er ein stuttur máti at skriva pluss stykki upp. Á sama hátt eru potensar, ein máti har man kann skriva faldi stykkir stutt upp:
+
+$$5 \cdot 5 \cdot 5 \cdot 5 = 5^4$$
+
+## Hvat eru potensar?
+
+Potensar nevna vit tað tá vit lyfta eitt tal upp í einum øðrum talið. Um vit taka dømi við $5^4$ so siga vit "fimm í fjórða", og hetta brúka vit bara tá tað sama talið verður falda við sær sjálvum fleiri ferðir.
+
+Eitt tal ið er skriva upp sum $5^4$ kallast ein potensur, har 5 er grundtalið og 4 er eksponenturin, tvs.:
+
+$$\text{grundtal}^{\text{eksponent}} = \text{potensur}$$
+
+## Potensroknireglur
+
+Tað eru nógvar potensroknireglur, sum gera tað lættari at rokna við potensum. Vit fara at gjøgnumganga allar og koma við dømum.
+
+## Filmur 
+{{< video https://youtu.be/5PL6BmjnkLI?si=OafpnvymcG1qGv9R >}}

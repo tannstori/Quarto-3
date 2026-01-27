@@ -1,0 +1,57 @@
+﻿---
+title: "Fjórðingsmørk og typutalið"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Median
+
+Median er miðverdið, tá dátini eru rað í størri.
+
+### Fjórðingsmørk (Kvartiler)
+
+- **Q1 (1. kvartil):** 25% av dátum eru minni
+- **Q2 (2. kvartil):** Sama sum median (50%)
+- **Q3 (3. kvartil):** 75% av dátum eru minni
+
+### Typutal (Modus)
+
+Typutalið er tað virðið, sum kemur oftast fyri.
+
+### Dømi
+
+Dáta (rað): 2, 3, 4, 4, 5, 6, 7, 8, 9
+
+- **Median (Q2):** 5 (miðverdið)
+- **Q1:** 3.5 (miðverdið millum 3 og 4)
+- **Q3:** 7.5 (miðverdið millum 7 og 8)
+- **Typutal:** 4 (kemur tveir ferðir fyri)
+
+### Interkvartilavstandur (IQR)
+
+$$
+IQR = Q3 - Q1
+$$
+
+IQR vísir spreiðingina í miðunum 50% av dátum.
+
+Í okkara dømi:
+$$
+IQR = 7.5 - 3.5 = 4
+$$
+
+### Úthoyrissvirði
+
+Virði eru úthoyrissvirði, um:
+- Minni enn $Q1 - 1.5 \times IQR$
+- Størri enn $Q3 + 1.5 \times IQR$
+
+
+## Filmur 
+{{< video https://youtu.be/zRoI7zasny0?si=evk0aGScQrSr2tze >}}

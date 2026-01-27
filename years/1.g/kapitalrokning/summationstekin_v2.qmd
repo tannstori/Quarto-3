@@ -1,0 +1,58 @@
+﻿---
+title: "Summatiónstekin v2"
+---
+
+## Innleiðing
+
+Henda undirvísing fevnir um evnið.
+
+## Dummy Content
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Hvat er summatiónstekin?
+
+Summatiónstekin (sigma-tekin) er ein máti at skriva eina summu av liðum á stuttligan hátt.
+
+### Alment forma
+
+$$
+\sum_{i=1}^{n} a_i = a_1 + a_2 + a_3 + ... + a_n
+$$
+
+### Dømi 1: Einføld summa
+
+$$
+\sum_{i=1}^{5} i = 1 + 2 + 3 + 4 + 5 = 15
+$$
+
+### Dømi 2: Kvadrat
+
+$$
+\sum_{i=1}^{4} i^2 = 1^2 + 2^2 + 3^2 + 4^2 = 1 + 4 + 9 + 16 = 30
+$$
+
+### Dømi 3: Geometrisk røð
+
+$$
+\sum_{i=0}^{n} r^i = 1 + r + r^2 + ... + r^n = \frac{1 - r^{n+1}}{1 - r}
+$$
+
+### Reglur
+
+**Konstant faktur:**
+$$
+\sum_{i=1}^{n} c \cdot a_i = c \cdot \sum_{i=1}^{n} a_i
+$$
+
+**Summa av summum:**
+$$
+\sum_{i=1}^{n} (a_i + b_i) = \sum_{i=1}^{n} a_i + \sum_{i=1}^{n} b_i
+$$
+
+### Nýtsla í kapitalrokning
+
+Summatiónstekin verður brúkt til at útleiða annuitetsformlum, har vit summera rað av gjøldum og rentum.
+
+## Filmur 
+{{< video https://youtu.be/9SE7k-wHeMQ?si=T6atb19KU0B0fw8Y >}}

@@ -1,0 +1,11 @@
+﻿---
+title: "Brot 2"
+---
+
+## Innleiðing
+
+Her vísa vit hvussu vit leggja tvey brot saman, og hvussu vit trekkja eitt brot frá einum øðrum.
+
+
+## Filmur 
+{{< video https://youtu.be/I_a-iiX7NEE?si=nOujrVw6XJXBGiOK >}}

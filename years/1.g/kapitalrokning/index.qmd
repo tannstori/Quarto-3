@@ -1,0 +1,42 @@
+﻿---
+title: "Kapitalrokning"
+sidebar: sidebar-1g
+---
+
+:::{.lesson-grid}
+
+:::{.lesson-card}
+### 💯 Prosent
+- [Prosent](Prosent.qmd)
+- [Prosentrokning](prosentrokning.qmd)
+- [Prosentrokning dømi](prosentrokning_domi.qmd)
+:::
+
+:::{.lesson-card}
+### 📈 Kapitalframskriving
+- [Kapitalframskriving rentufrymilin](kapitalframskriving_rentufrymilin.qmd)
+- [Rentufrymilin dømi](rentufrymilin_domi.qmd)
+- [Kapitalframskriving](kapitalframskriving.qmd)
+- [Kapitalframskriving dømi](kapitalframskriving_domi.qmd)
+- [Effektiv renta](effektiv_renta.qmd)
+:::
+
+:::{.lesson-card}
+### 🏦 Annuitetslán
+- [Intro til annuitet](intro_til_annuitet.qmd)
+- [Annuitetslán setningur](annuitetslán_setningur.qmd)
+- [Annuitetslán prógv](annuitetslán_prógv.qmd)
+- [Annuitetslán dømi](annuitetslán_domi.qmd)
+:::
+
+:::{.lesson-card}
+### 💰 Annuitetsuppsparing
+- [Annuitetsuppsparing setningur](annuitetsuppsparing_setningur.qmd)
+- [Annuitetsuppsparing prógv](annuitetsuppsparing_prógv.qmd)
+- [Summatiónstekin v2](summationstekin_v2.qmd)
+:::
+
+:::
+
+
+

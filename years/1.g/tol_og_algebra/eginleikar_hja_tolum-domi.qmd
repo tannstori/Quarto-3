@@ -1,0 +1,10 @@
+﻿---
+title: "Eginleikar hjá tølum - dømi"
+---
+
+## Dømi
+
+Her síggjast dømir á hvussu teir ymsu eginleikarnir rigga.
+
+## Filmur 
+{{< video https://youtu.be/1B7EtS3PpzA?si=6Gt5d3j5zPrHiMmb >}}
