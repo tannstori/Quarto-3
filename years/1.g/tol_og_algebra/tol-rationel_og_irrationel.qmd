@@ -4,30 +4,36 @@ title: "Tøl - rationel og irrationel tøl"
 
 ### Rationel tøl
 
+
 Rationel tøl eru øll heil tøl og øll tey tøl ið kunnu skrivast sum eitt brot:
-$$\frac{a}{b}$$
+<div style="margin-left: 1em;">
+$\frac{a}{b}$
+</div>
 
- Rationel tøl verða frámerkt við bókstavinum:
- $$
- \mathbb{Q}
- $$
 
- Hendan mongdin av tølum rúmar næstan øll tøl, írokna tey tølini, ið liggj ímillum tey heilu tølini. Hetta eru tøl sum 2,5 og -5,9, tí 
- $$
-2,5=\frac{5}{2}
- $$
+Rationel tøl verða frámerkt við bókstavinum:
+<div style="margin-left: 1em;">
+$\mathbb{Q}$
+</div>
+
+
+Hendan mongdin av tølum rúmar næstan øll tøl, írokna tey tølini, ið liggj ímillum tey heilu tølini. Hetta eru tøl sum 2,5 og -5,9, tí
+<div style="margin-left: 1em;">
+$2,5=\frac{5}{2}$
+</div>
 
 ### Irrationel tøl
 
 Irrationel tøl er, ið ikki kunnu skrivast sum eitt brot. Tað eru tøl sum hava óendaliga nógv
 decimaltøl, ella tøl eftir komma. Dømir á tílík tøl eru $\pi$ og $\sqrt{2}$.
-\\
+
 Um vit leggja allar hesar mongdirnar, heil-, rationel- og irationel tøl í eina mongd fáa
 vit øll tøl. Mongdin av øllum tølum kallast altøl ella reel tøl, og tann mongdin av tølum
+
 er frámerkt við bókstavinum:
-$$
-\mathbb{R}
-$$
+<div style="margin-left: 1em;">
+$\mathbb{R}$
+</div>
 
 
 ## Filmur 
