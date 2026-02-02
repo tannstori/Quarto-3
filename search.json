@@ -1928,7 +1928,7 @@
     "href": "years/1.g/tol_og_algebra/tol-naturlig_og_heiltol.html",
     "title": "Tøl - náturlig og heiltøl",
     "section": "",
-    "text": "Tey natúrligu tølini eru tey fyrstu tølini vit menniskju byrja at brúka. Tað eru tølini sum vit kunnu telja á fingrunum 1,2,3,4 og óendaliga langt upp. Hesa tølini frámerkja vit við bókstavinum:\n\\[\\mathbb{N}\\]\nVit kunnu skriva tey natúrligu tølini sum eina mongd á hendan hátt:\n\\[\\mathbb{N} = \\{1, 2, 3, 4, \\ldots\\}\\]\nHer merkja tey trý punktumini at mongdin av tølum heldur á fram í allar ævir.",
+    "text": "Tey natúrligu tølini eru tey fyrstu tølini vit menniskju byrja at brúka. Tað eru tølini sum vit kunnu telja á fingrunum 1,2,3,4 og óendaliga langt upp. Hesa tølini frámerkja vit við bókstavinum:\n\\(\\mathbb{N}\\)\nVit kunnu skriva tey natúrligu tølini sum eina mongd á hendan hátt:\n\\(\\mathbb{N} = \\{1, 2, 3, 4, \\ldots\\}\\)\nHer merkja tey trý punktumini at mongdin av tølum heldur á fram í allar ævir.",
     "crumbs": [
       "1.g",
       "📚 Tøl og Algebra",
@@ -2552,7 +2552,7 @@
     "href": "years/1.g/tol_og_algebra/tol-rationel_og_irrationel.html",
     "title": "Tøl - rationel og irrationel tøl",
     "section": "",
-    "text": "Rationel tøl eru øll heil tøl og øll tey tøl ið kunnu skrivast sum eitt brot: \\[\\frac{a}{b}\\]\nRationel tøl verða frámerkt við bókstavinum: \\[\n\\mathbb{Q}\n\\]\nHendan mongdin av tølum rúmar næstan øll tøl, írokna tey tølini, ið liggj ímillum tey heilu tølini. Hetta eru tøl sum 2,5 og -5,9, tí \\[\n2,5=\\frac{5}{2}\n\\]",
+    "text": "Rationel tøl eru øll heil tøl og øll tey tøl ið kunnu skrivast sum eitt brot:\n\n\\(\\frac{a}{b}\\)\n\nRationel tøl verða frámerkt við bókstavinum:\n\n\\(\\mathbb{Q}\\)\n\nHendan mongdin av tølum rúmar næstan øll tøl, írokna tey tølini, ið liggj ímillum tey heilu tølini. Hetta eru tøl sum 2,5 og -5,9, tí\n\n\\(2,5=\\frac{5}{2}\\)",
     "crumbs": [
       "1.g",
       "📚 Tøl og Algebra",
@@ -3641,7 +3641,7 @@
     "href": "years/1.g/tol_og_algebra/tol-makad_og_stok.html",
     "title": "Tøl - makað og støk tøl",
     "section": "",
-    "text": "Vit kunnu býta tey heilu tølini upp í tveir bólkar makað tøl sum 2, 14 og 28, og støk tøl sum 1, -7 og 23.\n\n\nEitt makað tal kann skrivast upp á hendan hátt:\n\\[2 \\cdot n\\]\nhar \\(n\\) er eitt makað tal. Eitt dømi kann vera 10, har \\(n = 5\\):\n\\[2 \\cdot n = 2 \\cdot 5 = 10\\]\n\n\n\nStøk tøl er eru tøl, ið kunnu skrivast upp á hendan hátt:\n\\[2 \\cdot n - 1\\]\nhar \\(n\\) er eitt makað tal. Eitt dømi kann vera \\(-7\\), har \\(n = -3\\):\n\\[2 \\cdot n - 1 = 2 \\cdot (-3) - 1 = -6 - 1 = -7\\]",
+    "text": "Vit kunnu býta tey heilu tølini upp í tveir bólkar; makað tøl sum 2, 14 og 28, og støk tøl sum 1, -7 og 23.\n\n\nEitt makað tal kann skrivast upp á hendan hátt: \\(2 \\cdot n\\) har \\(n\\) er eitt heiltal. Eitt dømi kann vera 10, har \\(n = 5\\): \\(2 \\cdot n = 2 \\cdot 5 = 10\\)\n\n\n\nStøk tøl eru tøl, ið kunnu skrivast upp á hendan hátt: \\(2 \\cdot n - 1\\) har \\(n\\) er eitt heiltal. Eitt dømi kann vera \\(-7\\), har \\(n = -3\\): \\(2 \\cdot n - 1 = 2 \\cdot (-3) - 1 = -6 - 1 = -7\\)",
     "crumbs": [
       "1.g",
       "📚 Tøl og Algebra",
@@ -3654,7 +3654,7 @@
     "href": "years/1.g/tol_og_algebra/tol-makad_og_stok.html#innleiðing",
     "title": "Tøl - makað og støk tøl",
     "section": "",
-    "text": "Vit kunnu býta tey heilu tølini upp í tveir bólkar makað tøl sum 2, 14 og 28, og støk tøl sum 1, -7 og 23.\n\n\nEitt makað tal kann skrivast upp á hendan hátt:\n\\[2 \\cdot n\\]\nhar \\(n\\) er eitt makað tal. Eitt dømi kann vera 10, har \\(n = 5\\):\n\\[2 \\cdot n = 2 \\cdot 5 = 10\\]\n\n\n\nStøk tøl er eru tøl, ið kunnu skrivast upp á hendan hátt:\n\\[2 \\cdot n - 1\\]\nhar \\(n\\) er eitt makað tal. Eitt dømi kann vera \\(-7\\), har \\(n = -3\\):\n\\[2 \\cdot n - 1 = 2 \\cdot (-3) - 1 = -6 - 1 = -7\\]",
+    "text": "Vit kunnu býta tey heilu tølini upp í tveir bólkar; makað tøl sum 2, 14 og 28, og støk tøl sum 1, -7 og 23.\n\n\nEitt makað tal kann skrivast upp á hendan hátt: \\(2 \\cdot n\\) har \\(n\\) er eitt heiltal. Eitt dømi kann vera 10, har \\(n = 5\\): \\(2 \\cdot n = 2 \\cdot 5 = 10\\)\n\n\n\nStøk tøl eru tøl, ið kunnu skrivast upp á hendan hátt: \\(2 \\cdot n - 1\\) har \\(n\\) er eitt heiltal. Eitt dømi kann vera \\(-7\\), har \\(n = -3\\): \\(2 \\cdot n - 1 = 2 \\cdot (-3) - 1 = -6 - 1 = -7\\)",
     "crumbs": [
       "1.g",
       "📚 Tøl og Algebra",
